@@ -6,7 +6,7 @@
 using namespace Rcpp;
 
 // read_data
-NumericMatrix read_data(std::string path, std::string format_name);
+List read_data(std::string path, std::string format_name);
 RcppExport SEXP rxylib_read_data(SEXP pathSEXP, SEXP format_nameSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
