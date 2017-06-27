@@ -1,0 +1,36 @@
+# MAKEFILE R package 'rxylib'
+# makefile in accordance with: https://github.com/AleMorales/RcppSundials.R/blob/master/src/Makevars
+
+PKG_CXXFLAGS= -I../inst/include/ -I../inst/include/xylib/
+PKG_CFLAGS= -I../inst/include/ -I../inst/include/xylib/
+
+RXYLIBSOBJECTS=\
+  	./xylib/bruker_raw.o \
+  	./xylib/cache.o \
+  	./xylib/canberra_mca.o \
+  	./xylib/chiplot.o \
+  	./xylib/cpi.o \
+  	./xylib/csv.o \
+  	./xylib/dbws.o \
+  	./xylib/gsas.o \
+  	./xylib/pdcif.o \
+  	./xylib/philips_raw.o \
+  	./xylib/philips_udf.o \
+  	./xylib/riet7.o \
+  	./xylib/rigaku_dat.o \
+  	./xylib/specsxy.o \
+  	./xylib/spectra.o \
+  	./xylib/text.o \
+  	./xylib/util.o \
+  	./xylib/uxd.o \
+  	./xylib/vamas.o \
+  	./xylib/winspec_spe.o \
+  	./xylib/xfit_xdd.o \
+  	./xylib/xylib.o
+
+
+WRAPOBJECTS= read_data.o
+
+PKGOBJECTS= RcppExports.o
+
+OBJECTS= $(WRAPOBJECTS) $(PKGOBJECTS) $(RXYLIBSOBJECTS)

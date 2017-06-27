@@ -1,0 +1,18 @@
+Package: rxylib
+Type: Package
+Title: The Package Provides a Wrapper for the xylib Library
+Version: 0.1.0
+Date: 2016-11-17
+Author: Sebastian Kreutzer [aut, trl, cre]
+Authors@R: c(
+    person("Sebastian", "Kreutzer", role = c("aut", "trl", "cre"), email = "sebastian.kreutzer@u-bordeaux-montaigne.fr"))
+Maintainer: Sebastian Kreutzer <sebastian.kreutzer@u-bordeaux-montaigne.fr>
+Description: More about what it does (maybe more than one line) Use four spaces
+    when indenting paragraphs within the Description.
+License: GPL-3
+Depends:
+    R (>= 3.3.0),
+LinkingTo: Rcpp (>= 0.12.5),
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
