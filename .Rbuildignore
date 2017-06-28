@@ -4,6 +4,7 @@
 
 # Exclude GitHub stuff
 LICENSE
+README.md
 
 # Exclude compiled code
 ^src/xylib/.*\.o$
@@ -12,3 +13,4 @@ LICENSE
 rxylib.BuildResults
 rxylib.BuildScripts
 rxylib.CHECK_AND_BUILD_MacOSX.sh
+
