@@ -1,4 +1,12 @@
-#' rxylib
+#' Import XY-Data into R
+#'
+#' @description
+#' Provides access to the 'xylib' C library for to import xy
+#' data from powder diffraction, spectroscopy and other experimental methods.
+#'
+#' @details
+#'
+#' Supported data formats
 #'
 #' @name rxylib-package
 #' @aliases rxylib-package rxylib

@@ -4,9 +4,34 @@
 \name{rxylib-package}
 \alias{rxylib-package}
 \alias{rxylib}
-\title{rxylib}
+\title{Import XY-Data into R}
 \description{
-rxylib
+Provides access to the 'xylib' C library for to import xy
+data from powder diffraction, spectroscopy and other experimental methods.
+}
+\details{
+Supported data formats
+\tabular{llll}{\bold{ID} \tab \bold{NAME} \tab \bold{DESCRIPTION} \tab \bold{FILE EXTENSION} \cr
+[1,] \tab cpi \tab Sietronics Sieray CPI \tab cpi\cr
+[2,] \tab uxd \tab Bruker Diffrac-AT UXD \tab uxd\cr
+[3,] \tab rigaku_dat \tab Rigaku DAT \tab dat\cr
+[4,] \tab bruker_raw \tab Siemens/Bruker RAW \tab raw\cr
+[5,] \tab vamas \tab VAMAS ISO-14976 \tab vms\cr
+[6,] \tab philips_udf \tab Philips UDF \tab udf\cr
+[7,] \tab spe \tab PI WinSpec SPE \tab spe\cr
+[8,] \tab pdcif \tab Powder Diffraction CIF \tab cif\cr
+[9,] \tab philips_rd \tab Philips PC-APD RD/SD \tab rd sd\cr
+[10,] \tab xrdml \tab PANalytical XRDML \tab xrdml\cr
+[11,] \tab canberra_mca \tab Canberra MCA \tab mca dat\cr
+[12,] \tab canberra_cnf \tab Canberra CNF \tab cnf\cr
+[13,] \tab xfit_xdd \tab XFIT XDD \tab xdd\cr
+[14,] \tab riet7 \tab RIET7/LHPM/PSI_DMC \tab dat\cr
+[15,] \tab dbws \tab DBWS data \tab dbw rit neu\cr
+[16,] \tab chiplot \tab ChiPLOT data \tab chi\cr
+[17,] \tab spectra \tab Spectra / VGX 900 \tab 1 2 3 4 5 6 7 8 9\cr
+[18,] \tab specsxy \tab SPECS SpecsLab2 xy \tab xy\cr
+[19,] \tab csv \tab CSV or TSV \tab csv tsv tab\cr
+ \tab \tab }
 }
 \author{
 Sebastian Kreutzer

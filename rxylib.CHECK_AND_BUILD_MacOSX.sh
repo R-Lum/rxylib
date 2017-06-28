@@ -80,6 +80,10 @@ echo ""
   eval R CMD BATCH --no-timing ${PATHPACKAGE}/rxylib.BuildScripts/rxylib.PBS_roxygen2.R /dev/null
   check_status
 
+  echo -ne "-> Add formats ... \t\t\t\t"
+  eval R CMD BATCH --no-timing ${PATHPACKAGE}/rxylib.BuildScripts/rxylib.PBS_Formats.R /dev/null
+  check_status
+
 #
 # BUILD PACKAGE
 # =================================================================================================
@@ -107,6 +111,7 @@ echo "[INSTALL PACKAGE]"
 echo ""
 
   eval R CMD INSTALL --build ${PATHPACKAGE}/
+
 
 #
 # COPY FILES AND CLEANING UP
