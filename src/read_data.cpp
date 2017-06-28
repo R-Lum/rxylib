@@ -1,12 +1,17 @@
-//read_data.cpp
-//author: Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France)
-//version: 0.1.0 [2017-06-27]
-
+// ## +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ## Title:   Read data using the xylib
+// ## Author:  Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France)
+// ## Contact: sebastian.kreutzer@u-bordeaux-montaigne.fr
+// ## Date:    Wed Jun 28 10:13:07 2017
+// ## +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #include <Rcpp.h>
 #include "xylib.h"
 
 using namespace Rcpp;
 using namespace xylib;
+
+//TODO LIST
+// - support format option values
 
 // [[Rcpp::export]]
 List read_data(std::string path, std::string format_name){
