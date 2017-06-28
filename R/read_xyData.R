@@ -42,6 +42,10 @@ read_xyData <- function(
     ##extract file extension
     ext <- rev(strsplit(x = basename(file), split = ".", fixed = TRUE)[[1]])[1]
 
+      ##make small letters out of it, otherwise it may not work if, for whatever reason,
+      ##the filename was written in capital letters
+      ext <- tolower(ext)
+
     ##construct data.frame of supported file formats
     df_supported <- as.data.frame(get_supportedFormats(), stringsAsFactors = FALSE)
 

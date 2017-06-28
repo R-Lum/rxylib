@@ -29,7 +29,8 @@ List read_data(std::string path, std::string format_name){
 
     //set variables for the block; columns and rows should be equal for each block
     int n_columns = xylib_count_columns(xylib_get_block(dataset, b));
-    int n_rows = xylib_count_rows(xylib_get_block(dataset, b), 1);
+    int n_rows = xylib_count_rows(xylib_get_block(dataset, b), n_columns);
+
     NumericMatrix m(n_rows, n_columns);
 
     //loop over columns
