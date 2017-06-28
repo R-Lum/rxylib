@@ -10,6 +10,8 @@ Provides access to the 'xylib' C library for to import xy
 data from powder diffraction, spectroscopy and other experimental methods.
 }
 \details{
+Currently the package uses `xylib` version 1.6 (unreleased).
+
 Supported data formats
 \tabular{llll}{\bold{ID} \tab \bold{NAME} \tab \bold{DESCRIPTION} \tab \bold{FILE EXTENSION} \cr
 [1,] \tab cpi \tab Sietronics Sieray CPI \tab cpi\cr
