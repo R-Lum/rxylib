@@ -39,3 +39,6 @@ src/*.so
 src/*.o
 src/xylib/*.o
 src/*.dll
+
+# Readme local
+README.html
