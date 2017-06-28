@@ -73,7 +73,6 @@ read_xyData <- function(
 
 
   # Import data ---------------------------------------------------------------------------------
-  read_data(path = file, format_name = format_name)
-
+  return(read_data(path = file, format_name = format_name))
 
 }

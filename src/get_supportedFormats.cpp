@@ -19,7 +19,7 @@ List get_supportedFormats() {
 
   //access the list of supported formats
   const xylibFormat* format = NULL;
-  int n_formats;
+  int n_formats = 0;
 
   //obtain number of formats
   for (int i = 0; (format = xylib_get_format(i)) != NULL; ++i){
