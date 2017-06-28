@@ -1,16 +1,23 @@
 Package: rxylib
 Type: Package
 Title: Import XY-Data into R 
-Version: 0.1.0
-Date: 2017-06-28
-Author: Sebastian Kreutzer [aut, trl, cre], Marcin Wojdyr [aut]
-Authors@R: c(
-    person("Sebastian", "Kreutzer", role = c("aut", "trl", "cre"), email = "sebastian.kreutzer@u-bordeaux-montaigne.fr"),
-    person("Marcin", "Wojdyr", role = c("aut")))
-Maintainer: Sebastian Kreutzer <sebastian.kreutzer@u-bordeaux-montaigne.fr>
 Description: Provides access to the 'xylib' C library for to import xy 
   data from powder diffraction, spectroscopy and other experimental methods.
-License: GPL-3
+Version: 0.1.0
+Date: 2017-06-28
+Author: Sebastian Kreutzer [aut, trl, cre], 
+  RLum Team [ctb],
+  Marcin Wojdyr [cph] (C-library xylib), 
+  Peng Zhang [cph] (C-library xylib)
+Authors@R: c(
+    person("Sebastian", "Kreutzer", role = c("aut", "trl", "cre"), email = "sebastian.kreutzer@u-bordeaux-montaigne.fr"),
+    person(family = "RLum Team", role = "ctb"),
+    person("Marcin", "Wojdyr", role = c("cph"), comment = "C-library xylib"),
+    person("Peng", "Zhang", role = c("cph"), comment = "C-library xylib"))
+Maintainer: Sebastian Kreutzer <sebastian.kreutzer@u-bordeaux-montaigne.fr>
+URL: https://github.com/R-Lum/rxylib
+BugReports: https://github.com/R-Lum/rxylib/issues
+License: GPL-3 | LGPL-2.1
 Depends:
     R (>= 3.4.0),
     utils

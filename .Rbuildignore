@@ -5,6 +5,7 @@
 # Exclude GitHub stuff
 LICENSE
 README.md
+README.html
 
 # Exclude compiled code
 ^src/xylib/.*\.o$
