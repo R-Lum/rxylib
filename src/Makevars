@@ -7,6 +7,7 @@ PKG_CFLAGS= -I../inst/include/ -I../inst/include/xylib/
 RXYLIBSOBJECTS=\
   	./xylib/bruker_raw.o \
   	./xylib/cache.o \
+  	./xylib/canberra_cnf.o \
   	./xylib/canberra_mca.o \
   	./xylib/chiplot.o \
   	./xylib/cpi.o \
@@ -26,6 +27,7 @@ RXYLIBSOBJECTS=\
   	./xylib/vamas.o \
   	./xylib/winspec_spe.o \
   	./xylib/xfit_xdd.o \
+  	./xylib/xrdml.o \
   	./xylib/xylib.o
 
 

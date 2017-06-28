@@ -107,7 +107,7 @@ Block* read_block(istream &f)
         if (row.size() == 0)
             break;
         if (row.size() != cols.size()) {
-            //SK, removed for R
+            //SK: remove for R
             //fprintf(stderr, "Warning. Expected %d numbers in line, got %d.\n",
             //                (int) cols.size(), (int) row.size());
             row.resize(cols.size(), 0);

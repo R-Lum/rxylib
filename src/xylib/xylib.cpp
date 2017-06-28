@@ -2,9 +2,7 @@
 // Licence: Lesser GNU Public License 2.1 (LGPL)
 
 #define BUILDING_XYLIB
-#include <Rcpp.h>
 #include "xylib.h"
-
 
 #include <cassert>
 #include <cstring>
@@ -38,7 +36,7 @@
 #include "winspec_spe.h"
 #include "pdcif.h"
 #include "philips_raw.h"
-//#include "xrdml.h"
+#include "xrdml.h"
 //#include "gsas.h"
 #include "cpi.h"
 #include "dbws.h"
@@ -76,10 +74,10 @@ const FormatInfo *formats[] = {
     &WinspecSpeDataSet::fmt_info,
     &PdCifDataSet::fmt_info,
     &PhilipsRawDataSet::fmt_info,
-    //&XrdmlDataSet::fmt_info,
+    &XrdmlDataSet::fmt_info,
     //&GsasDataSet::fmt_info,
     &CanberraMcaDataSet::fmt_info,
-    //&CanberraCnfDataSet::fmt_info,
+    &CanberraCnfDataSet::fmt_info,
     &XfitXddDataSet::fmt_info,
     &Riet7DataSet::fmt_info,
     &DbwsDataSet::fmt_info,
@@ -440,7 +438,7 @@ struct decompressing_istreambuf : public std::streambuf
         writeptr_ = bufdata_;
     }
 
-    // should be called only when the buffer is full, double the buffer size
+    // should be called only when the buffer is full, double the buffer size 
     void double_buf()
     {
         int old_size = (int) (writeptr_ - bufdata_);
@@ -540,7 +538,7 @@ DataSet* guess_and_load_stream(istream &is,
 # define S_ISDIR(mode) ((mode&S_IFMT) == S_IFDIR)
 #endif
 
-bool is_directory(std::string const& path)
+bool is_directory(string const& path)
 {
     struct stat buf;
     if (stat(path.c_str(), &buf) != 0)
