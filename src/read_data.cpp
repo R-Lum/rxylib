@@ -15,7 +15,7 @@ using namespace xylib;
 // - support metadata
 
 // [[Rcpp::export]]
-List read_data(std::string path, std::string format_name){
+RcppExport SEXP read_data(std::string path, std::string format_name){
 
   //load dataset
   DataSet* dataset = load_file(path, format_name);

@@ -4,9 +4,9 @@
 \name{rxylib-package}
 \alias{rxylib-package}
 \alias{rxylib}
-\title{xylib wrapper}
+\title{rxylib}
 \description{
-xylib wrapper
+rxylib
 }
 \author{
 Sebastian Kreutzer

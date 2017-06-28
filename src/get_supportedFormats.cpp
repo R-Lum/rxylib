@@ -7,15 +7,12 @@
 #include <Rcpp.h>
 #include "xylib.h"
 
-using namespace Rcpp;
-using namespace xylib;
-
 //TODO LIST
 // - valid_options crashes RStudio
 // - add other format information
 
 // [[Rcpp::export]]
-List get_supportedFormats() {
+RcppExport SEXP get_supportedFormats() {
 
   //access the list of supported formats
   const xylibFormat* format = NULL;
@@ -27,9 +24,9 @@ List get_supportedFormats() {
   }
 
   //set needed vectors
-  CharacterVector name(n_formats);
-  CharacterVector desc(n_formats);
-  CharacterVector exts(n_formats);
+  Rcpp::CharacterVector name(n_formats);
+  Rcpp::CharacterVector desc(n_formats);
+  Rcpp::CharacterVector exts(n_formats);
   //CharacterVector valid_options(n_formats); TODO
 
   //fill list
@@ -40,7 +37,7 @@ List get_supportedFormats() {
     //valid_options(i) =  xylib_get_format(i) -> valid_options; TODO
   }
 
-  List results;
+  Rcpp::List results;
     results["name"] = name;
     results["desc"] = desc;
     results["exts"] = exts;

@@ -8,5 +8,7 @@ LICENSE
 # Exclude compiled code
 ^src/xylib/.*\.o$
 
-# Exclude RLum related stuff
-^rxylib.*$
+# Exclude rxylib related stuff
+rxylib.BuildResults
+rxylib.BuildScripts
+rxylib.CHECK_AND_BUILD_MacOSX.sh

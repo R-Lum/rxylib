@@ -49,6 +49,14 @@ echo ""
   find ${PATHPACKAGE} -name ".RData" -depth -exec rm {} \;
   check_status
 
+  echo -ne "-> Remove .RcppExports.cpp ... \t\t\t"
+  find ${PATHPACKAGE}/src -name "RcppExports.cpp" -depth -exec rm {} \;
+  check_status
+
+  echo -ne "-> Remove .RcppExports.R ... \t\t\t"
+  find ${PATHPACKAGE}/R -name "RcppExports.R" -depth -exec rm {} \;
+  check_status
+
 
 # Rcpp
 # =================================================================================================
@@ -56,13 +64,11 @@ echo ""
   eval R CMD BATCH --no-timing ${PATHPACKAGE}/rxylib.BuildScripts/rxylib.PBS_Rcpp.R /dev/null
   check_status
 
-
 # REMOVE NAMESPACE
 # =================================================================================================
   echo -ne "-> Remove NAMESPACE ... \t\t\t"
   find ${PATHPACKAGE} -name "NAMESPACE" -depth -exec rm {} \;
   check_status
-
 
 # roxygen2
 # =================================================================================================
@@ -91,7 +97,7 @@ echo "[CHECK PACKAGE]"
 echo ""
 
   eval R CMD check --timings --as-cran ${PATHPACKAGE}/rxylib*.tar.gz
-
+  ##eval R CMD check --timings  ${PATHPACKAGE}/rxylib*.tar.gz
 
 #
 # INSTALL PACKAGE
@@ -133,7 +139,7 @@ echo ""
   rm -r ${PATHPACKAGE}/rxylib.Rcheck &>/dev/null
   check_status
 
-    echo -ne "-> Remove src/*.so ... \t\t\t\t"
+  echo -ne "-> Remove src/*.so ... \t\t\t\t"
   find ${PATHPACKAGE}/src -name "*.so" -depth -exec rm {} \;
   check_status
 

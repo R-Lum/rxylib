@@ -1,4 +1,4 @@
-#' xylib wrapper
+#' rxylib
 #'
 #' @name rxylib-package
 #' @aliases rxylib-package rxylib
@@ -6,5 +6,6 @@
 #' @author Sebastian Kreutzer
 #'
 #' @keywords package
-#' @useDynLib rxylib, .registration = TRUE
+#' @importFrom Rcpp evalCpp
+#' @useDynLib rxylib, .registration=TRUE
 NULL
