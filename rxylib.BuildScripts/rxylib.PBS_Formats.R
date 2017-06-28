@@ -11,7 +11,7 @@
   formats <- rxylib:::get_supportedFormats()
 
   ##create data frame
-  header <- "\\tabular{llll}{\\bold{ID} \\tab \\bold{NAME} \\tab \\bold{DESCRIPTION} \\tab \\bold{FILE EXTENSION} \\cr"
+  header <- "\\tabular{lllllll}{\\bold{ID} \\tab \\bold{NAME} \\tab \\bold{DESCRIPTION} \\tab \\bold{FILE EXTENSION}  \\tab \\bold{VALID_OPTIONS}  \\tab \\bold{DATATYPE} \\tab \\bold{BLOCK_TYPE}\\cr"
   footer <- " \\tab \\tab }"
   main <- vapply(1:length(formats$name), function(x){
     paste0(
@@ -21,7 +21,14 @@
       formats$desc[x],
       " \\tab ",
       formats$exts[x],
+      " \\tab ",
+      formats$valid_options[x],
+      " \\tab ",
+      formats$binary[x],
+      " \\tab ",
+      formats$multiblock[x],
       "\\cr"
+
     )
 
   }, vector(mode = "character", length = 1))

@@ -4,10 +4,12 @@
 \alias{read_xyData}
 \title{Import xy-Data for Supported Formats into R}
 \usage{
-read_xyData(file, verbose = TRUE)
+read_xyData(file, options = "", verbose = TRUE)
 }
 \arguments{
 \item{file}{\link{character} (\strong{required}): path and file to be imported. The argument accepts an \code{URL}.}
+
+\item{options}{\link{character} (with default): set format options (see \link{rxylib-package})}
 
 \item{verbose}{\link{logical} (\emph{with default}): enables/disables verbose mode}
 }
@@ -17,7 +19,7 @@ The functions returns a \link{list} of matrices.
 \description{
 The function provides an access to the underlying \code{xylib} to import data for supported file formats
 into R. Usually just the file path is needed. The function automatically recognises allowed
-formats.See \link{rxylib-package} for supported formats.
+formats. See \link{rxylib-package} for supported formats.
 }
 \section{Function version}{
  0.1.0

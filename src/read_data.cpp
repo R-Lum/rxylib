@@ -11,14 +11,13 @@ using namespace Rcpp;
 using namespace xylib;
 
 //TODO LIST
-// - support format option values
 // - support metadata
 
 // [[Rcpp::export]]
-RcppExport SEXP read_data(std::string path, std::string format_name){
+RcppExport SEXP read_data(std::string path, std::string format_name, std::string options){
 
   //load dataset
-  DataSet* dataset = load_file(path, format_name);
+  DataSet* dataset = load_file(path, format_name, options);
 
   //initialise values
   int n_blocks = dataset -> get_block_count();

@@ -7,10 +7,6 @@
 #include <Rcpp.h>
 #include "xylib.h"
 
-//TODO LIST
-// - valid_options crashes RStudio
-// - add other format information
-
 // [[Rcpp::export]]
 RcppExport SEXP get_supportedFormats() {
 
@@ -27,21 +23,53 @@ RcppExport SEXP get_supportedFormats() {
   Rcpp::CharacterVector name(n_formats);
   Rcpp::CharacterVector desc(n_formats);
   Rcpp::CharacterVector exts(n_formats);
-  //CharacterVector valid_options(n_formats); TODO
+  Rcpp::CharacterVector binary(n_formats);
+  Rcpp::CharacterVector multiblock(n_formats);
+  Rcpp::CharacterVector valid_options(n_formats);
 
   //fill list
   for (int i = 0; i < n_formats; ++i){
     name(i) =  xylib_get_format(i) -> name;
     desc(i) =  xylib_get_format(i) -> desc;
     exts(i) =  xylib_get_format(i) -> exts;
-    //valid_options(i) =  xylib_get_format(i) -> valid_options; TODO
+
+    //binary
+    if(xylib_get_format(i) -> binary == 0){
+       binary(i) = "ascii";
+
+    }else{
+        binary(i) = "binary";
+
+    }
+
+    //multiblock
+    if(xylib_get_format(i) -> multiblock == 0){
+      multiblock(i) = "multiple";
+
+    }else{
+      multiblock(i) = "single";
+
+    }
+
+    //valid_options
+    if(xylib_get_format(i) -> valid_options == NULL){
+      valid_options(i) = "";
+
+    }else{
+      valid_options(i) = xylib_get_format(i) -> valid_options;
+
+    }
+
   }
 
+  //construc list and return results
   Rcpp::List results;
     results["name"] = name;
     results["desc"] = desc;
     results["exts"] = exts;
-    //results["valid_options"] = valid_options; TODO
+    results["binary"] = binary;
+    results["multiblock"] = multiblock;
+    results["valid_options"] = valid_options;
 
   return results;
 

@@ -2,9 +2,11 @@
 #'
 #' The function provides an access to the underlying `xylib` to import data for supported file formats
 #' into R. Usually just the file path is needed. The function automatically recognises allowed
-#' formats.See [rxylib-package] for supported formats.
+#' formats. See [rxylib-package] for supported formats.
 #'
 #' @param file [character] (**required**): path and file to be imported. The argument accepts an `URL`.
+#'
+#' @param options [character] (with default): set format options (see [rxylib-package])
 #'
 #' @param verbose [logical] (*with default*): enables/disables verbose mode
 #'
@@ -39,6 +41,7 @@
 #' @export
 read_xyData <- function(
   file,
+  options = "",
   verbose = TRUE
 ){
 
@@ -116,6 +119,6 @@ read_xyData <- function(
 
 
   # Import data ---------------------------------------------------------------------------------
-  return(read_data(path = file, format_name = format_name))
+  return(read_data(path = file, format_name = format_name, options = options))
 
 }
