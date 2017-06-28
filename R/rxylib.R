@@ -6,5 +6,5 @@
 #' @author Sebastian Kreutzer
 #'
 #' @keywords package
-#' @useDynLib rxylib
+#' @useDynLib rxylib, .registration = TRUE
 NULL

@@ -7,3 +7,6 @@ LICENSE
 
 # Exclude compiled code
 ^src/xylib/.*\.o$
+
+# Exclude RLum related stuff
+^rxylib.*$
