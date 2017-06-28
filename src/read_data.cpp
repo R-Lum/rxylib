@@ -12,6 +12,7 @@ using namespace xylib;
 
 //TODO LIST
 // - support format option values
+// - support metadata
 
 // [[Rcpp::export]]
 List read_data(std::string path, std::string format_name){
