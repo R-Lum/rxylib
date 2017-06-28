@@ -38,3 +38,4 @@ rxylib.Rproj
 src/*.so
 src/*.o
 src/xylib/*.o
+src/*.dll
