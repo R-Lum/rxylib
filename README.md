@@ -1,6 +1,7 @@
 # rxylib
 
-The **R** package `rxylib` provides and access to the C++ library [xylib](http://xylib.sourceforge.net).
+The **R** package `rxylib` provides and access to the C++ library [xylib](http://xylib.sourceforge.net)
+by wrapping the library using Rcpp. 
 
 ## Package metrics 
 ### CRAN statistics
@@ -43,6 +44,7 @@ devtools::install_github("R-Lum/rxylib@master")
 To install a developer build other than 'master', replace the term 'master' in the codeline by the name
 of the wanted developer build. 
 
+
 # Licenses
 
 Please note that the package comprises two different licences 
@@ -59,8 +61,9 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 [GNU General Public License](https://github.com/R-Lum/rxylib/blob/master/LICENSE) for more details.
 
-## Package `xylib` library license 
+## Library `xylib` library license 
 
 The library itself is **NOT** part of the GPL-3 license conditions of the package 
-and available under LGPL license conditions only.
+and available under [LGPL](https://github.com/wojdyr/xylib/blob/master/COPYING) 
+license conditions only cf. https://github.com/wojdyr/xylib
 
