@@ -5,6 +5,16 @@
 
 using namespace Rcpp;
 
+// get_supportedFormats
+List get_supportedFormats();
+RcppExport SEXP rxylib_get_supportedFormats() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(get_supportedFormats());
+    return rcpp_result_gen;
+END_RCPP
+}
 // read_data
 List read_data(std::string path, std::string format_name);
 RcppExport SEXP rxylib_read_data(SEXP pathSEXP, SEXP format_nameSEXP) {
@@ -19,6 +29,7 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
+    {"rxylib_get_supportedFormats", (DL_FUNC) &rxylib_get_supportedFormats, 0},
     {"rxylib_read_data", (DL_FUNC) &rxylib_read_data, 2},
     {NULL, NULL, 0}
 };
