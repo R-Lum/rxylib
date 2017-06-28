@@ -1,6 +1,6 @@
 # rxylib
 
-The **R** package `rxylib` provides and access to the C++ library [xylib](http://xylib.sourceforge.net](http://xylib.sourceforge.net).
+The **R** package `rxylib` provides and access to the C++ library [xylib](http://xylib.sourceforge.net).
 
 ## Package metrics 
 ### CRAN statistics
