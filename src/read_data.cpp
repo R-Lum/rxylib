@@ -11,7 +11,8 @@ using namespace Rcpp;
 using namespace xylib;
 
 //TODO LIST
-// - support metadata
+// - support metadata for dataset and blocks (cf. xylib.h for implementation)
+//  >> the problem might be the keyword
 
 // [[Rcpp::export]]
 RcppExport SEXP read_data(std::string path, std::string format_name, std::string options){
