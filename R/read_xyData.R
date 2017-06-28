@@ -12,8 +12,6 @@
 #' @author
 #' Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France)
 #'
-#' @note
-#'
 #' @keywords IO
 #'
 #' @examples
@@ -45,7 +43,7 @@ read_xyData <- function(
     ext <- rev(strsplit(x = basename(file), split = ".", fixed = TRUE)[[1]])[1]
 
     ##construct data.frame of supported file formats
-    df_supported <- as.data.frame(rxylib:::get_supportedFormats(), stringsAsFactors = FALSE)
+    df_supported <- as.data.frame(get_supportedFormats(), stringsAsFactors = FALSE)
 
     ##check whether the extension is in the list
     if(ext == "txt"){
@@ -71,7 +69,7 @@ read_xyData <- function(
 
 
   # Import data ---------------------------------------------------------------------------------
-  rxylib:::read_data(path = file, format_name = format_name)
+  read_data(path = file, format_name = format_name)
 
 
 }

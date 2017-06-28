@@ -6,6 +6,5 @@
 #' @author Sebastian Kreutzer
 #'
 #' @keywords package
-#' @importFrom Rcpp evalCpp
 #' @useDynLib rxylib
 NULL

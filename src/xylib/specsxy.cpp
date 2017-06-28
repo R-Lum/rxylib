@@ -63,7 +63,7 @@ Block* read_block(istream &f)
                     // ignore, these fields are non-unique or not interesting
                 } else if (key == "Excitation Energy") {
                     blk->meta["source energy"] = value;
-                } else { // all other 
+                } else { // all other
                     blk->meta[key] = value;
                 }
             }
@@ -107,8 +107,9 @@ Block* read_block(istream &f)
         if (row.size() == 0)
             break;
         if (row.size() != cols.size()) {
-            fprintf(stderr, "Warning. Expected %d numbers in line, got %d.\n",
-                            (int) cols.size(), (int) row.size());
+            //SK, removed for R
+            //fprintf(stderr, "Warning. Expected %d numbers in line, got %d.\n",
+            //                (int) cols.size(), (int) row.size());
             row.resize(cols.size(), 0);
         }
         for (size_t i = 0; i != row.size(); ++i)

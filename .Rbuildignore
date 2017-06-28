@@ -1,2 +1,9 @@
+# Exclude R stuff
 ^.*\.Rproj$
 ^\.Rproj\.user$
+
+# Exclude GitHub stuff
+LICENSE
+
+# Exclude compiled code
+^src/xylib/.*\.o$
