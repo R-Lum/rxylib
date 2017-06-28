@@ -20,7 +20,7 @@ by wrapping the library using Rcpp.
 
    http://cran.r-project.org/bin/windows/Rtools/
 
-**Mac OS X** - 'Xcode' (provided by Apple)
+**MacOSX and macOS** - 'Xcode' (provided by Apple)
 
    https://developer.apple.com/xcode/downloads/
 
