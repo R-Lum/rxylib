@@ -16,8 +16,7 @@
 #' @name rxylib-package
 #' @aliases rxylib-package rxylib
 #' @docType package
-#' @author Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), Marcin Wojdyr (maintainer and author
-#' library `xylib`), Peng Zhang (author library `xylib`)
+#' @author Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), RLum Team (family support), Marcin Wojdyr (maintainer and author of the library `xylib`), Peng Zhang (author of the library `xylib`)
 #'
 #' @keywords package
 #' @import utils

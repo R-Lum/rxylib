@@ -1,7 +1,8 @@
 #' Import xy-Data for Supported Formats into R
 #'
 #' The function provides an access to the underlying `xylib` to import data for supported file formats
-#' into R
+#' into R. Usually just the file path is needed. The function automatically recognises allowed
+#' formats.See [rxylib-package] for supported formats.
 #'
 #' @param file [character] (**required**): path and file to be imported. The argument accepts an `URL`.
 #'
@@ -9,14 +10,30 @@
 #'
 #' @section Function version: 0.1.0
 #'
-#' @author
-#' Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France)
+#' @author Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France)
+#'
+#' @return The functions returns a [list] of matrices.
 #'
 #' @keywords IO
 #'
 #' @examples
 #'
-#' ## still missing
+#' \dontrun{
+#' ##load example dataset
+#' file <- system.file("extdata/ExampleSpectrum.CNF", package = "rxylib")
+#' results <- read_xyData(file)
+#'
+#' ##plot spectrum
+#' plot(results[[1]],
+#'  type = "l",
+#'  log = "y",
+#'  xlab = "Energy [keV]",
+#'  ylab = "Counts",
+#'  main = "Thorite - 1800 s")
+#'
+#' mtext(side = 3, "Canberra Inspector 1000, 3 x 3 NaI probe")
+#'
+#' }
 #'
 #' @md
 #' @export

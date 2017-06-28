@@ -11,9 +11,13 @@ read_xyData(file, verbose = TRUE)
 
 \item{verbose}{\link{logical} (\emph{with default}): enables/disables verbose mode}
 }
+\value{
+The functions returns a \link{list} of matrices.
+}
 \description{
 The function provides an access to the underlying \code{xylib} to import data for supported file formats
-into R
+into R. Usually just the file path is needed. The function automatically recognises allowed
+formats.See \link{rxylib-package} for supported formats.
 }
 \section{Function version}{
  0.1.0
@@ -21,7 +25,22 @@ into R
 
 \examples{
 
-## still missing
+\dontrun{
+##load example dataset
+file <- system.file("extdata/ExampleSpectrum.CNF", package = "rxylib")
+results <- read_xyData(file)
+
+##plot spectrum
+plot(results[[1]],
+ type = "l",
+ log = "y",
+ xlab = "Energy [keV]",
+ ylab = "Counts",
+ main = "Thorite - 1800 s")
+
+mtext(side = 3, "Canberra Inspector 1000, 3 x 3 NaI probe")
+
+}
 
 }
 \author{

@@ -39,7 +39,6 @@ Supported data formats
  \tab \tab }
 }
 \author{
-Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), Marcin Wojdyr (maintainer and author
-library `xylib`), Peng Zhang (author library `xylib`)
+Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), RLum Team (family support), Marcin Wojdyr (maintainer and author of the library `xylib`), Peng Zhang (author of the library `xylib`)
 }
 \keyword{package}
