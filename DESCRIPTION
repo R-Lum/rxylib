@@ -12,13 +12,17 @@ Description: Provides access to the 'xylib' C library for to import xy
   data from powder diffraction, spectroscopy and other experimental methods.
 License: GPL-3
 Depends:
-    R (>= 3.4.0)
+    R (>= 3.4.0),
+    utils
 Imports: 
     Rcpp (>= 0.12.11),
-    stringr (>= 1.2.0)
+    stringr (>= 1.2.0),
+    httr (>= 1.2.1)
+Suggests: 
+    testthat (>= 1.0.2)
 LinkingTo:
-  Rcpp (>= 0.12.11),
-  BH (>= 1.62.0-1)
+   Rcpp (>= 0.12.11),
+   BH (>= 1.62.0-1)
 Encoding: UTF-8
 Collate: 
     'rxylib.R'

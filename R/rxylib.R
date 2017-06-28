@@ -14,6 +14,7 @@
 #' @author Sebastian Kreutzer
 #'
 #' @keywords package
+#' @import utils
 #' @importFrom Rcpp evalCpp
 #' @useDynLib rxylib, .registration=TRUE
 NULL

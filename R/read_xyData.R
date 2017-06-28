@@ -3,7 +3,7 @@
 #' The function provides an access to the underlying `xylib` to import data for supported file formats
 #' into R
 #'
-#' @param file [character] (**required**): file to be imported
+#' @param file [character] (**required**): path and file to be imported. The argument accepts an `URL`.
 #'
 #' @param verbose [logical] (*with default*): enables/disables verbose mode
 #'
@@ -30,9 +30,35 @@ read_xyData <- function(
 
     ##check whether file exists
     if(!file.exists(file)){
-      stop("[read_xyData()] File does not exists!", call. = FALSE)
-    }
 
+      ##check whether the file as an URL
+      if(grepl(pattern = "http", x = file, fixed = TRUE)){
+        if(verbose){
+          cat("[read_xyData()] URL detected, checking connection ... ")
+        }
+
+        ##check URL
+        if(!httr::http_error(file)){
+          if(verbose) cat("OK")
+
+          ##dowload file
+          file_link <- paste0(tempfile("read_xyData"), ".", rev(strsplit(file, split = ".", fixed = TRUE)[[1]])[1])
+          download.file(file, destfile = file_link, quiet = ifelse(verbose, FALSE, TRUE), mode = "wb")
+          file <- file_link
+
+        }else{
+          cat("FAILED")
+          con <- NULL
+          stop("[read_xyData()] File could not be downloaded!", call. = FALSE)
+
+        }
+
+      }else{
+        stop("[read_xyData()] File does not exists!", call. = FALSE)
+
+      }
+
+    }
 
   # Set file extension  -------------------------------------------------------------------------
 
@@ -53,14 +79,14 @@ read_xyData <- function(
     if(ext == "txt"){
       format_name <- ""
       if(verbose){
-        cat("\n[read_xtData()] >> Plain TXT-file detected\n")
+        cat("\n[read_xyData()] >> Plain TXT-file detected\n")
 
       }
 
     }else if(any(stringr::str_detect(df_supported$exts, pattern = ext))){
       format_name <- df_supported[which(stringr::str_detect(df_supported$exts, pattern = ext)), "name"]
       if(verbose){
-        cat("\n[read_xtData()] >> File of type ")
+        cat("\n[read_xyData()] >> File of type ")
         cat(df_supported[which(stringr::str_detect(df_supported$exts, pattern = ext)), "desc"])
         cat(" detected\n")
 

@@ -7,7 +7,7 @@
 read_xyData(file, verbose = TRUE)
 }
 \arguments{
-\item{file}{\link{character} (\strong{required}): file to be imported}
+\item{file}{\link{character} (\strong{required}): path and file to be imported. The argument accepts an \code{URL}.}
 
 \item{verbose}{\link{logical} (\emph{with default}): enables/disables verbose mode}
 }
