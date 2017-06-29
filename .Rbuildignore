@@ -17,4 +17,6 @@ rxylib.CHECK_AND_BUILD_MacOSX.sh
 
 # Test resources
 .travis.yml
+codecov.yml
+appveyor.yml
 
