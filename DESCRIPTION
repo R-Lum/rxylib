@@ -12,8 +12,8 @@ Author: Sebastian Kreutzer [aut, trl, cre],
 Authors@R: c(
     person("Sebastian", "Kreutzer", role = c("aut", "trl", "cre"), email = "sebastian.kreutzer@u-bordeaux-montaigne.fr"),
     person(family = "RLum Team", role = "ctb"),
-    person("Marcin", "Wojdyr", role = c("cph"), comment = "C-library xylib"),
-    person("Peng", "Zhang", role = c("cph"), comment = "C-library xylib"))
+    person("Marcin", "Wojdyr", role = c("cph"), comment = "C++ library 'xylib'"),
+    person("Peng", "Zhang", role = c("cph"), comment = "C++ library 'xylib'"))
 Maintainer: Sebastian Kreutzer <sebastian.kreutzer@u-bordeaux-montaigne.fr>
 URL: https://github.com/R-Lum/rxylib
 BugReports: https://github.com/R-Lum/rxylib/issues

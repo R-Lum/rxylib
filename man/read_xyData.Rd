@@ -17,9 +17,9 @@ read_xyData(file, options = "", verbose = TRUE)
 The functions returns a \link{list} of matrices.
 }
 \description{
-The function provides an access to the underlying \code{xylib} to import data for supported file formats
-into R. Usually just the file path is needed. The function automatically recognises allowed
-formats. See \link{rxylib-package} for supported formats.
+The function provides access to the underlying \code{xylib} to import data for supported file formats
+into R. In most cases, only the file path is needed with further arguments to import the data.
+The function automatically recognises allowed formats. See \link{rxylib-package} for supported formats.
 }
 \section{Function version}{
  0.1.0

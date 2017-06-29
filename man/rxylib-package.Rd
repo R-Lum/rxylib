@@ -13,7 +13,7 @@ data from powder diffraction, spectroscopy and other experimental methods, like 
 \tab 0.1.0 \cr Date: \tab 2017-06-30 \cr License: \tab GPL-3 | LGPL-2.1 (for the C++ library 'xylib') \cr }
 }
 \details{
-Currently the package uses `xylib` version 1.6 (unreleased).
+Currently the package uses `xylib` in version 1.6 (unreleased).
 
 Supported data formats
 \tabular{lllllll}{\bold{ID} \tab \bold{NAME} \tab \bold{DESCRIPTION} \tab \bold{FILE EXTENSION}  \tab \bold{VALID_OPTIONS}  \tab \bold{DATATYPE} \tab \bold{BLOCK_TYPE}\cr

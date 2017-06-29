@@ -16,9 +16,11 @@ rxylib.BuildScripts
 rxylib.CHECK_AND_BUILD_MacOSX.sh
 rxylib.CHECK_AND_BUILD_LINUX.sh
 
-
 # Test resources
 .travis.yml
 codecov.yml
 appveyor.yml
 
+# CRAN
+cran-comments.md
+cran-comments.html
