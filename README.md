@@ -11,6 +11,8 @@ by wrapping the library using Rcpp. For supported data formats see https://githu
 [![Downloads](http://cranlogs.r-pkg.org/badges/last-week/rxylib)](http://www.r-pkg.org/pkg/rxylib)
 [![Downloads](http://cranlogs.r-pkg.org/badges/last-day/rxylib)](http://www.r-pkg.org/pkg/rxylib)
 
+### Platform tests status 
+[![Build Status](https://travis-ci.org/R-Lum/rxylib.svg?branch=master)](https://travis-ci.org/R-Lum/rxylib)
 
 ## Installation
 
