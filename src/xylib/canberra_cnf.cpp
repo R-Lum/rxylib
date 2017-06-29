@@ -201,10 +201,9 @@ void CanberraCnfDataSet::load_data(std::istream &f)
     // sample data - split name into name and description
     // (this was not in code from JF, it's my guess - MW)
     const char* sam_ptr = beg + sam_offset;
-    if (sam_ptr+0x30+80 >= end || sam_ptr[0] != 1 || sam_ptr[1] != 0x20){
-        //SK: removed for R
-        //fprintf(stderr, "Warning. Sample data not found.\n");
-    } else {
+    if (sam_ptr+0x30+80 >= end || sam_ptr[0] != 1 || sam_ptr[1] != 0x20)
+        warn("Warning. Sample data not found.\n");
+    else {
         string name = str_trim(string(sam_ptr+0x30, 32));
         if (!name.empty() && is_printable(name))
             blk->set_name(name);
@@ -221,10 +220,9 @@ void CanberraCnfDataSet::load_data(std::istream &f)
     uint16_t offset2 = from_le<uint16_t>(acq_ptr+36);
 
     const char* pha_ptr = acq_ptr + 48 + 128;
-    if (pha_ptr[0] != 'P' || pha_ptr[1] != 'H' || pha_ptr[2] != 'A'){
-        //SK: removed for R
-        //fprintf(stderr, "Warning. PHA keyword not found.\n");
-    }
+    if (pha_ptr[0] != 'P' || pha_ptr[1] != 'H' || pha_ptr[2] != 'A')
+        warn("Warning. PHA keyword not found.\n");
+
     int n_channels = from_le<uint16_t>(pha_ptr+10) * 256;
     if (n_channels < 256 || n_channels > 16384)
         throw FormatError("Unexpected number of channels" + S(n_channels));
@@ -245,8 +243,7 @@ void CanberraCnfDataSet::load_data(std::istream &f)
         xcol = read_energy_callibration(beg + enc_offset+48+32,
                                         blk.get(), n_channels);
     if (xcol == NULL) {
-        //SK: removed for R
-        //fprintf(stderr, "Warning. Energy Calibration not found.\n");
+        warn("Warning. Energy Calibration not found.\n");
         xcol = new StepColumn(1, 1);
     }
 

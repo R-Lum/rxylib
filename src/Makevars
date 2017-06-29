@@ -1,8 +1,8 @@
 # MAKEFILE R package 'rxylib'
 # makefile in accordance with: https://github.com/AleMorales/RcppSundials.R/blob/master/src/Makevars
 
-PKG_CXXFLAGS= -I../inst/include/ -I../inst/include/xylib/
-PKG_CFLAGS= -I../inst/include/ -I../inst/include/xylib/
+PKG_CXXFLAGS= -I../inst/include/ -I../inst/include/xylib/ -DDISABLE_STDERR_WARNINGS
+PKG_CFLAGS= -I../inst/include/ -I../inst/include/xylib/ -DDISABLE_STDERR_WARNINGS
 
 RXYLIBSOBJECTS=\
   	./xylib/bruker_raw.o \
@@ -13,7 +13,6 @@ RXYLIBSOBJECTS=\
   	./xylib/cpi.o \
   	./xylib/csv.o \
   	./xylib/dbws.o \
-  	./xylib/gsas.o \
   	./xylib/pdcif.o \
   	./xylib/philips_raw.o \
   	./xylib/philips_udf.o \
