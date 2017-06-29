@@ -14,6 +14,8 @@ README.html
 rxylib.BuildResults
 rxylib.BuildScripts
 rxylib.CHECK_AND_BUILD_MacOSX.sh
+rxylib.CHECK_AND_BUILD_LINUX.sh
+
 
 # Test resources
 .travis.yml
