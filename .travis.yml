@@ -1,0 +1,41 @@
+language: r
+cache: packages
+warnings_are_errors: true
+sudo: required
+
+r_packages:
+  - covr
+
+## test different platforms
+matrix:
+  include:
+  - os: linux
+    r: devel
+    before_install:
+      ##as suggested by https://www.r-bloggers.com/evading-the-quothadley-taxquot-faster-travis-tests-for-r/
+      - sudo add-apt-repository -y ppa:edd/misc
+      - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
+      - chmod 755 ./travis-tool.sh
+      - ./travis-tool.sh bootstrap
+    env: CACHE_NAME=JOB1
+  - os: osx
+    r: release
+    before_install:
+      - sudo chown -R travis /usr/local
+    install:
+      - Rscript -e 'install.packages("devtools", type = "source", dependencies = TRUE)'
+      - Rscript -e 'install.packages(c("BH", "Rcpp", "stringr", "httr"))'
+      - Rscript -e 'deps <- devtools::dev_package_deps(dependencies = TRUE)$package; if (!all(deps %in% installed.packages()[,"Package"])) {install.packages(deps, method = 'source', dependencies = TRUE)}'
+    env: CACHE_NAME=JOB2
+
+##create notifications
+notifications:
+  email:
+    recipients:
+      - sk@r-luminescence.de
+    on_success: change
+    on_failure: change
+
+##grep data from testthat
+after_success:
+- Rscript -e 'covr::codecov()'
