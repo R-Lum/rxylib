@@ -14,6 +14,9 @@ by wrapping the library using Rcpp. For supported data formats see https://githu
 ### Platform tests status 
 [![Build Status](https://travis-ci.org/R-Lum/rxylib.svg?branch=master)](https://travis-ci.org/R-Lum/rxylib)
 
+### Unit test status
+[![Coverage Status](https://img.shields.io/codecov/c/github/R-Lum/rxylib.svg)](https://codecov.io/github/R-Lum/rxylib?branch=master)
+
 ## Installation
 
 #### i. Requirements
