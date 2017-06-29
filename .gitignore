@@ -42,3 +42,6 @@ src/*.dll
 
 # Readme local
 README.html
+
+# CRAN
+cran-comments.html
