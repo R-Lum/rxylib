@@ -20,7 +20,6 @@
 #'
 #' @examples
 #'
-#' \dontrun{
 #' ##load example dataset
 #' file <- system.file("extdata/ExampleSpectrum.CNF", package = "rxylib")
 #' results <- read_xyData(file)
@@ -35,7 +34,6 @@
 #'
 #' mtext(side = 3, "Canberra Inspector 1000, 3 x 3 NaI probe")
 #'
-#' }
 #'
 #' @md
 #' @export

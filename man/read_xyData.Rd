@@ -27,7 +27,6 @@ The function automatically recognises allowed formats. See \link{rxylib-package}
 
 \examples{
 
-\dontrun{
 ##load example dataset
 file <- system.file("extdata/ExampleSpectrum.CNF", package = "rxylib")
 results <- read_xyData(file)
@@ -42,7 +41,6 @@ plot(results[[1]],
 
 mtext(side = 3, "Canberra Inspector 1000, 3 x 3 NaI probe")
 
-}
 
 }
 \author{

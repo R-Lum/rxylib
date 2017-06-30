@@ -2,6 +2,14 @@
 
 New package submission. 
 
+
+## Addressed CRAN requests
+
+Request by Uwe Ligges: 
+*Thanks, can you please unwrap the example from \sontrun{} so that the example also gets checked?*
+
+Done. 
+
 ## Test environments
 * local macOS Sierra 10.12.5, R version 3.4.1 RC (2017-06-22 r72859); currently no R-devel available
 * on AppVeyor CI
