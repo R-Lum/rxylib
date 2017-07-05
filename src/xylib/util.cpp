@@ -97,6 +97,7 @@ T read_le(istream &f)
 }
 
 unsigned int read_uint32_le(istream &f) { return read_le<uint32_t>(f); }
+int read_int32_le(istream &f) { return read_le<int32_t>(f); } //SK: Added for signed integer
 unsigned int read_uint16_le(istream &f) { return read_le<uint16_t>(f); }
 int read_int16_le(istream &f) { return read_le<int16_t>(f); }
 float read_flt_le(istream &f) { return read_le<float>(f); }

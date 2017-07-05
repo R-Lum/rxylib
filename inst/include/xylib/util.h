@@ -24,6 +24,7 @@ namespace xylib { namespace util {
 void le_to_host(void *ptr, int size);
 
 unsigned int read_uint32_le(std::istream &f);
+int read_int32_le(std::istream &f);
 unsigned int read_uint16_le(std::istream &f);
 int read_int16_le(std::istream &f);
 float read_flt_le(std::istream &f);
