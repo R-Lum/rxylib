@@ -22,6 +22,7 @@ const FormatInfo BrukerSpcDataSet::fmt_info(
     false,                       // whether has multi-blocks
     &BrukerSpcDataSet::ctor,
     &BrukerSpcDataSet::check
+
 );
 
 bool BrukerSpcDataSet::check(std::istream &f, string*)
@@ -33,6 +34,8 @@ bool BrukerSpcDataSet::check(std::istream &f, string*)
 
 void BrukerSpcDataSet::load_data(std::istream &f)
 {
+
+
   Block* blk = new Block;
 
   //predefine vectors
@@ -51,8 +54,7 @@ void BrukerSpcDataSet::load_data(std::istream &f)
 
       //the file format is quite simple, however,
       //we have BIG endian, means we have to swap the byte position ...
-      //https://stackoverflow.com/questions/105252/how-do-i-convert-between-big-endian-and-little-endian-values-in-c#105339
-      int y = __builtin_bswap32 (read_int32_le(f));
+      int y = swap_int32(read_int32_le(f));
       ycol -> add_val(y);
 
       //set x-value and update channel number
