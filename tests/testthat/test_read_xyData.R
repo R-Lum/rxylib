@@ -14,13 +14,14 @@ test_that("Test various examples", {
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/1d-2.spe"), type = "list")
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/1d-3.spe"), type = "list")
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/BT86.raw"), type = "list")
+  expect_type(read_xyData(file = "https://github.com/tzerk/ESR/raw/master/inst/extdata/mollusc.SPC"), type = "list")
   expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/BT86_.UXD"), type = "list")
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/Cu3Au-1.raw"), type = "list")
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/Cu3Au-2.raw"), type = "list")
 
   ##check this, something is fishy here
-  #expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/D1A5.dat"), type = "list")
-  #expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/PSI_DMC.dat"), type = "list")
+  ##expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/D1A5.dat"), type = "list")
+  ##expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/PSI_DMC.dat"), type = "list")
 
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/SMP00011.CNF"), type = "list")
   expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/Spectra.1"), type = "list")
