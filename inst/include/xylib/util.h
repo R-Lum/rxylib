@@ -8,6 +8,7 @@
 #include <cmath>    // floor
 #include <cstdio>   // snprintf
 #include <cstring>  // memcpy
+#include <cstdint>  // int_32_t
 #include <fstream>
 #include <memory>   // auto_ptr/unique_ptr
 #include <string>
