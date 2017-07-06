@@ -28,6 +28,7 @@ RXYLIBSOBJECTS=\
   	./xylib/winspec_spe.o \
   	./xylib/xfit_xdd.o \
   	./xylib/xrdml.o \
+  	./xylib/xsyg.o \
   	./xylib/xylib.o
 
 

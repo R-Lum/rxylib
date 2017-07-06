@@ -5,7 +5,7 @@
 #' data from powder diffraction, spectroscopy and other experimental methods, like gamma-ray spectrometry.
 #'
 #' \tabular{ll}{ Package: \tab rxylib\cr Type: \tab Package\cr Version:
-#' \tab 0.1.1 \cr Date: \tab 2017-07-05 \cr License: \tab GPL-3 | LGPL-2.1 (for the C++ library 'xylib') \cr }
+#' \tab 0.1.1 \cr Date: \tab 2017-07-06 \cr License: \tab GPL-3 | LGPL-2.1 (for the C++ library 'xylib') \cr }
 #'
 #' @details
 #'

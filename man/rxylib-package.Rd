@@ -10,7 +10,7 @@ Provides access to the 'xylib' C library for to import xy
 data from powder diffraction, spectroscopy and other experimental methods, like gamma-ray spectrometry.
 
 \tabular{ll}{ Package: \tab rxylib\cr Type: \tab Package\cr Version:
-\tab 0.1.1 \cr Date: \tab 2017-07-05 \cr License: \tab GPL-3 | LGPL-2.1 (for the C++ library 'xylib') \cr }
+\tab 0.1.1 \cr Date: \tab 2017-07-06 \cr License: \tab GPL-3 | LGPL-2.1 (for the C++ library 'xylib') \cr }
 }
 \details{
 Currently the package uses `xylib` in version 1.6 (unreleased).
@@ -37,6 +37,7 @@ Supported data formats
 [18,] \tab spectra \tab Spectra / VGX 900 \tab 1 2 3 4 5 6 7 8 9 \tab  \tab ascii \tab multiple\cr
 [19,] \tab specsxy \tab SPECS SpecsLab2 xy \tab xy \tab  \tab ascii \tab multiple\cr
 [20,] \tab csv \tab CSV or TSV \tab csv tsv tab \tab decimal-comma \tab ascii \tab single\cr
+[21,] \tab xsyg \tab Freiberg Instruments (FI) Lexsyg \tab xsyg \tab  \tab ascii \tab multiple\cr
  \tab \tab }
 }
 \author{

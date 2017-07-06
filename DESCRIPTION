@@ -4,7 +4,7 @@ Title: Import XY-Data into R
 Description: Provides access to the 'xylib' C library for to import xy 
   data from powder diffraction, spectroscopy and other experimental methods.
 Version: 0.1.1
-Date: 2017-07-05
+Date: 2017-07-06
 Author: Sebastian Kreutzer [aut, trl, cre], 
   Johannes Friedrich [ctb],
   RLum Team [ctb],
