@@ -4,6 +4,7 @@ rxylib 0.1.1 (Release date: 2017-07-05)
 * Correct for CRAN error on Solaris platform
 * Remove import of package 'stringr'
 * Correct faulty set value for multibock (fixed by Johannes Friedrich)
+* Fix minor issue for case the data format is not obvious
 * Update to newest 'xylib' library version
 
 rxylib 0.1.0 (Release date: 2017-06-30)

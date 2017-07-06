@@ -10,7 +10,7 @@
 #'
 #' @param verbose [logical] (*with default*): enables/disables verbose mode
 #'
-#' @section Function version: 0.1.0
+#' @section Function version: 0.1.1
 #'
 #' @author Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France)
 #'
@@ -94,19 +94,23 @@ read_xyData <- function(
     df_supported <- as.data.frame(get_supportedFormats(), stringsAsFactors = FALSE)
 
     ##check whether the extension is in the list
-    if(ext == "txt"){
-      format_name <- ""
-      if(verbose){
-        cat("\n[read_xyData()] >> Plain TXT-file detected\n")
+    if(any(grepl(x = df_supported$exts, pattern = ext, fixed = TRUE))){
+      format_name <- df_supported[grep(x = df_supported$exts, pattern = ext, fixed = TRUE), "name"]
+
+      ##check for format length and allow auto detect by the library
+      if (ext == "txt" || length(format_name) > 1) {
+        format_name <- ""
+        text <- "\n[read_xyData()] >> Unclear format, run auto detection ...\n"
+
+      }else{
+        text <- paste0("\n[read_xyData()] >> File of type ",
+                  df_supported[grep(x = df_supported$exts, pattern = ext, fixed = TRUE), "desc"],
+                  " detected\n")
 
       }
 
-    }else if(any(grepl(x = df_supported$exts, pattern = ext, fixed = TRUE))){
-      format_name <- df_supported[grep(x = df_supported$exts, pattern = ext, fixed = TRUE), "name"]
       if(verbose){
-        cat("\n[read_xyData()] >> File of type ")
-        cat(df_supported[grep(x = df_supported$exts, pattern = ext, fixed = TRUE), "desc"])
-        cat(" detected\n")
+        cat(text)
 
       }
 
