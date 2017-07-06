@@ -1,17 +1,18 @@
 ## Release summary
 
-New package submission. 
-
+This is a bugfix release, in paricular addressing a CRAN error 
+on Solaris.
 
 ## Addressed CRAN requests
 
-Request by Uwe Ligges: 
-*Thanks, can you please unwrap the example from \sontrun{} so that the example also gets checked?*
+Request by Prof Ripley 
 
-Done. 
+* Fix error on the Solaris platform: https://www.r-project.org/nosvn/R.check/r-patched-solaris-x86/rxylib-00install.html
+
+In collaboration with the maintainer of the wrapped 'xylib' this error is hopefully fixed.  However, I have no access to a Solaris system (offered VMs on the web and the given information there never worked out due to problems with 'libcurl'). Means: If there is another problem on Solaris, I will fix it, but I cannot test it.
 
 ## Test environments
-* local macOS Sierra 10.12.5, R version 3.4.1 RC (2017-06-22 r72859); currently no R-devel available
+* local macOS Sierra 10.12.5, R-devel
 * on AppVeyor CI
     * i386-w64-mingw32/i386 (32-bit), R-devel
     * x86_64_w64-mingw32/64 (64-bit), R-devel
@@ -20,31 +21,16 @@ Done.
 * on Travis CI
   * Ubuntu 12.04.5 LTS, R-devel
   * MacOSX, 10.11-xcode7.3, R 3.4.0
-* R-Hub (all provided test environments)
 
 ## R CMD check results
 There were no ERRORs or WARNINGs.
 
-There were 2 NOTES:
+There was 1 NOTE:
 
-* Maintainer: ‘Sebastian Kreutzer <sebastian.kreutzer@u-bordeaux-montaigne.fr>’
-  New submission
-
-This is a new submission.
-
-On, e.g., R-Hub CentOS 6, stock R from EPEL
-
-* checking installed package size ... NOTE
-  installed size is  8.2Mb
-  sub-directories of 1Mb or more:
-    libs   7.9Mb
-  
-From my understanding, the installed package size is large because of the large libs/ directory, 
-due to the large size of 'xylib' after the compilation. This occurs only on linux platforms, 
-but I don't think I can do something about it. 
-
+Some systems complain about the installed package size due to 
+a large libs directory after the compilation. From my understanding 
+I can do nothing about it.  
 
 ## License questions
 
-The `xylib` is published under LGPL-2.1. This is mentioned in the copyright statement and 
-I did contact the maintainer before submission. 
+The `xylib` is published under LGPL-2.1. This is mentioned in the copyright statement.
