@@ -101,11 +101,11 @@ read_xyData <- function(
 
       }
 
-    }else if(any(stringr::str_detect(df_supported$exts, pattern = ext))){
-      format_name <- df_supported[which(stringr::str_detect(df_supported$exts, pattern = ext)), "name"]
+    }else if(any(grepl(x = df_supported$exts, pattern = ext, fixed = TRUE))){
+      format_name <- df_supported[grep(x = df_supported$exts, pattern = ext, fixed = TRUE), "name"]
       if(verbose){
         cat("\n[read_xyData()] >> File of type ")
-        cat(df_supported[which(stringr::str_detect(df_supported$exts, pattern = ext)), "desc"])
+        cat(df_supported[grep(x = df_supported$exts, pattern = ext, fixed = TRUE), "desc"])
         cat(" detected\n")
 
       }

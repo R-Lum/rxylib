@@ -23,7 +23,6 @@ Depends:
     utils
 Imports: 
     Rcpp (>= 0.12.11),
-    stringr (>= 1.2.0),
     httr (>= 1.2.1)
 Suggests: 
     testthat (>= 1.0.2)
