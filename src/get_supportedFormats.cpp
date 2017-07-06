@@ -44,10 +44,10 @@ RcppExport SEXP get_supportedFormats() {
 
     //multiblock
     if(xylib_get_format(i) -> multiblock == 0){
-      multiblock(i) = "multiple";
+      multiblock(i) = "single";
 
     }else{
-      multiblock(i) = "single";
+      multiblock(i) = "multiple";
 
     }
 
