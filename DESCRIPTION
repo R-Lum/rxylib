@@ -6,11 +6,13 @@ Description: Provides access to the 'xylib' C library for to import xy
 Version: 0.1.1
 Date: 2017-07-05
 Author: Sebastian Kreutzer [aut, trl, cre], 
+  Johannes Friedrich [ctb],
   RLum Team [ctb],
   Marcin Wojdyr [cph] (C++ library 'xylib'), 
   Peng Zhang [cph] (C++ library 'xylib')
 Authors@R: c(
     person("Sebastian", "Kreutzer", role = c("aut", "trl", "cre"), email = "sebastian.kreutzer@u-bordeaux-montaigne.fr"),
+    person("Johannes Friedrich", role = c("ctb")), 
     person(family = "RLum Team", role = "ctb"),
     person("Marcin", "Wojdyr", role = c("cph"), comment = "C++ library 'xylib'"),
     person("Peng", "Zhang", role = c("cph"), comment = "C++ library 'xylib'"))
