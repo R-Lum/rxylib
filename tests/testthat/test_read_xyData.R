@@ -3,8 +3,14 @@ context("read_xyData")
 test_that("Test various examples", {
   testthat::skip_on_cran()
 
-  ##force break
+  ##force break (file does not exists)
   expect_error(read_xyData(file = "hi"))
+
+  ##force connection error
+  expect_error(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02"))
+
+  ##force wrong file format read
+  expect_error(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/R/read_xyData.R"))
 
   ##load example data step by step from GitHub
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02.mca"), type = "list")
