@@ -93,14 +93,14 @@ read_xyData <- function(
     ##construct data.frame of supported file formats
     df_supported <- as.data.frame(get_supportedFormats(), stringsAsFactors = FALSE)
 
-    ##check whether the extension is in the list
-    if(any(grepl(x = df_supported$exts, pattern = ext, fixed = TRUE))){
+    ##check whether the extension is in the list + txt
+    if(any(grepl(x = c(df_supported$exts,"txt"), pattern = ext, fixed = TRUE))){
       format_name <- df_supported[grep(x = df_supported$exts, pattern = ext, fixed = TRUE), "name"]
 
       ##check for format length and allow auto detect by the library
       if (ext == "txt" || length(format_name) > 1) {
         format_name <- ""
-        text <- "\n[read_xyData()] >> Unclear format, run auto detection ...\n"
+        text <- "\n[read_xyData()] >> Non-obvious format, run auto detection ...\n"
 
       }else{
         text <- paste0("\n[read_xyData()] >> File of type ",
