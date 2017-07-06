@@ -40,6 +40,6 @@ Supported data formats
  \tab \tab }
 }
 \author{
-Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library `xylib`), Peng Zhang (author of the C++ library `xylib`)
+Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), Johannes Friedrich (University of Bayreuth, Germany; bug fix contributions), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library `xylib`), Peng Zhang (author of the C++ library `xylib`)
 }
 \keyword{package}
