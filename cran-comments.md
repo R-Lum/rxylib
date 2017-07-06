@@ -1,15 +1,15 @@
 ## Release summary
 
-This is a bugfix release, in paricular addressing a CRAN error 
-on Solaris.
+This is a bugfix release, in paricular addressing a CRAN compiler error 
+on Solaris. Thanks to Prof Ripley for pointing out.
 
 ## Addressed CRAN requests
 
-Request by Prof Ripley 
+Request by Brain Ripley 
 
 * Fix error on the Solaris platform: https://www.r-project.org/nosvn/R.check/r-patched-solaris-x86/rxylib-00install.html
 
-In collaboration with the maintainer of the wrapped 'xylib' this error is hopefully fixed.  However, I have no access to a Solaris system (offered VMs on the web and the given information there never worked out due to problems with 'libcurl'). Means: If there is another problem on Solaris, I will fix it, but I cannot test it.
+Thanks to the maintainer of the wrapped 'xylib', it got fixed directly within in the C++ library. However, I have no access to a Solaris system (offered VMs on the web and the given information there never worked out due to problems with 'libcurl'). Means: If there is another problem on Solaris, of course I will do everything I can to fix it, but I cannot test it.
 
 ## Test environments
 * local macOS Sierra 10.12.5, R-devel
