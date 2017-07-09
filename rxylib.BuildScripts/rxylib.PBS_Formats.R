@@ -11,6 +11,7 @@
   formats <- rxylib:::get_supportedFormats()
 
   ##create data frame
+  preheader <- paste0("library version: ", rxylib:::get_version(), "\\cr\\cr")
   header <- "\\tabular{lllllll}{\\bold{ID} \\tab \\bold{NAME} \\tab \\bold{DESCRIPTION} \\tab \\bold{FILE EXTENSION}  \\tab \\bold{VALID_OPTIONS}  \\tab \\bold{DATATYPE} \\tab \\bold{BLOCK_TYPE}\\cr"
   footer <- " \\tab \\tab }"
   main <- vapply(1:length(formats$name), function(x){
@@ -34,7 +35,7 @@
   }, vector(mode = "character", length = 1))
 
   ##table
-  table <- c(header, main, footer)
+  table <- c(preheader, header, main, footer)
 
   ##read RD file
   file <- readLines("man/rxylib-package.Rd")

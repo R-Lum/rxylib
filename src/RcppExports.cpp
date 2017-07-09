@@ -15,6 +15,16 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// get_version
+Rcpp::CharacterVector get_version();
+RcppExport SEXP rxylib_get_version() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(get_version());
+    return rcpp_result_gen;
+END_RCPP
+}
 // read_data
 RcppExport SEXP read_data(std::string path, std::string format_name, std::string options);
 RcppExport SEXP rxylib_read_data(SEXP pathSEXP, SEXP format_nameSEXP, SEXP optionsSEXP) {
@@ -31,6 +41,7 @@ END_RCPP
 
 static const R_CallMethodDef CallEntries[] = {
     {"rxylib_get_supportedFormats", (DL_FUNC) &rxylib_get_supportedFormats, 0},
+    {"rxylib_get_version", (DL_FUNC) &rxylib_get_version, 0},
     {"rxylib_read_data", (DL_FUNC) &rxylib_read_data, 3},
     {NULL, NULL, 0}
 };

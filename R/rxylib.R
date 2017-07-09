@@ -9,8 +9,6 @@
 #'
 #' @details
 #'
-#' Currently the package uses `xylib` in version 1.6 (unreleased).
-#'
 #' Supported data formats
 #'
 #' @name rxylib-package

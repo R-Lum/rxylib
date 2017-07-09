@@ -5,6 +5,10 @@ get_supportedFormats <- function() {
     .Call('rxylib_get_supportedFormats', PACKAGE = 'rxylib')
 }
 
+get_version <- function() {
+    .Call('rxylib_get_version', PACKAGE = 'rxylib')
+}
+
 read_data <- function(path, format_name, options) {
     .Call('rxylib_read_data', PACKAGE = 'rxylib', path, format_name, options)
 }

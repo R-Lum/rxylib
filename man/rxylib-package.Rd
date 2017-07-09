@@ -13,9 +13,8 @@ data from powder diffraction, spectroscopy and other experimental methods, like 
 \tab 0.1.2 \cr Date: \tab 2017-XX-XX \cr License: \tab GPL-3 | LGPL-2.1 (for the C++ library 'xylib') \cr }
 }
 \details{
-Currently the package uses `xylib` in version 1.6 (unreleased).
-
 Supported data formats
+library version: 1.6.0\cr\cr
 \tabular{lllllll}{\bold{ID} \tab \bold{NAME} \tab \bold{DESCRIPTION} \tab \bold{FILE EXTENSION}  \tab \bold{VALID_OPTIONS}  \tab \bold{DATATYPE} \tab \bold{BLOCK_TYPE}\cr
 [1,] \tab cpi \tab Sietronics Sieray CPI \tab cpi \tab  \tab ascii \tab single\cr
 [2,] \tab uxd \tab Bruker Diffrac-AT UXD \tab uxd \tab  \tab ascii \tab multiple\cr
