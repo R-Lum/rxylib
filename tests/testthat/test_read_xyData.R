@@ -13,6 +13,9 @@ test_that("Test various examples", {
   expect_error(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02"))
 
   ##force wrong file format read
+  expect_error(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/appveyor.yml"))
+
+  ##force unclear data format
   expect_error(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/R/read_xyData.R"))
 
   ##check S3 methods

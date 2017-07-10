@@ -126,14 +126,27 @@ read_xyData <- function(
 
     # extract metaData
     if(metaData){
+      dataSet_metaData <- try(get_meta_DataSet(path = file, format_name = format_name, options = options), silent = TRUE)
 
-      dataSet_metaData <- get_meta_DataSet(path = file, format_name = format_name, options = options)
+      if(inherits(dataSet_metaData, "try-error")){
+        try(stop("[read_xyData()] Metadata extraction failed! Set to NULL!", call. = FALSE))
+        dataSet_metaData <- NULL
+        metaData <- FALSE
+
+      }
 
     } else {
       dataSet_metaData <- NULL
     }
 
-    data <- read_data(path = file, format_name = format_name, options = options, metaData = metaData)
+    #import data
+    data <- try(read_data(path = file, format_name = format_name, options = options, metaData = metaData), silent = TRUE)
+
+    if(inherits(data, "try-error")){
+      try(stop("[read_xyData()] Data import failed. Return NULL!", call. = FALSE))
+      return(NULL)
+
+    }
 
 
   # return data ---------------------------------------------------------------------------------
