@@ -27,7 +27,7 @@ print.rxylib <- function(x, ...) {
       cat("\n  << block", i,">>\n")
       cat("  .. $data_block", "\t" ,
           is(x$dataset[[i]]$data_block)[1], ":",paste(dim(x$dataset[[i]]$data_block), collapse = " x "))
-      cat("\n  .. $metadata_block \t", is(x$dataset[[i]]$metadata_block)[1])
+      cat("\n  .. $metadata_block \t", ifelse(nrow(x$dataset[[i]]$metadata_block) == 0, FALSE, TRUE))
 
   }
 
