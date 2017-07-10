@@ -26,9 +26,10 @@
 #' ##load example dataset
 #' file <- system.file("extdata/ExampleSpectrum.CNF", package = "rxylib")
 #' results <- read_xyData(file)
+#' results
 #'
 #' ##plot spectrum
-#' plot(results$dataset[[1]][[1]],
+#' plot(results$dataset[[1]]$data_block,
 #'  type = "l",
 #'  log = "y",
 #'  xlab = "Energy [keV]",

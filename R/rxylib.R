@@ -17,7 +17,8 @@
 #' @author Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), Johannes Friedrich (University of Bayreuth, Germany), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library `xylib`), Peng Zhang (author of the C++ library `xylib`)
 #'
 #' @keywords package
-#' @import utils
+#' @import utils methods
+#' @importFrom graphics plot
 #' @importFrom Rcpp evalCpp
 #' @useDynLib rxylib, .registration=TRUE
 NULL
