@@ -27,6 +27,12 @@ test_that("Test various examples", {
                               format_name = "canberra_cnf",options = ""),
     type = "list")
 
+  ##check metadata argument
+  expect_type(read_xyData(file = system.file("extdata/ExampleSpectrum.CNF", package = "rxylib"), metaData = FALSE), type = "list")
+
+  ##check verbose
+  expect_silent(read_xyData(file = system.file("extdata/ExampleSpectrum.CNF", package = "rxylib"), verbose =  FALSE))
+
   ##load example data step by step from GitHub
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02.mca"), type = "list")
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/04nacl02.mca"), type = "list")
