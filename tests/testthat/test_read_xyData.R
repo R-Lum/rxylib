@@ -18,6 +18,12 @@ test_that("Test various examples", {
   expect_silent(plot(test_dataset))
   rm(test_dataset)
 
+  ##check C++ function
+  expect_type(
+    rxylib:::get_meta_DataSet(path = system.file("extdata/ExampleSpectrum.CNF", package = "rxylib"),
+                              format_name = "canberra_cnf",options = ""),
+    type = "list")
+
   ##load example data step by step from GitHub
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02.mca"), type = "list")
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/04nacl02.mca"), type = "list")
