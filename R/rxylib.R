@@ -5,7 +5,7 @@
 #' data from powder diffraction, spectroscopy and other experimental methods, like gamma-ray spectrometry.
 #'
 #' \tabular{ll}{ Package: \tab rxylib\cr Type: \tab Package\cr Version:
-#' \tab 0.1.2 \cr Date: \tab 2017-XX-XX \cr License: \tab GPL-3 | LGPL-2.1 (for the C++ library 'xylib') \cr }
+#' \tab 0.2.0 \cr Date: \tab 2017-XX-XX \cr License: \tab GPL-3 | LGPL-2.1 (for the C++ library 'xylib') \cr }
 #'
 #' @details
 #'
@@ -14,7 +14,7 @@
 #' @name rxylib-package
 #' @aliases rxylib-package rxylib
 #' @docType package
-#' @author Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), Johannes Friedrich (University of Bayreuth, Germany; bug fix contributions), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library `xylib`), Peng Zhang (author of the C++ library `xylib`)
+#' @author Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), Johannes Friedrich (University of Bayreuth, Germany), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library `xylib`), Peng Zhang (author of the C++ library `xylib`)
 #'
 #' @keywords package
 #' @import utils

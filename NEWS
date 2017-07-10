@@ -1,9 +1,10 @@
-rxylib 0.1.2 (Release date: 2017-XX-XX)
+rxylib 0.2.0 (Release date: 2017-XX-XX)
 ==============
 
+* Add full support for file format meta data
+* Add internal function `get_version` to return the 'xylib' version number
 * Unfortunately the table with the supported file format got missing during the last update
 round ... again added
-* Add internal function `get_version` to return the 'xylib' version number
 
 rxylib 0.1.1 (Release date: 2017-07-05)
 ==============

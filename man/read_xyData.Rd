@@ -4,7 +4,7 @@
 \alias{read_xyData}
 \title{Import xy-Data for Supported Formats into R}
 \usage{
-read_xyData(file, options = "", verbose = TRUE)
+read_xyData(file, options = "", verbose = TRUE, metaData = TRUE)
 }
 \arguments{
 \item{file}{\link{character} (\strong{required}): path and file to be imported. The argument accepts an \code{URL}.}
@@ -12,6 +12,8 @@ read_xyData(file, options = "", verbose = TRUE)
 \item{options}{\link{character} (with default): set format options (see \link{rxylib-package})}
 
 \item{verbose}{\link{logical} (\emph{with default}): enables/disables verbose mode}
+
+\item{metaData}{\link{logical} (\emph{with default}): enables/disbales the export of metadata}
 }
 \value{
 The functions returns a \link{list} of matrices.
@@ -22,7 +24,7 @@ into R. In most cases, only the file path is needed with further arguments to im
 The function automatically recognises allowed formats. See \link{rxylib-package} for supported formats.
 }
 \section{Function version}{
- 0.1.1
+ 0.2.0
 }
 
 \examples{
@@ -32,7 +34,7 @@ file <- system.file("extdata/ExampleSpectrum.CNF", package = "rxylib")
 results <- read_xyData(file)
 
 ##plot spectrum
-plot(results[[1]],
+plot(results$dataset[[1]][[1]],
  type = "l",
  log = "y",
  xlab = "Energy [keV]",
@@ -44,6 +46,7 @@ mtext(side = 3, "Canberra Inspector 1000, 3 x 3 NaI probe")
 
 }
 \author{
-Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France)
+Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), Johannes Friedrich,
+University of Bayreuth (Germany)
 }
 \keyword{IO}

@@ -10,9 +10,12 @@
 #'
 #' @param verbose [logical] (*with default*): enables/disables verbose mode
 #'
-#' @section Function version: 0.1.1
+#' @param metaData [logical] (*with default*): enables/disbales the export of metadata
 #'
-#' @author Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France)
+#' @section Function version: 0.2.0
+#'
+#' @author Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), Johannes Friedrich,
+#' University of Bayreuth (Germany)
 #'
 #' @return The functions returns a [list] of matrices.
 #'
@@ -25,7 +28,7 @@
 #' results <- read_xyData(file)
 #'
 #' ##plot spectrum
-#' plot(results[[1]],
+#' plot(results$dataset[[1]][[1]],
 #'  type = "l",
 #'  log = "y",
 #'  xlab = "Energy [keV]",
@@ -40,7 +43,8 @@
 read_xyData <- function(
   file,
   options = "",
-  verbose = TRUE
+  verbose = TRUE,
+  metaData = TRUE
 ){
 
   # Integrity tests -----------------------------------------------------------------------------
@@ -80,7 +84,7 @@ read_xyData <- function(
 
   # Set file extension  -------------------------------------------------------------------------
 
-    ##provide full path (the underlying C++ code does not like weired paths
+    ##provide full path (the underlying C++ code does not like weired paths)
     file <- paste0(dirname(file),"/",basename(file))
 
     ##extract file extension
@@ -119,8 +123,22 @@ read_xyData <- function(
 
     }
 
+    # extract metaData
+    if(metaData){
+
+      dataSet_metaData <- get_meta_DataSet(path = file, format_name = format_name, options = options)
+
+    } else {
+      dataSet_metaData <- NULL
+    }
+
+    data <- read_data(path = file, format_name = format_name, options = options, metaData = metaData)
+
 
   # Import data ---------------------------------------------------------------------------------
-  return(read_data(path = file, format_name = format_name, options = options))
+  return(list(
+    dataset = data,
+    metadata = dataSet_metaData
+  ))
 
 }
