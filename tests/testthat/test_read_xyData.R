@@ -12,6 +12,12 @@ test_that("Test various examples", {
   ##force wrong file format read
   expect_error(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/R/read_xyData.R"))
 
+  ##check S3 methods
+  test_dataset <- read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02.mca")
+  expect_output(print(test_dataset))
+  expect_silent(plot(test_dataset))
+  rm(test_dataset)
+
   ##load example data step by step from GitHub
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02.mca"), type = "list")
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/04nacl02.mca"), type = "list")
@@ -46,5 +52,6 @@ test_that("Test various examples", {
   expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/with_sigma.txt"), type = "list")
   expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/xy_text.txt"), type = "list")
   expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/rfqm_uv.xsyg"), type = "list")
+
 })
 
