@@ -30,7 +30,8 @@ Rcpp::DataFrame get_meta_DataSet(std::string path, std::string format_name, std:
   }
 
   return(Rcpp::DataFrame::create(
-      Rcpp::Named("key") = key_vec,
-      Rcpp::Named("value") = value_vec
+      _["key"] = key_vec,
+      _["value"] = value_vec,
+      _["stringsAsFactors"] = false
   ));
 }

@@ -63,19 +63,20 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
       }
 
       metaData_block = Rcpp::DataFrame::create(
-        Rcpp::Named("key") = key_vec,
-        Rcpp::Named("value") = value_vec);
+        _["key"] = key_vec,
+        _["value"] = value_vec,
+        _["stringsAsFactors"] = false );
 
       //write values into list
       results_block = Rcpp::List::create(
-        Rcpp::Named("data_block") = m,
-        Rcpp::Named("metadata_block") = metaData_block);
+        _["data_block"] = m,
+        _["metadata_block"] = metaData_block);
 
     } else {
 
       //write values into list
       results_block = Rcpp::List::create(
-        Rcpp::Named("data_block") = m);
+        _["data_block"] = m);
     }
 
       results(b) = results_block;
