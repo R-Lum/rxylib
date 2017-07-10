@@ -135,10 +135,18 @@ read_xyData <- function(
     data <- read_data(path = file, format_name = format_name, options = options, metaData = metaData)
 
 
-  # Import data ---------------------------------------------------------------------------------
-  return(list(
+  # return data ---------------------------------------------------------------------------------
+  output <- list(
     dataset = data,
-    metadata = dataSet_metaData
-  ))
+    metadata = dataSet_metaData)
+
+  # set format name attribute
+  attr(output, "format_name") <- df_supported[grep(x = df_supported$exts, pattern = ext, fixed = TRUE), "desc"]
+
+  ##set class
+  class(output) <- "rxylib"
+
+  ##return
+  return(output)
 
 }

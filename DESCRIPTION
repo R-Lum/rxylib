@@ -33,6 +33,7 @@ LinkingTo:
    BH (>= 1.62.0-1)
 Encoding: UTF-8
 Collate: 
+    'methods_rxylib.R'
     'rxylib.R'
     'RcppExports.R'
     'read_xyData.R'
