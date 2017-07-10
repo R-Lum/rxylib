@@ -6,6 +6,9 @@ test_that("Test various examples", {
   ##force break (file does not exists)
   expect_error(read_xyData(file = "hi"))
 
+  ##check get_version (internal function)
+  expect_type(rxylib:::get_version(), type = "character")
+
   ##force connection error
   expect_error(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02"))
 
