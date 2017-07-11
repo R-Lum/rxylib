@@ -73,7 +73,6 @@ test_that("Test various examples", {
   expect_type(read_xyData(file = "http://www.ccp14.ac.uk/ccp/ccp14/ftp-mirror/krumm/Software/windows/stereo/Y2O3.XDD"), type = "list")
   expect_type(read_xyData(file = "http://www.ccp14.ac.uk/ccp/ccp14/ftp-mirror/krumm/Software/windows/winfit/Winfit/ZEOLITE.UDF"), type = "list")
   expect_type(read_xyData(file = "http://www.mx.iucr.org/iucr-top/comm/cpd/QARR/rd/cpd-1a.rd"), type = "list")
-  expect_type(read_xyData(file = "http://mysite.du.edu/~balzar/lebailbr.dbw"), type = "list")
-  
+
 })
 
