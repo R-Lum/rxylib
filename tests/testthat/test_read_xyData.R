@@ -15,10 +15,15 @@ test_that("General tests", {
   ##force wrong file format read
   expect_error(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/appveyor.yml"))
 
+  ##check broken testdata
+
+
   ##check S3 methods
   test_dataset <- read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/03yag02.mca")
   expect_output(print(test_dataset))
   expect_silent(plot(test_dataset))
+  expect_silent(plot(test_dataset, block = 1))
+  expect_type(plot(test_dataset, block = 2), type = "NULL")
   rm(test_dataset)
 
   ##check C++ function

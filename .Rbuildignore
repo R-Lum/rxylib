@@ -20,6 +20,7 @@ rxylib.CHECK_AND_BUILD_LINUX.sh
 .travis.yml
 codecov.yml
 appveyor.yml
+tests/testdata
 
 # CRAN
 cran-comments.md
