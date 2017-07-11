@@ -15,9 +15,6 @@ test_that("General tests", {
   ##force wrong file format read
   expect_error(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/appveyor.yml"))
 
-  ##force unclear data format
-  expect_type(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/R/read_xyData.R"), type = "NULL")
-
   ##check S3 methods
   test_dataset <- read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/03yag02.mca")
   expect_output(print(test_dataset))
