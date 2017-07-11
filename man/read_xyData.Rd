@@ -24,7 +24,7 @@ into R. In most cases, only the file path is needed with further arguments to im
 The function automatically recognises allowed formats. See \link{rxylib-package} for supported formats.
 }
 \section{Function version}{
- 0.2.0
+ 0.2.1
 }
 
 \examples{

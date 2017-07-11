@@ -25,8 +25,7 @@ Depends:
     utils
 Imports: 
     methods,
-    Rcpp (>= 0.12.11),
-    httr (>= 1.2.1)
+    Rcpp (>= 0.12.11)
 Suggests: 
     testthat (>= 1.0.2)
 LinkingTo:

@@ -12,7 +12,7 @@
 #'
 #' @param metaData [logical] (*with default*): enables/disbales the export of metadata
 #'
-#' @section Function version: 0.2.0
+#' @section Function version: 0.2.1
 #'
 #' @author Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), Johannes Friedrich,
 #' University of Bayreuth (Germany)
@@ -57,27 +57,28 @@ read_xyData <- function(
       ##check whether the file as an URL
       if(grepl(pattern = "http", x = file, fixed = TRUE)){
         if(verbose){
-          cat("[read_xyData()] URL detected, checking connection ... ")
+          cat("[read_xyData()] URL detected, try download ... ")
         }
 
-        ##check URL
-        if(!httr::http_error(file)){
-          if(verbose) cat("OK")
+        ##set file link
+        file_link <- paste0(tempfile("read_xyData"), ".", rev(strsplit(file, split = ".", fixed = TRUE)[[1]])[1])
 
-          ##dowload file
-          file_link <- paste0(tempfile("read_xyData"), ".", rev(strsplit(file, split = ".", fixed = TRUE)[[1]])[1])
-          download.file(file, destfile = file_link, quiet = ifelse(verbose, FALSE, TRUE), mode = "wb")
-          file <- file_link
+        ##try download
+        try <- try(download.file(file, destfile = file_link, quiet = ifelse(verbose, FALSE, TRUE), mode = "wb"), silent = TRUE)
+        file <- file_link
 
-        }else{
-          cat("FAILED")
+        ##check and stop if necessary
+        if(inherits(try, "try-error")){
           con <- NULL
-          stop("[read_xyData()] File could not be downloaded!", call. = FALSE)
+          try(stop("[read_xyData()] File could not be downloaded, NULL returned!", call. = FALSE))
+          return(NULL)
 
         }
+
 
       }else{
-        stop("[read_xyData()] File does not exists!", call. = FALSE)
+        try(stop("[read_xyData()] File does not exist, NULL returned!", call. = FALSE))
+        return(NULL)
 
       }
 
@@ -97,12 +98,12 @@ read_xyData <- function(
 
     ##construct data.frame of supported file formats
     df_supported <- as.data.frame(get_supportedFormats(), stringsAsFactors = FALSE)
-    
+
     supported_ext <- unlist(lapply(1:length(df_supported$exts), function(x){
-      
+
       strsplit(df_supported$exts[x], "\\s+")
-      
-      
+
+
     }))
 
     ##check whether the extension is in the list + txt
@@ -127,7 +128,8 @@ read_xyData <- function(
       }
 
     }else{
-      stop(paste0("[read_xyData()] File extension '*.", ext, "' is not supported!"), call. = FALSE)
+      try(stop(paste0("[read_xyData()] File extension '*.", ext, "' is not supported! Return NULL!"), call. = FALSE))
+      return(NULL)
 
     }
 

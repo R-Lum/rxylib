@@ -4,16 +4,16 @@ test_that("General tests", {
   testthat::skip_on_cran()
 
   ##force break (file does not exists)
-  expect_error(read_xyData(file = "hi"))
+  expect_type(read_xyData(file = "hi"), type = "NULL")
 
   ##check get_version (internal function)
   expect_type(rxylib:::get_version(), type = "character")
 
   ##force connection error
-  expect_error(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02"))
+  expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02"), type = "NULL")
 
   ##force wrong file format read
-  expect_error(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/appveyor.yml"))
+  expect_type(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/appveyor.yml"), type = "NULL")
 
   ##check broken testdata
   expect_type(read_xyData(file = "https://github.com/R-Lum/rxylib/raw/master/tests/testdata/BrokenExampleSpectrum.CNF"), type = "NULL")
@@ -114,6 +114,9 @@ test_that("Check all formats", {
 
     ##Philips UDF
     expect_type(read_xyData(file = "http://www.ccp14.ac.uk/ccp/ccp14/ftp-mirror/krumm/Software/windows/winfit/Winfit/ZEOLITE.UDF"), type = "list")
+
+    ##DBWS data
+    expect_type(read_xyData("http://mysite.du.edu/~balzar/lebailbr.dbw"), type = "list")
 
 })
 
