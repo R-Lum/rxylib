@@ -2,9 +2,12 @@
 % Please edit documentation in R/methods_rxylib.R
 \name{methods_rxylib}
 \alias{methods_rxylib}
+\alias{print.rxylib}
 \alias{plot.rxylib}
 \title{methods_ryxlib}
 \usage{
+\method{print}{rxylib}(x, ...)
+
 \method{plot}{rxylib}(x, ...)
 }
 \arguments{

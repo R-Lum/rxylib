@@ -20,7 +20,7 @@ NULL
 # ##################################################################################################
 #' @rdname methods_rxylib
 #' @method print rxylib
-#' @noRd
+#' @export
 print.rxylib <- function(x, ...) {
   cat("\n[rxylib-object]\n")
   cat("\n  Imported format:\t", attr(x, "format_name"))
