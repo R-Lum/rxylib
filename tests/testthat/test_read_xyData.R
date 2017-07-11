@@ -10,7 +10,7 @@ test_that("General tests", {
   expect_type(rxylib:::get_version(), type = "character")
 
   ##force connection error
-  expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02"), type = "NULL")
+  expect_type(read_xyData(file = "https://github.com/R-Lum/rxylib/raw/master/tests/testdata/BkenExampleSpectrum.CNF"), type = "NULL")
 
   ##force wrong file format read
   expect_type(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/appveyor.yml"), type = "NULL")
@@ -37,6 +37,9 @@ test_that("General tests", {
 
   ##check verbose
   expect_silent(read_xyData(file = system.file("extdata/ExampleSpectrum.CNF", package = "rxylib"), verbose =  FALSE))
+
+  ##check plot warning (and import of spectrum)
+  expect_warning(plot(read_xyData(file = system.file("extdata/TLSpectrum.xsyg", package = "rxylib"), verbose =  FALSE)))
 
 })
 

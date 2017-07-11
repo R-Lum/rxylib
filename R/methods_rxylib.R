@@ -81,7 +81,11 @@ plot.rxylib <- function(x, block = NULL, ...) {
 
   ##return what is inside
   for(i in block){
-    args <-
+
+    ##return warning if the matrix has more than two column
+    if(ncol(x$dataset[[i]]$data_block) > 2)
+      warning(paste0("[plot.rxylib] In block ", i, ": number of columns > 2; use first two columns. Consider manual plotting!"), call. = FALSE)
+
     do.call(
       what = "plot",
       args = c(list(x = x$dataset[[i]]$data_block), plot_settings))
