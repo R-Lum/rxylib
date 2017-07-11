@@ -1,6 +1,6 @@
 context("read_xyData")
 
-test_that("Test various examples", {
+test_that("General tests", {
   testthat::skip_on_cran()
 
   ##force break (file does not exists)
@@ -16,10 +16,10 @@ test_that("Test various examples", {
   expect_error(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/appveyor.yml"))
 
   ##force unclear data format
-  expect_error(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/R/read_xyData.R"))
+  expect_type(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/R/read_xyData.R"), type = "NULL")
 
   ##check S3 methods
-  test_dataset <- read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02.mca")
+  test_dataset <- read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/03yag02.mca")
   expect_output(print(test_dataset))
   expect_silent(plot(test_dataset))
   rm(test_dataset)
@@ -36,9 +36,14 @@ test_that("Test various examples", {
   ##check verbose
   expect_silent(read_xyData(file = system.file("extdata/ExampleSpectrum.CNF", package = "rxylib"), verbose =  FALSE))
 
+})
+
+test_that("Check all formats", {
+  testthat::skip_on_cran()
+
   ##load example data step by step from GitHub
-  expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/03yag02.mca"), type = "list")
-  expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/blob/master/samples/04nacl02.mca"), type = "list")
+  expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/03yag02.mca"), type = "list")
+  expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/04nacl02.mca"), type = "list")
   expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/1517474.cif"), type = "list")
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/1d-1.spe"), type = "list")
   expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/1d-2.spe"), type = "list")

@@ -35,7 +35,7 @@ results <- read_xyData(file)
 results
 
 ##plot spectrum
-plot(results$dataset[[1]]$data_block,
+plot(results,
  type = "l",
  log = "y",
  xlab = "Energy [keV]",

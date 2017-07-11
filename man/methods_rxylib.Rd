@@ -2,7 +2,16 @@
 % Please edit documentation in R/methods_rxylib.R
 \name{methods_rxylib}
 \alias{methods_rxylib}
+\alias{plot.rxylib}
 \title{methods_ryxlib}
+\usage{
+\method{plot}{rxylib}(x, ...)
+}
+\arguments{
+\item{x}{(**required**): input opject}
+
+\item{...}{further arguments that can be passed to the method}
+}
 \description{
 methods_ryxlib
 }

@@ -2,9 +2,11 @@
 ##                      METHODS FOR S3 GENERICS                                 ##
 ##################################################################################
 
-#TODO: add metadata information once the data.frame was fixed (no factors!)
-
 #' methods_ryxlib
+#'
+#' @param x (**required**): input opject
+#'
+#' @param ... further arguments that can be passed to the method
 #'
 #' @name methods_rxylib
 NULL
@@ -38,7 +40,7 @@ print.rxylib <- function(x, ...) {
 # ##################################################################################################
 #' @rdname methods_rxylib
 #' @method plot rxylib
-#' @noRd
+#' @export
 plot.rxylib <- function(x, ...) {
 
   ##preset plot settings
@@ -58,8 +60,12 @@ plot.rxylib <- function(x, ...) {
 
   ##return what is inside
   for(i in 1:length(x$dataset)){
-    do.call(what = "plot", args = c(list(x = x$dataset[[i]]$data_block[,1], y = x$dataset[[i]]$data_block[,2]), plot_settings))
+    args <-
+    do.call(
+      what = "plot",
+      args = c(list(x = x$dataset[[i]]$data_block), plot_settings))
 
   }
 
+  invisible(NULL)
 }

@@ -22,9 +22,9 @@ BugReports: https://github.com/R-Lum/rxylib/issues
 License: GPL-3 | LGPL-2.1
 Depends:
     R (>= 3.3.0),
-    methods,
     utils
 Imports: 
+    methods,
     Rcpp (>= 0.12.11),
     httr (>= 1.2.1)
 Suggests: 
