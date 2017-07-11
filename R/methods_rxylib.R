@@ -11,6 +11,7 @@
 #'
 #' @param ... further arguments that can be passed to the method
 #'
+#' @md
 #' @name methods_rxylib
 NULL
 

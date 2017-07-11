@@ -8,11 +8,11 @@
 \method{plot}{rxylib}(x, ...)
 }
 \arguments{
-\item{x}{(**required**): input opject}
+\item{x}{(\strong{required}): input opject}
 
 \item{...}{further arguments that can be passed to the method}
 }
 \description{
-S3-methods support by the package `rxylib`. Listed functions can be passed directly into
-S3 generics (e.g., [plot], [print]) without reshaping the data.
+S3-methods support by the package \code{rxylib}. Listed functions can be passed directly into
+S3 generics (e.g., \link{plot}, \link{print}) without reshaping the data.
 }
