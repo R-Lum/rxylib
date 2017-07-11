@@ -118,5 +118,8 @@ test_that("Check all formats", {
     ##DBWS data
     expect_type(read_xyData("http://mysite.du.edu/~balzar/lebailbr.dbw"), type = "list")
 
+    ##Sietronics Sieray CPI detected
+    expect_type(read_xyData("https://cbc-wb01x.chemistry.ohio-state.edu/~woodward/ceo2br.cpi"), type = "list")
+
 })
 
