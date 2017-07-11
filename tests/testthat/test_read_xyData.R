@@ -16,7 +16,7 @@ test_that("General tests", {
   expect_error(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/appveyor.yml"))
 
   ##check broken testdata
-
+  expect_type(read_xyData(file = "https://github.com/R-Lum/rxylib/raw/master/tests/testdata/BrokenExampleSpectrum.CNF"), type = "NULL")
 
   ##check S3 methods
   test_dataset <- read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/03yag02.mca")

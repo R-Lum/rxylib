@@ -8,12 +8,14 @@
 \usage{
 \method{print}{rxylib}(x, ...)
 
-\method{plot}{rxylib}(x, ...)
+\method{plot}{rxylib}(x, block = NULL, ...)
 }
 \arguments{
 \item{x}{(\strong{required}): input opject}
 
 \item{...}{further arguments that can be passed to the method}
+
+\item{block}{[numeric] (with default): select block for plotting, e.g. `c(1:2)`.}
 }
 \description{
 S3-methods support by the package \code{rxylib}. Listed functions can be passed directly into

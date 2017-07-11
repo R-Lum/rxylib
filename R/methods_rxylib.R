@@ -43,9 +43,12 @@ print.rxylib <- function(x, ...) {
 # methods for generic: plot()
 # ##################################################################################################
 #' @rdname methods_rxylib
+#'
+#' @param block [numeric] (with default): select block for plotting, e.g. `c(1:2)`.
+#'
 #' @method plot rxylib
 #' @export
-plot.rxylib <- function(x, ...) {
+plot.rxylib <- function(x, block = NULL, ...) {
 
   ##preset plot settings
   plot_settings.default <- list(
@@ -62,8 +65,21 @@ plot.rxylib <- function(x, ...) {
   ##modify list on request
   plot_settings <- modifyList(x = plot_settings.default, val = list(...))
 
+  ##check if block number is set
+  if(!is.null(block)){
+    if(!block%in%(1:length(x$dataset))){
+      try(stop("[plot.rxylib] Block index not valid, return NULL!", call. = FALSE))
+      return(NULL)
+
+    }
+
+  }else{
+    block <- 1:length(x$dataset)
+
+  }
+
   ##return what is inside
-  for(i in 1:length(x$dataset)){
+  for(i in block){
     args <-
     do.call(
       what = "plot",
