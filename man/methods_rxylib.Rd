@@ -13,5 +13,6 @@
 \item{...}{further arguments that can be passed to the method}
 }
 \description{
-methods_ryxlib
+S3-methods support by the package `rxylib`. Listed functions can be passed directly into
+S3 generics (e.g., [plot], [print]) without reshaping the data.
 }
