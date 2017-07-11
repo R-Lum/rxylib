@@ -43,10 +43,11 @@ print.rxylib <- function(x, ...) {
 # methods for generic: plot()
 # ##################################################################################################
 #' @rdname methods_rxylib
+#' @method plot rxylib
 #'
 #' @param block [numeric] (with default): select block for plotting, e.g. `c(1:2)`.
 #'
-#' @method plot rxylib
+#' @md
 #' @export
 plot.rxylib <- function(x, block = NULL, ...) {
 
