@@ -21,9 +21,12 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
   int n_blocks = dataset -> get_block_count();
   List results(n_blocks);
   List results_block;
+  Rcpp:CharacterVector col_names;
 
   //loop over blocks
   for(int b=0;b<n_blocks;b++){
+    
+    const Block* block = dataset ->get_block(b);
 
     //set variables for the block; columns and rows should be equal for each block
     int n_columns = xylib_count_columns(xylib_get_block(dataset, b));
@@ -34,20 +37,27 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
 
     //loop over columns
     for (int c=0;c<n_columns; c++){
-
+      
        //loop over rows
        for (int r=0;r<n_rows; r++){
          m(r,c) = xylib_get_data(xylib_get_block(dataset, b), c + 1, r);
 
        }
-
+       
+       // set column names (if available)
+       if(!block ->get_column(c+1).get_name().empty())
+        col_names.push_back(block ->get_column(c+1).get_name());
+       
     }
+    
+    // set column names (if available)
+    colnames(m) = col_names;
+
 
     //get Block meta data
-    Rcpp::DataFrame metaData_block;
-
     if(metaData){
-      const Block* block = dataset ->get_block(b);
+      
+      Rcpp::DataFrame metaData_block;
 
       size_t meta_size = block ->meta.size();
       std::string value, key;
