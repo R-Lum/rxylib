@@ -21,7 +21,8 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
   int n_blocks = dataset -> get_block_count();
   List results(n_blocks);
   List results_block;
-  Rcpp:CharacterVector col_names;
+  // std::vector<std::string> col_names;
+  
 
   //loop over blocks
   for(int b=0;b<n_blocks;b++){
@@ -31,6 +32,7 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
     //set variables for the block; columns and rows should be equal for each block
     int n_columns = xylib_count_columns(xylib_get_block(dataset, b));
     int n_rows = xylib_count_rows(xylib_get_block(dataset, b), n_columns);
+    Rcpp:CharacterVector col_names(n_columns);
 
     //set numeric matrix
     NumericMatrix m(n_rows, n_columns);
@@ -44,15 +46,18 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
 
        }
        
-       // set column names (if available)
-       if(!block ->get_column(c+1).get_name().empty())
-        col_names.push_back(block ->get_column(c+1).get_name());
-       
+       // get column names (if available)
+       if(!block ->get_column(c+1).get_name().empty()){
+        col_names[c] = block ->get_column(c+1).get_name();
+       } else { //convert to number
+        std::ostringstream convert;
+        convert << c+1;
+        col_names[c] = convert.str();
+       }
     }
-    
-    // set column names (if available)
-    colnames(m) = col_names;
 
+    // set column names
+    colnames(m) = col_names;
 
     //get Block meta data
     if(metaData){
