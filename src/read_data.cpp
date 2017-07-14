@@ -3,7 +3,7 @@
 // ## Author:  Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France),
 // ##          Johannes Friedrich, University of Bayreuth (Germany)
 // ## Contact: sebastian.kreutzer@u-bordeaux-montaigne.fr
-// ## Date:    Wed Jun 28 10:13:07 2017
+// ## Version: 0.2.0 - 2017-07-14
 // ## +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #include <Rcpp.h>
 #include "xylib.h"
@@ -22,11 +22,11 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
   List results(n_blocks);
   List results_block;
   // std::vector<std::string> col_names;
-  
+
 
   //loop over blocks
   for(int b=0;b<n_blocks;b++){
-    
+
     const Block* block = dataset ->get_block(b);
 
     //set variables for the block; columns and rows should be equal for each block
@@ -39,20 +39,23 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
 
     //loop over columns
     for (int c=0;c<n_columns; c++){
-      
+
        //loop over rows
        for (int r=0;r<n_rows; r++){
          m(r,c) = xylib_get_data(xylib_get_block(dataset, b), c + 1, r);
 
        }
-       
+
        // get column names (if available)
        if(!block ->get_column(c+1).get_name().empty()){
         col_names[c] = block ->get_column(c+1).get_name();
-       } else { //convert to number
+
+       } else {
+        //convert to number and create new column name
         std::ostringstream convert;
         convert << c+1;
-        col_names[c] = convert.str();
+        col_names[c] = "V" + convert.str(); //adding the 'V' is somehow consistent with R behaviour
+
        }
     }
 
@@ -61,7 +64,6 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
 
     //get Block meta data
     if(metaData){
-      
       Rcpp::DataFrame metaData_block;
 
       size_t meta_size = block ->meta.size();
@@ -69,7 +71,6 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
       Rcpp::CharacterVector value_vec, key_vec;
 
       for(int i =0; i < meta_size; i++){
-
         key = block ->meta.get_key(i);
         value = block ->meta.get(key);
         key_vec.push_back(key);
@@ -88,8 +89,7 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
         _["metadata_block"] = metaData_block);
 
     } else {
-
-      //write values into list
+     //write values into list
       results_block = Rcpp::List::create(
         _["data_block"] = m);
     }

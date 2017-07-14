@@ -51,21 +51,6 @@ print.rxylib <- function(x, ...) {
 #' @export
 plot.rxylib <- function(x, block = NULL, ...) {
 
-  ##preset plot settings
-  plot_settings.default <- list(
-    xlab = "x [a.u.]",
-    ylab = "y [a.u.]"
-
-  )
-
-  ##remove values from list which are in the default, otherwise we get an error
-  call <- names(as.list(sys.call()))
-  call <- call[call!=""]
-  plot_settings.default[names(call)] <- NULL
-
-  ##modify list on request
-  plot_settings <- modifyList(x = plot_settings.default, val = list(...))
-
   ##check if block number is set
   if(!is.null(block)){
     if(!block%in%(1:length(x$dataset))){
@@ -81,11 +66,27 @@ plot.rxylib <- function(x, block = NULL, ...) {
 
   ##return what is inside
   for(i in block){
-
     ##return warning if the matrix has more than two column
     if(ncol(x$dataset[[i]]$data_block) > 2)
-      warning(paste0("[plot.rxylib] In block ", i, ": number of columns > 2; use first two columns. Consider manual plotting!"), call. = FALSE)
+      warning(paste0("[plot.rxylib] In block ", i, ": number of columns > 2; using first two columns. Consider manual plotting!"), call. = FALSE)
 
+    ##preset plot settings
+    ##Why here ... within the loop? The overhead is negligible and blocks may have different columns
+    plot_settings.default <- list(
+      xlab = paste(colnames(x$dataset[[i]]$data_block)[1] ,"[a.u.]"),
+      ylab = paste(colnames(x$dataset[[i]]$data_block)[2],"[a.u.]")
+
+    )
+
+    ##remove values from list which are in the default, otherwise we get an error
+    call <- names(as.list(sys.call()))
+    call <- call[call!=""]
+    plot_settings.default[names(call)] <- NULL
+
+    ##modify list on request
+    plot_settings <- modifyList(x = plot_settings.default, val = list(...))
+
+    ##call plot function
     do.call(
       what = "plot",
       args = c(list(x = x$dataset[[i]]$data_block), plot_settings))
