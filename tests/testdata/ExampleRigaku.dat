@@ -1,0 +1,26 @@
+* Sample Fragment: ("#xxx": comments added by me; ...: omitted lines)
+
+# file header
+*TYPE           =  Raw
+*CLASS          =  Standard measurement
+...
+*GROUP_COUNT    =  2
+...
+# group 0 header
+*BEGIN
+*GROUP          =  0
+...
+*START          =  10.0000
+*STOP           =  103.1200
+*STEP           =  0.0200
+...
+*COUNT          =  4657
+# data in group 0
+ 1048, 1162, 1108, 1163
+ 1071, 1057, 1055, 973
+# group 0 end
+*END
+# repeat group segment if extra group(s) exist
+...
+# end of file
+*EOF
