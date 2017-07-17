@@ -56,6 +56,9 @@ test_that("Check all formats", {
     expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/SMP00011.CNF"), type = "list")
     expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/background_8.CNF"), type = "list")
 
+    ##Check ChiPlot
+    expect_type(read_xyData(file = system.file("extdata/ExampleChiPlot.chi", package = "rxylib")), type = "list")
+
     ##Powder Diffraction CIF
     expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/1517474.cif"), type = "list")
 

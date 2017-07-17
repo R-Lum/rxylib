@@ -4,7 +4,7 @@ rxylib 0.2.0 (Release date: 2017-XX-XX)
 * Add full support for file format metadata
 * Add full support for column names (R like set to V1 and V2 if not provided otherwise)
 * Add S3-methods for `plot` and `print`
-* Add new example dataset for a TL spectrum (XSYG-file format)
+* Add new example dataset for a TL spectrum (XSYG-file format) and a ChiPlot (chi-file format)
 * Add internal function `get_version` to return the 'xylib' version number
 * Unfortunately the table with the supported file format got missing during the last update
 round ... again added
