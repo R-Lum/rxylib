@@ -81,7 +81,8 @@ plot.rxylib <- function(x, block = NULL, ...) {
     ##Why here ... within the loop? The overhead is negligible and blocks may have different columns
     plot_settings.default <- list(
       xlab = paste(colnames(x$dataset[[i]]$data_block)[1] ,"[a.u.]"),
-      ylab = paste(colnames(x$dataset[[i]]$data_block)[2],"[a.u.]")
+      ylab = paste(colnames(x$dataset[[i]]$data_block)[2],"[a.u.]"),
+      main = ifelse(is.null(names(x$dataset)) || names(x$dataset) == "", NULL, names(x$dataset)[i])
 
     )
 
