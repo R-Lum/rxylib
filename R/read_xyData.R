@@ -158,7 +158,16 @@ read_xyData <- function(
     } else {
       dataSet_metaData <- NULL
     }
-
+    
+    #extract blockNames
+    block_names <- try(get_block_names(path = file, format_name = format_name, options = options), silent = TRUE)
+    
+    if(inherits(block_names, "try-error")){
+      try(stop("[read_xyData()] Block names import failed. Return NULL!", call. = FALSE))
+      return(NULL)
+      
+    }
+    
     #import data
     data <- try(read_data(path = file, format_name = format_name, options = options, metaData = metaData), silent = TRUE)
 

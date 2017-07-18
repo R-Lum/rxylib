@@ -5,9 +5,22 @@
 
 using namespace Rcpp;
 
+// get_block_names
+Rcpp::CharacterVector get_block_names(std::string path, std::string format_name, std::string options);
+RcppExport SEXP _rxylib_get_block_names(SEXP pathSEXP, SEXP format_nameSEXP, SEXP optionsSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< std::string >::type path(pathSEXP);
+    Rcpp::traits::input_parameter< std::string >::type format_name(format_nameSEXP);
+    Rcpp::traits::input_parameter< std::string >::type options(optionsSEXP);
+    rcpp_result_gen = Rcpp::wrap(get_block_names(path, format_name, options));
+    return rcpp_result_gen;
+END_RCPP
+}
 // get_meta_DataSet
 Rcpp::DataFrame get_meta_DataSet(std::string path, std::string format_name, std::string options);
-RcppExport SEXP rxylib_get_meta_DataSet(SEXP pathSEXP, SEXP format_nameSEXP, SEXP optionsSEXP) {
+RcppExport SEXP _rxylib_get_meta_DataSet(SEXP pathSEXP, SEXP format_nameSEXP, SEXP optionsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -20,7 +33,7 @@ END_RCPP
 }
 // get_supportedFormats
 RcppExport SEXP get_supportedFormats();
-RcppExport SEXP rxylib_get_supportedFormats() {
+RcppExport SEXP _rxylib_get_supportedFormats() {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -30,7 +43,7 @@ END_RCPP
 }
 // get_version
 Rcpp::CharacterVector get_version();
-RcppExport SEXP rxylib_get_version() {
+RcppExport SEXP _rxylib_get_version() {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -40,7 +53,7 @@ END_RCPP
 }
 // read_data
 RcppExport SEXP read_data(std::string path, std::string format_name, std::string options, bool metaData);
-RcppExport SEXP rxylib_read_data(SEXP pathSEXP, SEXP format_nameSEXP, SEXP optionsSEXP, SEXP metaDataSEXP) {
+RcppExport SEXP _rxylib_read_data(SEXP pathSEXP, SEXP format_nameSEXP, SEXP optionsSEXP, SEXP metaDataSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -54,10 +67,11 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"rxylib_get_meta_DataSet", (DL_FUNC) &rxylib_get_meta_DataSet, 3},
-    {"rxylib_get_supportedFormats", (DL_FUNC) &rxylib_get_supportedFormats, 0},
-    {"rxylib_get_version", (DL_FUNC) &rxylib_get_version, 0},
-    {"rxylib_read_data", (DL_FUNC) &rxylib_read_data, 4},
+    {"_rxylib_get_block_names", (DL_FUNC) &_rxylib_get_block_names, 3},
+    {"_rxylib_get_meta_DataSet", (DL_FUNC) &_rxylib_get_meta_DataSet, 3},
+    {"_rxylib_get_supportedFormats", (DL_FUNC) &_rxylib_get_supportedFormats, 0},
+    {"_rxylib_get_version", (DL_FUNC) &_rxylib_get_version, 0},
+    {"_rxylib_read_data", (DL_FUNC) &_rxylib_read_data, 4},
     {NULL, NULL, 0}
 };
 

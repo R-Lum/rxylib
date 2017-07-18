@@ -32,7 +32,7 @@ RXYLIBSOBJECTS=\
   	./xylib/xylib.o
 
 
-WRAPOBJECTS= read_data.o get_supportedFormats.o get_version.o get_meta_DataSet.o
+WRAPOBJECTS= read_data.o get_supportedFormats.o get_version.o get_meta_DataSet.o get_block_names.o
 
 PKGOBJECTS= RcppExports.o
 
