@@ -12,7 +12,7 @@
 #'
 #' @param metaData [logical] (*with default*): enables/disbales the export of metadata
 #'
-#' @section Function version: 0.2.1
+#' @section Function version: 0.3.0
 #'
 #' @author Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), Johannes Friedrich,
 #' University of Bayreuth (Germany)
@@ -144,7 +144,16 @@ read_xyData <- function(
 
     }
 
-    # extract metaData
+    # READ Data Import ----------------------------------------------------------------------------
+    data <- try(read_data(path = file, format_name = format_name, options = options, metaData = metaData), silent = TRUE)
+
+    if(inherits(data, "try-error")){
+      try(stop("[read_xyData()] Data import failed. Return NULL!", call. = FALSE))
+      return(NULL)
+
+    }
+
+    # READ Metadata -------------------------------------------------------------------------------
     if(metaData){
       dataSet_metaData <- try(get_meta_DataSet(path = file, format_name = format_name, options = options), silent = TRUE)
 
@@ -157,25 +166,19 @@ read_xyData <- function(
 
     } else {
       dataSet_metaData <- NULL
+
     }
-    
+
+    # READ Block names ----------------------------------------------------------------------------
     #extract blockNames
     block_names <- try(get_block_names(path = file, format_name = format_name, options = options), silent = TRUE)
-    
-    if(inherits(block_names, "try-error")){
-      try(stop("[read_xyData()] Block names import failed. Return NULL!", call. = FALSE))
-      return(NULL)
-      
-    }
-    
-    #import data
-    data <- try(read_data(path = file, format_name = format_name, options = options, metaData = metaData), silent = TRUE)
 
-    if(inherits(data, "try-error")){
-      try(stop("[read_xyData()] Data import failed. Return NULL!", call. = FALSE))
-      return(NULL)
+      #if it fails ... just return NA (silently it is not important)
+      if(!inherits(block_names, "try-error")){
+        ##set block names (each list element)
+        names(data) <- block_names
 
-    }
+      }
 
 
   # return data ---------------------------------------------------------------------------------

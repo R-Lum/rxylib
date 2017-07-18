@@ -30,7 +30,14 @@ print.rxylib <- function(x, ...) {
 
   ##return what is inside
   for(i in 1:length(x$dataset)){
-      cat("\n  << block", i,">>\n")
+      if(is.null(names(x$dataset)) || names(x$dataset) == ""){
+        cat("\n  << block", i,">>\n")
+
+      }else{
+        cat("\n  << block", i,":", names(x$dataset)[i],">>\n")
+
+      }
+
       cat("  .. $data_block", "\t" ,
           is(x$dataset[[i]]$data_block)[1], ":",paste(dim(x$dataset[[i]]$data_block), collapse = " x "))
       cat("\n  .. $metadata_block \t", ifelse(nrow(x$dataset[[i]]$metadata_block) == 0, FALSE, TRUE))
