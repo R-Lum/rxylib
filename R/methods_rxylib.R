@@ -82,7 +82,12 @@ plot.rxylib <- function(x, block = NULL, ...) {
     plot_settings.default <- list(
       xlab = paste(colnames(x$dataset[[i]]$data_block)[1] ,"[a.u.]"),
       ylab = paste(colnames(x$dataset[[i]]$data_block)[2],"[a.u.]"),
-      main = ifelse(is.null(names(x$dataset)) || names(x$dataset) == "", NULL, names(x$dataset)[i])
+      main = if(is.null(names(x$dataset)) || names(x$dataset) == ""){
+        NULL
+      }else{
+        names(x$dataset)[i]
+
+      }
 
     )
 
