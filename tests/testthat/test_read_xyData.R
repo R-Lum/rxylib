@@ -18,14 +18,6 @@ test_that("General tests", {
   ##check broken testdata
   expect_type(read_xyData(file = "https://github.com/R-Lum/rxylib/raw/master/tests/testdata/BrokenExampleSpectrum.CNF"), type = "NULL")
 
-  ##check S3 methods
-  test_dataset <- read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/03yag02.mca")
-  expect_output(print(test_dataset))
-  expect_silent(plot(test_dataset))
-  expect_silent(plot(test_dataset, block = 1))
-  expect_type(plot(test_dataset, block = 2), type = "NULL")
-  rm(test_dataset)
-
   ##check C++ function
   expect_type(
     rxylib:::get_meta_DataSet(path = system.file("extdata/ExampleSpectrum.CNF", package = "rxylib"),
@@ -40,6 +32,23 @@ test_that("General tests", {
 
   ##check plot warning (and import of spectrum)
   expect_warning(plot(read_xyData(file = system.file("extdata/TLSpectrum.xsyg", package = "rxylib"), verbose =  FALSE)))
+
+})
+
+test_that("Methods test", {
+  testthat::skip_on_cran()
+
+  ##check S3 methods
+  test_dataset <- read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/03yag02.mca")
+  expect_output(print(test_dataset))
+  expect_silent(plot(test_dataset))
+  expect_silent(plot(test_dataset, block = 1))
+  expect_type(plot(test_dataset, block = 2), type = "NULL")
+
+  test_dataset <- read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/background_8.CNF")
+
+  expect_output(print(test_dataset))
+  rm(test_dataset)
 
 })
 
