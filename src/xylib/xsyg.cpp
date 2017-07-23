@@ -76,7 +76,7 @@ void XsygDataSet::load_data(std::istream &f){
     meta["StartDate"] = startDate;
     meta["sampleCarrier"] = sampleCarrier;
     meta["lexsygID"] = lexsygID;
-    meta["lexStuidoVersion"] = lexStudioVersion;
+    meta["lexStudioVersion"] = lexStudioVersion;
     meta["firmwareVersion"] = firmwareVersion;
     meta["os"] = os;
     meta["comment"] = comment;
