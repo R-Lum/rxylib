@@ -21,7 +21,7 @@ test_that("General tests", {
   ##check C++ function
   expect_type(
     rxylib:::get_meta_DataSet(path = system.file("extdata/ExampleSpectrum.CNF", package = "rxylib"),
-                              format_name = "canberra_cnf",options = ""),
+                              format_name = "canberra_cnf", options = ""),
     type = "list")
 
   ##check metadata argument
@@ -32,6 +32,9 @@ test_that("General tests", {
 
   ##check plot warning (and import of spectrum)
   expect_warning(plot(read_xyData(file = system.file("extdata/TLSpectrum.xsyg", package = "rxylib"), verbose =  FALSE)))
+
+  ##check empty data
+  expect_output(print(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/tests/testdata/TLSpectrum_Empty.xsyg", verbose =  FALSE)))
 
 })
 
