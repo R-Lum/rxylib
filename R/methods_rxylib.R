@@ -28,19 +28,24 @@ print.rxylib <- function(x, ...) {
   cat("\n  Dataset has metadata:\t", ifelse(nrow(x$metadata) == 0, FALSE, TRUE))
   cat("\n")
 
-  ##return what is inside
-  for(i in 1:length(x$dataset)){
-      if(is.null(names(x$dataset)) || names(x$dataset) == ""){
-        cat("\n  << block", i,">>\n")
+  ##return what is inside, if something is inside
+  if(length(x$dataset) != 0){
+    for(i in 1:length(x$dataset)){
+        if(is.null(names(x$dataset)) || names(x$dataset) == ""){
+          cat("\n  << block", i,">>\n")
 
-      }else{
-        cat("\n  << block", i,":", names(x$dataset)[i],">>\n")
+        }else{
+          cat("\n  << block", i,":", names(x$dataset)[i],">>\n")
 
-      }
+        }
 
-      cat("  .. $data_block", "\t" ,
-          is(x$dataset[[i]]$data_block)[1], ":",paste(dim(x$dataset[[i]]$data_block), collapse = " x "))
-      cat("\n  .. $metadata_block \t", ifelse(nrow(x$dataset[[i]]$metadata_block) == 0, FALSE, TRUE))
+        cat("  .. $data_block", "\t" ,
+            is(x$dataset[[i]]$data_block)[1], ":",paste(dim(x$dataset[[i]]$data_block), collapse = " x "))
+        cat("\n  .. $metadata_block \t", ifelse(nrow(x$dataset[[i]]$metadata_block) == 0, FALSE, TRUE))
+
+    }
+  }else{
+    cat("\n << empty data set >>\n")
 
   }
 
