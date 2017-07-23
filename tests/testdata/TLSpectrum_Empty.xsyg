@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sample state="finished" parentID="0" name="TL_Spectrum" user="admin" startDate="20150601162719" sampleCarrier="" lexsygID="00-re-00-0000" lexStudioVersion="Lexstudio2 v1.2.3" firmwareVersion="unknown" os="Microsoft Windows NT 6.1.7601 Service Pack 1" comment="">
+  <Sequence state="finished" parentID="1006011627190" name="20150601_BT706_TL_Spectra_FS_SLS365" position="1" comment="" startDate="20150601162719" protocol="" mineral="">
+    <Record state="finished" parentID="2006011627191" name="unknown" startDate="20150601213029" recordType="TL" sequenceStepNumber="4" comment="" metaIrrType="none" metaIrrDuration="0.0" sampleCondition="Natural" filterCombination="10053" detectionWindow="TL-Spektrum" endDate="20150601213533">
+      <Curve state="finished" parentID="3006012130294" startDate="20150601213029" curveType="predefined" stimulator="heating element" curveDescripter="t [s]; T [°C]" offset="0">0,25;212,450;251,60;371,60</Curve>
+    </Record>
+  </Sequence>
+</Sample>
