@@ -57,7 +57,7 @@ devtools::install_github("R-Lum/rxylib@master")
 To install a developer build other than 'master', replace the term 'master' in the codeline by the name
 of the wanted developer build. 
 
-# Releated projects
+## Releated projects
 
 * [rxylibShiny](https://github.com/JohannesFriedrich/rxylibShiny)
 
