@@ -100,8 +100,8 @@ echo ""
 echo "[CHECK PACKAGE]"
 echo ""
 
-  ##eval R CMD check --timings --as-cran ${PATHPACKAGE}/rxylib*.tar.gz
-  eval R CMD check --timings ${PATHPACKAGE}/rxylib*.tar.gz
+  eval R CMD check --timings --as-cran ${PATHPACKAGE}/rxylib*.tar.gz
+  #eval R CMD check --timings ${PATHPACKAGE}/rxylib*.tar.gz
 
 #
 # INSTALL PACKAGE
