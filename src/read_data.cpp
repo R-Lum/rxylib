@@ -32,7 +32,7 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
     //set variables for the block; columns and rows should be equal for each block
     int n_columns = xylib_count_columns(xylib_get_block(dataset, b));
     int n_rows = xylib_count_rows(xylib_get_block(dataset, b), n_columns);
-    Rcpp:CharacterVector col_names(n_columns);
+    CharacterVector col_names(n_columns);
 
     //set numeric matrix
     NumericMatrix m(n_rows, n_columns);
