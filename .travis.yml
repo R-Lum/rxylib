@@ -24,7 +24,7 @@ matrix:
       - sudo chown -R travis /usr/local
     install:
       - Rscript -e 'install.packages("devtools", type = "source", dependencies = TRUE)'
-      - Rscript -e 'install.packages(c("BH", "Rcpp", "stringr", "httr"))'
+      - Rscript -e 'install.packages(c("BH", "Rcpp", "stringr", "httr", "stringdist"))'
       - Rscript -e 'deps <- devtools::dev_package_deps(dependencies = TRUE)$package; if (!all(deps %in% installed.packages()[,"Package"])) {install.packages(deps, method = 'source', dependencies = TRUE)}'
     env: CACHE_NAME=JOB2
 
