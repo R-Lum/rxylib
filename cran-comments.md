@@ -18,11 +18,14 @@ to the underlying C++ library `xylib`
 ## R CMD check results
 There were no ERRORs or WARNINGs.
 
-There was 1 NOTE:
+## CRAN notes
 
 Some systems complain about the installed package size due to 
-a large libs directory after the compilation. From my understanding 
-I can do nothing about it.  
+a large libs directory after the compilation. We tried 
+to overcome this by following the suggestions made
+by Dirk Eddelbuettel (http://dirk.eddelbuettel.com/blog/2017/08/14/#009_compact_shared_libraries). 
+Local tests indicate a signficant reduction of the library 
+size, whether this will stand on the CRAN servers we don't know. 
 
 ## License questions
 
