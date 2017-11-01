@@ -37,4 +37,5 @@ Collate:
     'rxylib.R'
     'RcppExports.R'
     'read_xyData.R'
+    'convert_xy2TKA.R'
 RoxygenNote: 6.0.1

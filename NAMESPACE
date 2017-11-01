@@ -2,6 +2,7 @@
 
 S3method(plot,rxylib)
 S3method(print,rxylib)
+export(convert_xy2TKA)
 export(read_xyData)
 import(methods)
 import(utils)
