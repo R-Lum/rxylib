@@ -10,10 +10,13 @@
 #'
 #'
 #' @param object [rxylib] (**required**): xy data as imported by the function [read_xyData]. Optional
-#' a file supported by the `rxylib`-package can be provided as input.
+#' a file supported by the `rxylib`-package can be provided as input. Arguments can be provided as [list].
 #'
 #' @param file [character] (optional): optional file path or file name for the output to be written.
-#' If only a path is provided the output file name is derived from the input file name
+#' If only a path is provided the output file name is derived from the input file name. Argument
+#' can be provided as [list].
+#'
+#' @param overwrite [logical] (with default): force overwriting of existing files if set to `TRUE`
 #'
 #' @section Function version: 0.1.0
 #'
@@ -41,8 +44,36 @@
 #' @export
 convert_xy2TKA <- function(
   object,
-  file = NULL
+  file = NULL,
+  overwrite = FALSE
 ){
+
+
+  # self call -----------------------------------------------------------------------------------
+  if(class(object) == "list" || (class(object) == "character" && length(object) > 1)){
+
+    ##convert to list in either case
+    if(class(object) == "character")
+      object <- as.list(object)
+
+    ##expand
+    if(class(file) == "list"){
+      file <- rep_len(file,length.out = length(object))
+
+    }else{
+      file <- rep_len(as.list(file),length.out = length(object))
+
+    }
+
+    ##run the function
+    output <- unlist(lapply(1:length(object), function(x){
+      convert_xy2TKA(object[[x]], file[[x]])
+
+    }), recursive = FALSE)
+
+    ##return
+    return(output)
+  }
 
 
   # Set objects ---------------------------------------------------------------------------------
@@ -77,7 +108,8 @@ convert_xy2TKA <- function(
     })
 
   }else {
-    stop(paste0("[write_xy2TKA()] Sorry, no support for ",attr(object, "format_name"), " implemented!"), call. = FALSE)
+    stop(paste0("[write_xy2TKA()] Sorry, no support for ",attr(object, "format_name"), " implemented!"),
+         call. = FALSE)
 
 
   }
@@ -113,8 +145,15 @@ convert_xy2TKA <- function(
 
         }
 
-      ##write
-      write.table(x = output[[i]], file = file, append = FALSE, row.names = FALSE, col.names = FALSE)
+      ##check whether files exists
+      if(file.exists(file) & !overwrite){
+        message(paste0("[convert_xy2TKA()] File ", file, " already exists, skipped!"))
+
+      }else{
+        ##write
+        write.table(x = output[[i]], file = file, append = FALSE, row.names = FALSE, col.names = FALSE)
+
+      }
 
     }
 

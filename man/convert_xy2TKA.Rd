@@ -4,14 +4,17 @@
 \alias{convert_xy2TKA}
 \title{Export xy-data to TKA}
 \usage{
-convert_xy2TKA(object, file = NULL)
+convert_xy2TKA(object, file = NULL, overwrite = FALSE)
 }
 \arguments{
 \item{object}{\link{rxylib} (\strong{required}): xy data as imported by the function \link{read_xyData}. Optional
-a file supported by the \code{rxylib}-package can be provided as input.}
+a file supported by the \code{rxylib}-package can be provided as input. Arguments can be provided as \link{list}.}
 
 \item{file}{\link{character} (optional): optional file path or file name for the output to be written.
-If only a path is provided the output file name is derived from the input file name}
+If only a path is provided the output file name is derived from the input file name. Argument
+can be provided as \link{list}.}
+
+\item{overwrite}{\link{logical} (with default): force overwriting of existing files if set to \code{TRUE}}
 }
 \value{
 Returns a \link{list} of \link{matrix} objects or an output TKA-file.
