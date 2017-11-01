@@ -2,7 +2,7 @@
 % Please edit documentation in R/convert_xy2TKA.R
 \name{convert_xy2TKA}
 \alias{convert_xy2TKA}
-\title{Export xy-data to TKA}
+\title{Convert xy-data to TKA}
 \usage{
 convert_xy2TKA(object, file = NULL, overwrite = FALSE)
 }
@@ -14,13 +14,13 @@ a file supported by the \code{rxylib}-package can be provided as input. Argument
 If only a path is provided the output file name is derived from the input file name. Argument
 can be provided as \link{list}.}
 
-\item{overwrite}{\link{logical} (with default): force overwriting of existing files if set to \code{TRUE}}
+\item{overwrite}{\link{logical} (with default): force overwriting of existing files if \code{TRUE}.}
 }
 \value{
 Returns a \link{list} of \link{matrix} objects or an output TKA-file.
 }
 \description{
-Export data to the Toolkit file format (TKA) as exported by, e.g., by the software
+Convert data to the Toolkit file format (TKA) as exported by, e.g., by the software
 Canberra Genie 2000.
 }
 \details{

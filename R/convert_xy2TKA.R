@@ -1,6 +1,6 @@
-#' Export xy-data to TKA
+#' Convert xy-data to TKA
 #'
-#' Export data to the Toolkit file format (TKA) as exported by, e.g., by the software
+#' Convert data to the Toolkit file format (TKA) as exported by, e.g., by the software
 #' Canberra Genie 2000.
 #'
 #' **Supported formats**
@@ -16,7 +16,7 @@
 #' If only a path is provided the output file name is derived from the input file name. Argument
 #' can be provided as [list].
 #'
-#' @param overwrite [logical] (with default): force overwriting of existing files if set to `TRUE`
+#' @param overwrite [logical] (with default): force overwriting of existing files if `TRUE`.
 #'
 #' @section Function version: 0.1.0
 #'
