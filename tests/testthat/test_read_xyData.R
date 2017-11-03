@@ -128,10 +128,12 @@ test_that("Check all formats", {
     expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/rfqm_uv.xsyg"), type = "list")
 
     ##XFIT XDD
-    expect_type(read_xyData(file = "http://www.ccp14.ac.uk/ccp/ccp14/ftp-mirror/krumm/Software/windows/stereo/Y2O3.XDD"), type = "list")
+    ##commented 2017-11-03 ... server down?
+    #expect_type(read_xyData(file = "http://www.ccp14.ac.uk/ccp/ccp14/ftp-mirror/krumm/Software/windows/stereo/Y2O3.XDD"), type = "list")
 
     ##Philips UDF
-    expect_type(read_xyData(file = "http://www.ccp14.ac.uk/ccp/ccp14/ftp-mirror/krumm/Software/windows/winfit/Winfit/ZEOLITE.UDF"), type = "list")
+    ##commented 2017-11-03 ... server down?
+    #expect_type(read_xyData(file = "http://www.ccp14.ac.uk/ccp/ccp14/ftp-mirror/krumm/Software/windows/winfit/Winfit/ZEOLITE.UDF"), type = "list")
 
     ##DBWS data
     expect_type(read_xyData("http://mysite.du.edu/~balzar/lebailbr.dbw"), type = "list")
