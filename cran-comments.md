@@ -1,11 +1,10 @@
 ## Release summary
 
-This is a major release, inlcuding various new features 
-and it hands in some missing featues with regard 
-to the underlying C++ library `xylib`
+This is a minor release, polishing the package
+and adding new functionality.
 
 ## Test environments
-* local macOS Sierra 10.12.6, R-devel
+* local macOS High Sierra 10.13.2, R-devel
 * on AppVeyor CI
     * i386-w64-mingw32/i386 (32-bit), R-devel
     * x86_64_w64-mingw32/64 (64-bit), R-devel
