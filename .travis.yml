@@ -5,6 +5,7 @@ sudo: required
 
 r_packages:
   - covr
+  - devtools
 
 ## test different platforms
 matrix:
