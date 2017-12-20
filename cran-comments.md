@@ -1,7 +1,7 @@
 ## Release summary
 
-This is a minor release, polishing the package
-and adding new functionality.
+This is a minor release. We polished the code 
+and did everything to make the users happy.
 
 ## Test environments
 * local macOS High Sierra 10.13.2-xcode9.2, R-devel
