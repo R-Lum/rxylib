@@ -94,7 +94,7 @@ test_that("Check all formats", {
     ##Non-obious format
     expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/D1A5.dat"), type = "list")
     expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/PSI_DMC.dat"), type = "list")
-    expect_type(read_xyData(file = "http://www.mx.iucr.org/iucr-top/comm/cpd/QARR/rd/cpd-1a.rd"), type = "list")
+    #expect_type(read_xyData(file = "http://www.mx.iucr.org/iucr-top/comm/cpd/QARR/rd/cpd-1a.rd"), type = "list")
 
     ##Spectra / VGX 900
     expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/Spectra.1"), type = "list")
