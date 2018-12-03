@@ -142,7 +142,7 @@ test_that("Check all formats", {
     expect_type(read_xyData("https://raw.githubusercontent.com/R-Lum/rxylib/master/tests/testdata/ExampleRigaku.dat"), type = "list")
 
     ##Sietronics Sieray CPI detected
-    expect_type(read_xyData("https://cbc-wb01x.chemistry.ohio-state.edu/~woodward/ceo2br.cpi"), type = "list")
+    #expect_type(read_xyData("https://cbc-wb01x.chemistry.ohio-state.edu/~woodward/ceo2br.cpi"), type = "list")
 
 })
 
