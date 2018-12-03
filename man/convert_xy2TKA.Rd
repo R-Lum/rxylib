@@ -36,15 +36,21 @@ Canberra Genie 2000.
 
 \examples{
 
-##convert CNF data
+##convert CNF data (no export to file system)
 convert_xy2TKA(
  object = system.file("extdata/ExampleSpectrum.CNF", package = "rxylib"))
 
 \dontrun{
 ##export as file
+
+##create temporary filepath
+##(for usage replace by own path)
+temp_file <- tempfile(pattern = "output", fileext = ".TKA")
+
+##convert and write to file system
 convert_xy2TKA(
  object = system.file("extdata/ExampleSpectrum.CNF", package = "rxylib"),
- file = "~/Desktop/")
+ file = temp_file)
 
 }
 
