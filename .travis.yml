@@ -15,8 +15,8 @@ matrix:
     env: CACHE_NAME=JOB1
   - os: osx
     r: release
-    before_install:
-      - sudo chown -R travis /usr/local
+    #before_install:
+    #  - sudo chown -R travis /usr/local
     #install:
      # - Rscript -e 'install.packages("devtools", type = "source", dependencies = TRUE)'
       #- Rscript -e 'install.packages(c("BH", "Rcpp", "stringr", "httr", "stringdist"))'
