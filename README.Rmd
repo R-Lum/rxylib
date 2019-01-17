@@ -21,7 +21,7 @@ The **R** package `rxylib` provides and access to the C++ library [xylib](http:/
 by wrapping the library using Rcpp. For supported data formats see https://github.com/wojdyr/xylib.
 
 [![Rdoc](http://www.rdocumentation.org/badges/version/rxylib)](http://www.rdocumentation.org/packages/rxylib)
-[![CRAN](http://www.r-pkg.org/badges/version/rxylib)](http://cran.rstudio.com/package=rxylib)
+[![CRAN](http://www.r-pkg.org/badges/version/rxylib)](https://CRAN.R-project.org/package=rxylib)
 [![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rxylib)](http://www.r-pkg.org/pkg/rxylib)
 [![Build status](https://ci.appveyor.com/api/projects/status/7mmfpmo23k3iaq57/branch/master?svg=true)](https://ci.appveyor.com/project/RLumSK/rxylib/branch/master)
 [![Build Status](https://travis-ci.org/R-Lum/rxylib.svg?branch=master)](https://travis-ci.org/R-Lum/rxylib)
@@ -33,7 +33,7 @@ by wrapping the library using Rcpp. For supported data formats see https://githu
 
 **Windows (32/64bit)** - 'Rtools' (provided by CRAN)
 
-   http://cran.r-project.org/bin/windows/Rtools/
+   https://cran.r-project.org/bin/windows/Rtools/
 
 **MacOSX and macOS** - 'Xcode' (provided by Apple)
 
