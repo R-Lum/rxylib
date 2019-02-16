@@ -39,4 +39,3 @@ namespace xylib {
 
 }
 #endif // XYLIB_SPECTRA_H_
-
