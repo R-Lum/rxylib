@@ -1,3 +1,7 @@
+## rxylib 0.2.3 (Release date: 2019-04-11)
+
+* Dummy
+
 ## rxylib 0.2.2 (Release date: 2019-04-11)
 
 * Update to newest 'xylib' version
