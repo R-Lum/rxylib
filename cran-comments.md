@@ -3,10 +3,12 @@
 This is a minor release. We polished the code 
 and did everything to make the users happy.
 
-## CRAN issues
+## Addressed CRAN issues
 
-We removed the unconditional stripping in response 
-to the email by Brian Ripley from 2019-04-10 (subject: CRAN packages stripping unconditionally). 
+We removed the unconditional stripping in response to the email by 
+Brian Ripley from 2019-04-10 (subject: CRAN packages stripping unconditionally).
+
+This necessarily encreased the library size on unix platforms.
 
 ## Test environments
 * local macOS High Sierra 10.14.4-xcode10.2, R-devel
@@ -21,9 +23,6 @@ to the email by Brian Ripley from 2019-04-10 (subject: CRAN packages stripping u
 
 ## R CMD check results
 There were no ERRORs or WARNINGs.
-
-## CRAN notes
-
 
 ## License questions
 

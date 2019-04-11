@@ -1,4 +1,4 @@
-## rxylib 0.2.2 (Release date: 2019-04-17)
+## rxylib 0.2.2 (Release date: 2019-04-11)
 
 * Update to newest 'xylib' version
 * Modify example in convert_xy2TKA() to avoid CRAN problems
