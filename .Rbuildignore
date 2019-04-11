@@ -6,6 +6,9 @@
 LICENSE
 ^README\.Rmd$
 
+# Exclude NEWS
+^.*\.html$
+
 # Exclude compiled code
 ^src/xylib/.*\.o$
 

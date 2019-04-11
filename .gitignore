@@ -45,3 +45,6 @@ README.html
 
 # CRAN
 cran-comments.html
+
+# NEWS
+*.html

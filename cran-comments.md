@@ -3,8 +3,13 @@
 This is a minor release. We polished the code 
 and did everything to make the users happy.
 
+## CRAN issues
+
+We removed the unconditional stripping in response 
+to the email by Brian Ripley from 2019-04-10 (subject: CRAN packages stripping unconditionally). 
+
 ## Test environments
-* local macOS High Sierra 10.13.2-xcode9.2, R-devel
+* local macOS High Sierra 10.14.4-xcode10.2, R-devel
 * on AppVeyor CI
     * i386-w64-mingw32/i386 (32-bit), R-devel
     * x86_64_w64-mingw32/64 (64-bit), R-devel
