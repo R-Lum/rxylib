@@ -1,8 +1,9 @@
 # MAKEFILE R package 'rxylib'
 # makefile in accordance with: https://github.com/AleMorales/RcppSundials.R/blob/master/src/Makevars
 
-PKG_CXXFLAGS= -I../inst/include/ -I../inst/include/xylib/ -DDISABLE_STDERR_WARNINGS
-PKG_CFLAGS= -I../inst/include/ -I../inst/include/xylib/ -DDISABLE_STDERR_WARNINGS
+PKG_CXXFLAGS = -I../inst/include/ -I../inst/include/xylib/ -DDISABLE_STDERR_WARNINGS
+PKG_CFLAGS = -I../inst/include/ -I../inst/include/xylib/ -DDISABLE_STDERR_WARNINGS
+CXX_STD = CXX11
 
 RXYLIBSOBJECTS=\
   	./xylib/bruker_raw.o \
