@@ -12,7 +12,12 @@ This necessarily encreased the library size on unix platforms.
 
 > Found the following sources/headers with CR or CRLF line endings:
 
-We resaved the relevant file, this should have fixed this issue.
+We re-saved the relevant file, this should have fixed this issue.
+
+> C++ 1998 does not support 'long long' for R-devel WIN, raised by the pre-test
+
+Fixed by adding `CXX_STD = CXX11` in Makevars, since the underlying 
+library cannot be easily modified. 
 
 ## Test environments
 * local macOS High Sierra 10.14.4-xcode10.2, R-devel
