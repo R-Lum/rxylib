@@ -1,6 +1,11 @@
+## rxylib 0.2.4 (Release date: 2019-XX-XX)
+
+* Add rxylib logo
+
 ## rxylib 0.2.3 (Release date: 2019-04-11)
 
 * Set compiler flag to avoid `C++ 1998 does not support 'long long'` error on R-devel for Windows
+* Remove unconditional stripping for symbols (CRAN request)
 
 ## rxylib 0.2.2 (Release date: 2019-04-11)
 

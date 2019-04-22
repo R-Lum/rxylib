@@ -5,6 +5,7 @@
 # Exclude GitHub stuff
 LICENSE
 ^README\.Rmd$
+^docs$
 
 # Exclude NEWS
 ^.*\.html$
