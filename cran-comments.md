@@ -1,23 +1,7 @@
 ## Release summary
 
-This is a minor release. We polished the code 
-and did everything to make the users happy.
 
 ## Addressed CRAN issues
-
-* We removed the unconditional stripping in response to the email by 
-Brian Ripley from 2019-04-10 (subject: CRAN packages stripping unconditionally).
-
-This necessarily encreased the library size on unix platforms.
-
-> Found the following sources/headers with CR or CRLF line endings:
-
-We re-saved the relevant file, this should have fixed this issue.
-
-> C++ 1998 does not support 'long long' for R-devel WIN, raised by the pre-test
-
-Fixed by adding `CXX_STD = CXX11` in Makevars, since the underlying 
-library cannot be easily modified. 
 
 ## Test environments
 * local macOS High Sierra 10.14.4-xcode10.2, R-devel
