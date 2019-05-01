@@ -39,7 +39,7 @@ distributions. Should *gcc* be not available, however, we kindly refer
 to the exhaustive collection of installation guides depending on the
 linux distribution.
 
-#### ii. Install the package
+#### ii. Install the package (development version)
 
 To install the stable version from CRAN, simply run the following from
 an R console:
@@ -87,3 +87,8 @@ The library itself is **NOT** part of the GPL-3 license conditions of
 the package and available under
 [LGPL](https://github.com/wojdyr/xylib/blob/master/COPYING) license
 conditions only cf. <https://github.com/wojdyr/xylib>
+
+## <span class="glyphicon glyphicon-euro"></span> Funding
+
+Between 2017-2019, the work of Sebastian Kreutzer as maintainer of the
+package was supported by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).

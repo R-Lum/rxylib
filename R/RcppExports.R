@@ -2,22 +2,22 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 get_block_names <- function(path, format_name, options) {
-    .Call('_rxylib_get_block_names', PACKAGE = 'rxylib', path, format_name, options)
+    .Call(`_rxylib_get_block_names`, path, format_name, options)
 }
 
 get_meta_DataSet <- function(path, format_name, options) {
-    .Call('_rxylib_get_meta_DataSet', PACKAGE = 'rxylib', path, format_name, options)
+    .Call(`_rxylib_get_meta_DataSet`, path, format_name, options)
 }
 
 get_supportedFormats <- function() {
-    .Call('_rxylib_get_supportedFormats', PACKAGE = 'rxylib')
+    .Call(`_rxylib_get_supportedFormats`)
 }
 
 get_version <- function() {
-    .Call('_rxylib_get_version', PACKAGE = 'rxylib')
+    .Call(`_rxylib_get_version`)
 }
 
 read_data <- function(path, format_name, options, metaData) {
-    .Call('_rxylib_read_data', PACKAGE = 'rxylib', path, format_name, options, metaData)
+    .Call(`_rxylib_read_data`, path, format_name, options, metaData)
 }
 

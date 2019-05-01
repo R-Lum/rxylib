@@ -13,6 +13,11 @@
 #'
 #' @details
 #'
+#' **Funding**
+#'
+#' Between 2017-2019, the work of Sebastian Kreutzer as maintainer of the package was supported
+#' by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).
+#'
 #' Supported data formats
 #'
 #' @name rxylib-package
