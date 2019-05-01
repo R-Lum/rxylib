@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 library(rxylib)
 ```
 
-# rxylib <img width=120px src="man/figures/rxylib.png" align="right" />
+# rxylib <img width=120px src="man/figures/rxylib.svg" align="right" />
 
 The **R** package `rxylib` provides and access to the C++ library [xylib](http://xylib.sourceforge.net)
 by wrapping the library using Rcpp. For supported data formats see https://github.com/wojdyr/xylib.

@@ -7,7 +7,7 @@
 \title{Import XY-Data into R
 
 \if{html}{
-\figure{rxylib.png}{options: width="50px"}\cr
+\figure{rxylib.svg}{options: width="50px"}\cr
 }}
 \description{
 Provides access to the 'xylib' C library for to import xy

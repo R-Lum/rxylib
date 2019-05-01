@@ -1,6 +1,7 @@
 ## rxylib 0.2.4 (Release date: 2019-XX-XX)
 
 * Add rxylib logo
+* Remove `log` from example to avoid warning
 
 ## rxylib 0.2.3 (Release date: 2019-04-11)
 

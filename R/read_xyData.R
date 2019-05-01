@@ -31,7 +31,6 @@
 #' ##plot xy-spectrum
 #' plot(results,
 #'  type = "l",
-#'  log = "y",
 #'  xlab = "Energy [keV]",
 #'  ylab = "Counts",
 #'  main = "Thorite - 1800 s")
