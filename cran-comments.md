@@ -3,6 +3,11 @@
 
 ## Addressed CRAN issues
 
+> Result: NOTE 
+>     PKG_CFLAGS set in 'src/Makevars' without any corresponding files 
+
+Indeed, we have only *.cpp files. The corresponding line in 'src/Makevars' was removed. 
+
 ## Test environments
 * local macOS High Sierra 10.14.4-xcode10.2, R-devel
 * on AppVeyor CI

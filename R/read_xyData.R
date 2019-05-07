@@ -14,7 +14,7 @@
 #'
 #' @section Function version: 0.3.0
 #'
-#' @author Sebastian Kreutzer, IRAMAT-CRP2A, Universite Bordeaux Montaigne (France), Johannes Friedrich,
+#' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France), Johannes Friedrich,
 #' University of Bayreuth (Germany)
 #'
 #' @return The functions returns a [list] of matrices.
@@ -110,9 +110,7 @@ read_xyData <- function(
     df_supported <- as.data.frame(get_supportedFormats(), stringsAsFactors = FALSE)
 
     supported_ext <- unlist(lapply(1:length(df_supported$exts), function(x){
-
       strsplit(df_supported$exts[x], "\\s+")
-
 
     }))
 
