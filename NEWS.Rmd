@@ -8,9 +8,15 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
+### Bugfixes and other changes
+
 * Update to newest library version
 * Add rxylib logo
 * Remove `log` from example to avoid warning
+
+### Internals 
+
+* Adress CRAN R-devel complains regarding an unneeded Makevars entry
 
 ## rxylib 0.2.3 (Release date: 2019-04-11)
 
