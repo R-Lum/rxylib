@@ -5,11 +5,11 @@
 #' }
 #'
 #' @description
-#' Provides access to the 'xylib' C library for to import xy
-#' data from powder diffraction, spectroscopy and other experimental methods, like gamma-ray spectrometry.
+#' Provides access to the 'xylib' C++ library for to import xy
+#' data from powder diffraction, spectroscopy and other experimental methods,
+#' like gamma-ray spectrometry.\cr
 #'
-#' \tabular{ll}{ Package: \tab rxylib\cr Type: \tab Package\cr Version:
-#' \tab 0.2.4 \cr Date: \tab 2019-XX-XX \cr License: \tab GPL-3 | LGPL-2.1 (for the C++ library 'xylib') \cr }
+#' License: GPL-3 | LGPL-2.1 (for the C++ library 'xylib')
 #'
 #' @details
 #'
@@ -25,6 +25,7 @@
 #' @docType package
 #' @author Sebastian Kreutzer, IRAMAT-CRP2A, Université Bordeaux Montaigne (France), Johannes Friedrich (University of Bayreuth, Germany), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library `xylib`), Peng Zhang (author of the C++ library `xylib`)
 #'
+#' @md
 #' @keywords package
 #' @import utils methods
 #' @importFrom graphics plot
