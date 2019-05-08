@@ -60,7 +60,7 @@ Sebastian Kreutzer, IRAMAT-CRP2A, Université Bordeaux Montaigne (France)
 } 
 
 \section{How to cite}{
-Kreutzer, S. (2019). convert_xy2TKA(): Convert xy-data to TKA. Function version 0.1.0. In: Kreutzer, S., Friedrich, J. (2019). rxylib: Import XY-Data into R R package version 0.2.4.9000-46. https://CRAN.R-project.org/package=rxylib
+Kreutzer, S. (2019). convert_xy2TKA(): Convert xy-data to TKA. Function version 0.1.0. In: Kreutzer, S., Friedrich, J. (2019). rxylib: Import XY-Data into R R package version 0.2.4.9000-49. https://CRAN.R-project.org/package=rxylib
 }
 
 \keyword{IO}
