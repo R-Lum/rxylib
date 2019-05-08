@@ -39,15 +39,10 @@
 
 <img src='figures/rxylib.svg' width="50px" /><br /> — rxylib-package" />
 
-<meta property="og:description" content="Provides access to the 'xylib' C library for to import xy
-data from powder diffraction, spectroscopy and other experimental methods, like gamma-ray spectrometry.
-
-Package:rxylib
-Type:Package
-Version:0.2.4
-Date:2019-XX-XX
-License:GPL-3 | LGPL-2.1 (for the C++ library 'xylib')
-" />
+<meta property="og:description" content="Provides access to the 'xylib' C++ library for to import xy
+data from powder diffraction, spectroscopy and other experimental methods,
+like gamma-ray spectrometry.
+License: GPL-3 | LGPL-2.1 (for the C++ library 'xylib')" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -78,7 +73,7 @@ License:GPL-3 | LGPL-2.1 (for the C++ library 'xylib')
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">rxylib</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.4</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.4.9000.49</span>
       </span>
     </div>
 
@@ -127,22 +122,17 @@ License:GPL-3 | LGPL-2.1 (for the C++ library 'xylib')
 
     <div class="ref-description">
     
-    <p>Provides access to the 'xylib' C library for to import xy
-data from powder diffraction, spectroscopy and other experimental methods, like gamma-ray spectrometry.</p>
-<table class='table'>
-<tr><td>Package:</td><td>rxylib</td></tr>
-<tr><td>Type:</td><td>Package</td></tr>
-<tr><td>Version:</td><td>0.2.4</td></tr>
-<tr><td>Date:</td><td>2019-XX-XX</td></tr>
-<tr><td>License:</td><td>GPL-3 | LGPL-2.1 (for the C++ library 'xylib')</td></tr>
-</table>
+    <p>Provides access to the 'xylib' C++ library for to import xy
+data from powder diffraction, spectroscopy and other experimental methods,
+like gamma-ray spectrometry.<br /></p>
+<p>License: GPL-3 | LGPL-2.1 (for the C++ library 'xylib')</p>
     
     </div>
 
         
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>**Funding**</p>
+    <p><strong>Funding</strong></p>
 <p>Between 2017-2019, the work of Sebastian Kreutzer as maintainer of the package was supported
 by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).</p>
 <p>Supported data formats
@@ -152,7 +142,31 @@ library version: 1.6.0<br /><br /></p><table class='table'>
 <tr><td>[2,]</td><td>uxd</td><td>Bruker Diffrac-AT UXD</td><td>uxd</td><td></td><td>ascii</td><td>multiple</td></tr>
 <tr><td>[3,]</td><td>rigaku_dat</td><td>Rigaku DAT</td><td>dat</td><td></td><td>ascii</td><td>multiple</td></tr>
 <tr><td>[4,]</td><td>bruker_raw</td><td>Siemens/Bruker RAW</td><td>raw</td><td></td><td>binary</td><td>multiple</td></tr>
-<tr><td>[5,]</td><td>bruker_spc</td><td>Bruker ESP300-E SPC</td><td>spc</td><td></td><td>binary</td><td>single</td></tr>
+<tr><td>[5,]</td><td>bruker_spc</td><td>Bruker ESP300-E SPC</td><td>spc par</td><td></td><td>binary</td><td>single</td></tr>
+<tr><td>[6,]</td><td>vamas</td><td>VAMAS ISO-14976</td><td>vms</td><td></td><td>ascii</td><td>multiple</td></tr>
+<tr><td>[7,]</td><td>philips_udf</td><td>Philips UDF</td><td>udf</td><td></td><td>ascii</td><td>single</td></tr>
+<tr><td>[8,]</td><td>spe</td><td>PI WinSpec SPE</td><td>spe</td><td></td><td>binary</td><td>multiple</td></tr>
+<tr><td>[9,]</td><td>pdcif</td><td>Powder Diffraction CIF</td><td>cif</td><td></td><td>ascii</td><td>multiple</td></tr>
+<tr><td>[10,]</td><td>philips_rd</td><td>Philips PC-APD RD/SD</td><td>rd sd</td><td></td><td>binary</td><td>single</td></tr>
+<tr><td>[11,]</td><td>xrdml</td><td>PANalytical XRDML</td><td>xrdml</td><td></td><td>ascii</td><td>multiple</td></tr>
+<tr><td>[12,]</td><td>canberra_mca</td><td>Canberra MCA</td><td>mca dat</td><td></td><td>binary</td><td>single</td></tr>
+<tr><td>[13,]</td><td>canberra_cnf</td><td>Canberra CNF</td><td>cnf</td><td></td><td>binary</td><td>single</td></tr>
+<tr><td>[14,]</td><td>xfit_xdd</td><td>XFIT XDD</td><td>xdd</td><td></td><td>ascii</td><td>single</td></tr>
+<tr><td>[15,]</td><td>riet7</td><td>RIET7/LHPM/PSI_DMC</td><td>dat</td><td></td><td>ascii</td><td>single</td></tr>
+<tr><td>[16,]</td><td>dbws</td><td>DBWS data</td><td>dbw rit neu</td><td></td><td>ascii</td><td>single</td></tr>
+<tr><td>[17,]</td><td>chiplot</td><td>ChiPLOT data</td><td>chi</td><td></td><td>ascii</td><td>single</td></tr>
+<tr><td>[18,]</td><td>spectra</td><td>Spectra / VGX 900</td><td>1 2 3 4 5 6 7 8 9</td><td></td><td>ascii</td><td>multiple</td></tr>
+<tr><td>[19,]</td><td>specsxy</td><td>SPECS SpecsLab2 xy</td><td>xy</td><td></td><td>ascii</td><td>multiple</td></tr>
+<tr><td>[20,]</td><td>csv</td><td>CSV or TSV</td><td>csv tsv tab</td><td>decimal-comma</td><td>ascii</td><td>single</td></tr>
+<tr><td>[21,]</td><td>xsyg</td><td>Freiberg Instruments (FI) Lexsyg</td><td>xsyg</td><td></td><td>ascii</td><td>multiple</td></tr>
+</table>
+<p>library version: 1.6.0<br /><br /></p><table class='table'>
+<tr><td><b>ID</b></td><td><b>NAME</b></td><td><b>DESCRIPTION</b></td><td><b>FILE EXTENSION</b></td><td><b>VALID_OPTIONS</b></td><td><b>DATATYPE</b></td><td><b>BLOCK_TYPE</b></td></tr>
+<tr><td>[1,]</td><td>cpi</td><td>Sietronics Sieray CPI</td><td>cpi</td><td></td><td>ascii</td><td>single</td></tr>
+<tr><td>[2,]</td><td>uxd</td><td>Bruker Diffrac-AT UXD</td><td>uxd</td><td></td><td>ascii</td><td>multiple</td></tr>
+<tr><td>[3,]</td><td>rigaku_dat</td><td>Rigaku DAT</td><td>dat</td><td></td><td>ascii</td><td>multiple</td></tr>
+<tr><td>[4,]</td><td>bruker_raw</td><td>Siemens/Bruker RAW</td><td>raw</td><td></td><td>binary</td><td>multiple</td></tr>
+<tr><td>[5,]</td><td>bruker_spc</td><td>Bruker ESP300-E SPC</td><td>spc par</td><td></td><td>binary</td><td>single</td></tr>
 <tr><td>[6,]</td><td>vamas</td><td>VAMAS ISO-14976</td><td>vms</td><td></td><td>ascii</td><td>multiple</td></tr>
 <tr><td>[7,]</td><td>philips_udf</td><td>Philips UDF</td><td>udf</td><td></td><td>ascii</td><td>single</td></tr>
 <tr><td>[8,]</td><td>spe</td><td>PI WinSpec SPE</td><td>spe</td><td></td><td>binary</td><td>multiple</td></tr>
@@ -181,7 +195,7 @@ library version: 1.6.0<br /><br /></p><table class='table'>
           </ul>
 
     <h2>Author</h2>
-    <p>Sebastian Kreutzer, IRAMAT-CRP2A, Université Bordeaux Montaigne (France), Johannes Friedrich (University of Bayreuth, Germany), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library `xylib`), Peng Zhang (author of the C++ library `xylib`)</p>
+    <p>Sebastian Kreutzer, IRAMAT-CRP2A, Université Bordeaux Montaigne (France), Johannes Friedrich (University of Bayreuth, Germany), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library <code>xylib</code>), Peng Zhang (author of the C++ library <code>xylib</code>)</p>
   </div>
 </div>
 
