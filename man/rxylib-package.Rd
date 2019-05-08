@@ -22,8 +22,8 @@ License: GPL-3 | LGPL-2.1 (for the C++ library 'xylib')
 Between 2017-2019, the work of Sebastian Kreutzer as maintainer of the package was supported
 by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).
 
-Supported data formats
-library version: 1.6.0\cr\cr
+Supported data formats:
+\cr library version: 1.6.0\cr\cr
 \tabular{lllllll}{\bold{ID} \tab \bold{NAME} \tab \bold{DESCRIPTION} \tab \bold{FILE EXTENSION}  \tab \bold{VALID_OPTIONS}  \tab \bold{DATATYPE} \tab \bold{BLOCK_TYPE}\cr
 [1,] \tab cpi \tab Sietronics Sieray CPI \tab cpi \tab  \tab ascii \tab single\cr
 [2,] \tab uxd \tab Bruker Diffrac-AT UXD \tab uxd \tab  \tab ascii \tab multiple\cr
