@@ -97,13 +97,18 @@ by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).
 ### 2019-05-08
 ### ==========================================================================================
 
-## this script adds all allowed formats to the produced package manual
+##run only if not alrady there (otherwise we create it two time)
+if(!any(
+  grepl(
+    pattern = "library version:", 
+    x = readLines("man/rxylib-package.Rd", warn = FALSE), fixed = TRUE, useBytes = TRUE))){
 
+  ## this script adds all allowed formats to the produced package manual
   ##get format list
   formats <- rxylib:::get_supportedFormats()
 
   ##create data frame
-  preheader <- paste0("library version: ", rxylib:::get_version(), "\\cr\\cr")
+  preheader <- paste0("\\cr library version: ", rxylib:::get_version(), "\\cr\\cr")
   header <- "\\tabular{lllllll}{\\bold{ID} \\tab \\bold{NAME} \\tab \\bold{DESCRIPTION} \\tab \\bold{FILE EXTENSION}  \\tab \\bold{VALID_OPTIONS}  \\tab \\bold{DATATYPE} \\tab \\bold{BLOCK_TYPE}\\cr"
   footer <- " \\tab \\tab }"
   main <- vapply(1:length(formats$name), function(x){
@@ -137,5 +142,6 @@ by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).
   writeLines(
     text = c(file[1:insert_id], table, file[(insert_id + 1):length(file)]),
     con = "man/rxylib-package.Rd")
+}
 ```
 
