@@ -1,5 +1,12 @@
 ## Release summary
 
+This release addresses the CRAN R-devel notes and updates to a newer xy-library version. 
+
+## Known issues
+
+The compilation of the file `xylib/util.cpp` throws out a warning, however, 
+this is related to boost library (package 'BH') and there is nothing 
+we can do about. 
 
 ## Addressed CRAN issues
 
