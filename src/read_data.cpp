@@ -39,7 +39,6 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
 
     //loop over columns
     for (int c=0;c<n_columns; c++){
-
        //loop over rows
        for (int r=0;r<n_rows; r++){
          m(r,c) = xylib_get_data(xylib_get_block(dataset, b), c + 1, r);
