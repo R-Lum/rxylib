@@ -23,6 +23,30 @@ Between 2017-2019, the work of Sebastian Kreutzer as maintainer of the package w
 by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).
 
 Supported data formats
+library version: 1.6.0\cr\cr
+\tabular{lllllll}{\bold{ID} \tab \bold{NAME} \tab \bold{DESCRIPTION} \tab \bold{FILE EXTENSION}  \tab \bold{VALID_OPTIONS}  \tab \bold{DATATYPE} \tab \bold{BLOCK_TYPE}\cr
+[1,] \tab cpi \tab Sietronics Sieray CPI \tab cpi \tab  \tab ascii \tab single\cr
+[2,] \tab uxd \tab Bruker Diffrac-AT UXD \tab uxd \tab  \tab ascii \tab multiple\cr
+[3,] \tab rigaku_dat \tab Rigaku DAT \tab dat \tab  \tab ascii \tab multiple\cr
+[4,] \tab bruker_raw \tab Siemens/Bruker RAW \tab raw \tab  \tab binary \tab multiple\cr
+[5,] \tab bruker_spc \tab Bruker ESP300-E SPC \tab spc par \tab  \tab binary \tab single\cr
+[6,] \tab vamas \tab VAMAS ISO-14976 \tab vms \tab  \tab ascii \tab multiple\cr
+[7,] \tab philips_udf \tab Philips UDF \tab udf \tab  \tab ascii \tab single\cr
+[8,] \tab spe \tab PI WinSpec SPE \tab spe \tab  \tab binary \tab multiple\cr
+[9,] \tab pdcif \tab Powder Diffraction CIF \tab cif \tab  \tab ascii \tab multiple\cr
+[10,] \tab philips_rd \tab Philips PC-APD RD/SD \tab rd sd \tab  \tab binary \tab single\cr
+[11,] \tab xrdml \tab PANalytical XRDML \tab xrdml \tab  \tab ascii \tab multiple\cr
+[12,] \tab canberra_mca \tab Canberra MCA \tab mca dat \tab  \tab binary \tab single\cr
+[13,] \tab canberra_cnf \tab Canberra CNF \tab cnf \tab  \tab binary \tab single\cr
+[14,] \tab xfit_xdd \tab XFIT XDD \tab xdd \tab  \tab ascii \tab single\cr
+[15,] \tab riet7 \tab RIET7/LHPM/PSI_DMC \tab dat \tab  \tab ascii \tab single\cr
+[16,] \tab dbws \tab DBWS data \tab dbw rit neu \tab  \tab ascii \tab single\cr
+[17,] \tab chiplot \tab ChiPLOT data \tab chi \tab  \tab ascii \tab single\cr
+[18,] \tab spectra \tab Spectra / VGX 900 \tab 1 2 3 4 5 6 7 8 9 \tab  \tab ascii \tab multiple\cr
+[19,] \tab specsxy \tab SPECS SpecsLab2 xy \tab xy \tab  \tab ascii \tab multiple\cr
+[20,] \tab csv \tab CSV or TSV \tab csv tsv tab \tab decimal-comma \tab ascii \tab single\cr
+[21,] \tab xsyg \tab Freiberg Instruments (FI) Lexsyg \tab xsyg \tab  \tab ascii \tab multiple\cr
+ \tab \tab }
 }
 \author{
 Sebastian Kreutzer, IRAMAT-CRP2A, Université Bordeaux Montaigne (France), Johannes Friedrich (University of Bayreuth, Germany), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library \code{xylib}), Peng Zhang (author of the C++ library \code{xylib})

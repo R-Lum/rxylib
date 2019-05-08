@@ -16,7 +16,7 @@ header-includes:
 
 ### Internals 
 
-* Adress CRAN R-devel complains regarding an unneeded Makevars entry
+* Address CRAN R-devel complains regarding an unneeded Makevars entry
 
 ## rxylib 0.2.3 (Release date: 2019-04-11)
 
