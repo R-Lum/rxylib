@@ -9,8 +9,7 @@
 
 The **R** package `rxylib` provides and access to the C++ library
 [xylib](http://xylib.sourceforge.net) by wrapping the library using
-Rcpp. For supported data formats see
-<https://github.com/wojdyr/xylib>.
+Rcpp. For supported data formats see <https://github.com/wojdyr/xylib>.
 
 [![Rdoc](http://www.rdocumentation.org/badges/version/rxylib)](http://www.rdocumentation.org/packages/rxylib)
 [![CRAN](http://www.r-pkg.org/badges/version/rxylib)](https://CRAN.R-project.org/package=rxylib)
