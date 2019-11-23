@@ -62,7 +62,7 @@ University of Bayreuth (Germany)
 } 
 
 \section{How to cite}{
-Kreutzer, S., Friedrich, J., 2019. read_xyData(): Import xy-Data for Supported Formats into R. Function version 0.3.0. In: Kreutzer, S., Friedrich, J., 2019. rxylib: Import XY-Data into R R package version 0.2.5.9000-3. https://github.com/R-Lum/rxylib
+Kreutzer, S., Friedrich, J., 2019. read_xyData(): Import xy-Data for Supported Formats into R. Function version 0.3.0. In: Kreutzer, S., Friedrich, J., 2019. rxylib: Import XY-Data into R R package version 0.2.5.9000-6. https://github.com/R-Lum/rxylib
 }
 
 \keyword{IO}
