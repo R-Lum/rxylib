@@ -2,12 +2,12 @@
 ##                      METHODS FOR S3 GENERICS                                 ##
 ##################################################################################
 
-#' methods_ryxlib
+#' methods_rxylib
 #'
 #' S3-methods support by the package `rxylib`. Listed functions can be passed directly into
 #' S3 generics (e.g., [plot], [print]) without reshaping the data.
 #'
-#' @param x (**required**): input opject
+#' @param x (**required**): input object
 #'
 #' @param ... further arguments that can be passed to the method
 #'

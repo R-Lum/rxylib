@@ -4,14 +4,14 @@
 \alias{methods_rxylib}
 \alias{print.rxylib}
 \alias{plot.rxylib}
-\title{methods_ryxlib}
+\title{methods_rxylib}
 \usage{
 \method{print}{rxylib}(x, ...)
 
 \method{plot}{rxylib}(x, block = NULL, ...)
 }
 \arguments{
-\item{x}{(\strong{required}): input opject}
+\item{x}{(\strong{required}): input object}
 
 \item{...}{further arguments that can be passed to the method}
 

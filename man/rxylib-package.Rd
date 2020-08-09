@@ -20,7 +20,7 @@ License: GPL-3 | LGPL-2.1 (for the C++ library 'xylib')
 \strong{Funding}
 
 Between 2017-2019, the work of Sebastian Kreutzer as maintainer of the package was supported
-by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).
+by LabEx LaScArBx (ANR - n. ANR-10-LABX-52).
 
 Supported data formats:
 \cr library version: 1.6.0\cr\cr
@@ -49,6 +49,6 @@ Supported data formats:
  \tab \tab }
 }
 \author{
-Sebastian Kreutzer, IRAMAT-CRP2A, Université Bordeaux Montaigne (France), Johannes Friedrich (University of Bayreuth, Germany), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library \code{xylib}), Peng Zhang (author of the C++ library \code{xylib})
+Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom), Johannes Friedrich (University of Bayreuth, Germany), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library \code{xylib}), Peng Zhang (author of the C++ library \code{xylib})
 }
 \keyword{package}

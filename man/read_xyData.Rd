@@ -13,7 +13,7 @@ read_xyData(file, options = "", verbose = TRUE, metaData = TRUE)
 
 \item{verbose}{\link{logical} (\emph{with default}): enables/disables verbose mode}
 
-\item{metaData}{\link{logical} (\emph{with default}): enables/disbales the export of metadata}
+\item{metaData}{\link{logical} (\emph{with default}): enables/disables the export of metadata}
 }
 \value{
 The functions returns a \link{list} of matrices.
@@ -62,7 +62,7 @@ University of Bayreuth (Germany)
 } 
 
 \section{How to cite}{
-Kreutzer, S., Friedrich, J., 2020. read_xyData(): Import xy-Data for Supported Formats into R. Function version 0.3.0. In: Kreutzer, S., Friedrich, J., 2020. rxylib: Import XY-Data into R . R package version 0.2.5.9000-31. https://github.com/R-Lum/rxylib
+Kreutzer, S., Friedrich, J., 2020. read_xyData(): Import xy-Data for Supported Formats into R. Function version 0.3.0. In: Kreutzer, S., Friedrich, J., 2020. rxylib: Import XY-Data into R . R package version 0.2.5.9000-35. https://github.com/R-Lum/rxylib
 }
 
 \keyword{IO}

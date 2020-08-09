@@ -16,14 +16,14 @@
 #' **Funding**
 #'
 #' Between 2017-2019, the work of Sebastian Kreutzer as maintainer of the package was supported
-#' by LabEx LaScArBxSK (ANR - n. ANR-10-LABX-52).
+#' by LabEx LaScArBx (ANR - n. ANR-10-LABX-52).
 #'
 #' Supported data formats:
 #'
 #' @name rxylib-package
 #' @aliases rxylib-package rxylib
 #' @docType package
-#' @author Sebastian Kreutzer, IRAMAT-CRP2A, Université Bordeaux Montaigne (France), Johannes Friedrich (University of Bayreuth, Germany), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library `xylib`), Peng Zhang (author of the C++ library `xylib`)
+#' @author Sebastian Kreutzer, Geography & Earth Sciences, Aberystwyth University (United Kingdom), Johannes Friedrich (University of Bayreuth, Germany), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library `xylib`), Peng Zhang (author of the C++ library `xylib`)
 #'
 #' @md
 #' @keywords package

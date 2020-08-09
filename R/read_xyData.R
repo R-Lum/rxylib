@@ -10,7 +10,7 @@
 #'
 #' @param verbose [logical] (*with default*): enables/disables verbose mode
 #'
-#' @param metaData [logical] (*with default*): enables/disbales the export of metadata
+#' @param metaData [logical] (*with default*): enables/disables the export of metadata
 #'
 #' @section Function version: 0.3.0
 #'
