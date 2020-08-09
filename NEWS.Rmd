@@ -8,6 +8,7 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
+* This version requires R >= 3.5.0
 * Update to the latest `xylib` version, which fixes the not working import of 
 SPC-files
 
