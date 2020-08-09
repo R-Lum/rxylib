@@ -31,15 +31,9 @@ by wrapping the library using Rcpp. For supported data formats see https://githu
 
 #### i. Requirements
 
-**Windows (32/64bit)** - 'Rtools' (provided by CRAN)
-
-   https://cran.r-project.org/bin/windows/Rtools/
-
-**MacOSX and macOS** - 'Xcode' (provided by Apple)
-
-   https://developer.apple.com/xcode/downloads/
-
-For **Linux** users *gcc* often comes pre-installed in most distributions. Should *gcc* be not available, however, we kindly refer to the exhaustive collection of installation guides depending on the linux distribution.
+* *Windows (32/64bit)*:  [Rtools](https://cran.r-project.org/bin/windows/Rtools/) (provided by CRAN)
+* *macOS*: [Xcode](https://developer.apple.com/xcode/downloads/) (provided by Apple)
+* *Linux*: [gcc](https://gcc.gnu.org) often comes pre-installed in most distributions. 
 
 #### ii. Install the package (development version)
 
@@ -56,10 +50,9 @@ if(!require("devtools"))
   install.packages("devtools")
 devtools::install_github("R-Lum/rxylib@master")
 ```
-To install a developer build other than 'master', replace the term 'master' in the codeline by the name
-of the wanted developer build. 
+To install a developer build other than 'master', replace the term 'master' in the code line by the name of the wanted developer build. 
 
-## Releated projects
+## Related projects
 
 * [rxylibShiny](https://github.com/JohannesFriedrich/rxylibShiny)
 
