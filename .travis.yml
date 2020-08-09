@@ -1,18 +1,23 @@
 language: r
 cache: packages
 warnings_are_errors: true
-sudo: required
 
 r_packages:
   - covr
   - devtools
 
 ## test different platforms
-matrix:
+jobs:
   include:
   - os: linux
-    r: devel
+    r: old
     env: CACHE_NAME=JOB1
+  - os: linux
+    r: release
+    env: CACHE_NAME=JOB2
+  - os: linux
+    r: devel
+    env: CACHE_NAME=JOB3
   - os: osx
     r: release
     #before_install:
@@ -21,7 +26,7 @@ matrix:
      # - Rscript -e 'install.packages("devtools", type = "source", dependencies = TRUE)'
       #- Rscript -e 'install.packages(c("BH", "Rcpp", "stringr", "httr", "stringdist"))'
       #- Rscript -e 'deps <- devtools::dev_package_deps(dependencies = TRUE)$package; if (!all(deps %in% installed.packages()[,"Package"])) {install.packages(deps, method = 'source', dependencies = TRUE)}'
-    env: CACHE_NAME=JOB2
+    env: CACHE_NAME=JOB4
 
 ##create notifications
 notifications:
