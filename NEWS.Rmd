@@ -8,7 +8,8 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
-* Dummy
+* Update to the latest `xylib` version, which fixes the not working import of 
+SPC-files
 
 
 ## rxylib 0.2.4 (Release date: 2019-06-05)
