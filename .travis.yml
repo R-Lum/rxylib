@@ -10,7 +10,7 @@ r_packages:
 jobs:
   include:
   - os: linux
-    r: old
+    r: oldrel
     env: CACHE_NAME=JOB1
   - os: linux
     r: release
