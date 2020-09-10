@@ -186,17 +186,16 @@ string str_trim(string const& str)
 
 
 // skip whitespace, get key and val that are separated by `sep'
-void str_split(string const& line, string const& sep,
-               string &key, string &val)
+void str_split(string const& line, char sep, string &key, string &val)
 {
-    string::size_type p = line.find_first_of(sep);
+    string::size_type p = line.find(sep);
     if (p == string::npos) {
         key = line;
         val = "";
     }
     else {
         key = str_trim(line.substr(0, p));
-        val = str_trim(line.substr(p + sep.size()));
+        val = str_trim(line.substr(p + 1));
     }
 }
 
@@ -260,6 +259,32 @@ bool get_valid_line(std::istream &is, std::string &line, char comment_char)
     if (start != 0 || stop != line.size())
         line = line.substr(start, stop - start);
     return true;
+}
+
+// get line ending with \r, \n or \r\n
+// based on https://stackoverflow.com/a/6089413/104453
+std::istream& getline_with_any_ending(std::istream& is, std::string& t)
+{
+    t.clear();
+    std::istream::sentry se(is, true);
+    std::streambuf* sb = is.rdbuf();
+    for (;;) {
+        int c = sb->sbumpc();
+        if (c == '\n')
+            return is;
+        if (c == '\r') {
+            if (sb->sgetc() == '\n')
+                sb->sbumpc();
+            return is;
+        }
+        if (c == std::streambuf::traits_type::eof()) {
+            // Also handle the case when the last line has no line ending
+            if (t.empty())
+                is.setstate(std::ios::eofbit);
+            return is;
+        }
+        t += (char)c;
+    }
 }
 
 

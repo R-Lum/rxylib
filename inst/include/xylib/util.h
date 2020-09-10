@@ -46,7 +46,7 @@ T from_le(const char* p)
 double from_pdp11(const unsigned char* p);
 
 std::string str_trim(std::string const& str);
-void str_split(std::string const& line, std::string const& sep,
+void str_split(std::string const& line, char sep,
                std::string &key, std::string &val);
 inline bool str_startwith(const std::string &str, const std::string &prefix) {
     return str.compare(0, prefix.size(), prefix) == 0;
@@ -57,6 +57,7 @@ bool has_word(const std::string &sentence, const std::string &word);
 
 std::string read_line(std::istream &is);
 bool get_valid_line(std::istream &is, std::string &line, char comment_char);
+std::istream& getline_with_any_ending(std::istream& is, std::string& t);
 
 void skip_whitespace(std::istream &f);
 Column* read_start_step_end_line(std::istream& f);
@@ -131,6 +132,9 @@ inline void format_assert(DataSet const* ds, bool condition,
                           + (comment.empty() ? comment : "; " + comment));
 }
 
+#if (defined(__GNUC__) && !defined(__MINGW32__)) || defined(__clang)
+__attribute__((format(printf, 1, 2)))
+#endif
 void warn(const char *fmt, ...);
 
 class ColumnWithName : public Column
