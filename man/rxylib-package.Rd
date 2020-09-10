@@ -29,7 +29,7 @@ Supported data formats:
 [2,] \tab uxd \tab Bruker Diffrac-AT UXD \tab uxd \tab  \tab ascii \tab multiple\cr
 [3,] \tab rigaku_dat \tab Rigaku DAT \tab dat \tab  \tab ascii \tab multiple\cr
 [4,] \tab bruker_raw \tab Siemens/Bruker RAW \tab raw \tab  \tab binary \tab multiple\cr
-[5,] \tab bruker_spc \tab Bruker ESP300-E SPC \tab spc par \tab  \tab binary \tab single\cr
+[5,] \tab bruker_spc \tab Bruker ESP300-E SPC \tab spc \tab  \tab binary \tab single\cr
 [6,] \tab vamas \tab VAMAS ISO-14976 \tab vms \tab  \tab ascii \tab multiple\cr
 [7,] \tab philips_udf \tab Philips UDF \tab udf \tab  \tab ascii \tab single\cr
 [8,] \tab spe \tab PI WinSpec SPE \tab spe \tab  \tab binary \tab multiple\cr

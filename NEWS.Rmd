@@ -10,7 +10,7 @@ header-includes:
 
 * This version requires R >= 3.5.0
 * Update to the latest `xylib` version, which fixes the not working import of 
-SPC-files
+SPC-files and comes with partly re-factored code.
 
 
 ## rxylib 0.2.4 (Release date: 2019-06-05)
