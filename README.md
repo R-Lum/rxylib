@@ -84,5 +84,10 @@ conditions only cf. <https://github.com/wojdyr/xylib>
 
 ## <span class="glyphicon glyphicon-euro"></span> Funding
 
-Between 2017-2019, the work of Sebastian Kreutzer as maintainer of the
-package was supported by LabEx LaScArBx (ANR - n. ANR-10-LABX-52).
+  - Between 2017-2019, the work of Sebastian Kreutzer as maintainer of
+    the package was supported by LabEx LaScArBx (ANR -
+    n. ANR-10-LABX-52).
+
+  - From 2020, Sebastian Kreutzer received funding from the European
+    Union’s Horizon 2020 research and innovation programme under the
+    Marie Skłodowska-Curie grant agreement No 844457 (project: CREDit).
