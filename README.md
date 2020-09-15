@@ -18,6 +18,7 @@ Rcpp. For supported data formats see <https://github.com/wojdyr/xylib>.
 status](https://ci.appveyor.com/api/projects/status/7mmfpmo23k3iaq57/branch/master?svg=true)](https://ci.appveyor.com/project/RLumSK/rxylib/branch/master)
 [![Build
 Status](https://travis-ci.org/R-Lum/rxylib.svg?branch=master)](https://travis-ci.org/R-Lum/rxylib)
+[![DOI](https://zenodo.org/badge/95584252.svg)](https://zenodo.org/badge/latestdoi/95584252)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/R-Lum/rxylib.svg)](https://codecov.io/github/R-Lum/rxylib?branch=master)
 
