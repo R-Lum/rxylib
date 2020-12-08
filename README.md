@@ -26,12 +26,12 @@ Status](https://img.shields.io/codecov/c/github/R-Lum/rxylib.svg)](https://codec
 
 #### i. Requirements
 
-  - *Windows (32/64bit)*:
+-   *Windows (32/64bit)*:
     [Rtools](https://cran.r-project.org/bin/windows/Rtools/) (provided
     by CRAN)
-  - *macOS*: [Xcode](https://developer.apple.com/xcode/downloads/)
+-   *macOS*: [Xcode](https://developer.apple.com/xcode/downloads/)
     (provided by Apple)
-  - *Linux*: [gcc](https://gcc.gnu.org) often comes pre-installed in
+-   *Linux*: [gcc](https://gcc.gnu.org) often comes pre-installed in
     most distributions.
 
 #### ii. Install the package (development version)
@@ -56,7 +56,7 @@ To install a developer build other than `'master'`, replace the term
 
 ## Related projects
 
-  - [rxylibShiny](https://github.com/JohannesFriedrich/rxylibShiny)
+-   [rxylibShiny](https://github.com/JohannesFriedrich/rxylibShiny)
 
 # Licenses
 
@@ -85,10 +85,10 @@ conditions only cf. <https://github.com/wojdyr/xylib>
 
 ## <span class="glyphicon glyphicon-euro"></span> Funding
 
-  - Between 2017-2019, the work of Sebastian Kreutzer as maintainer of
+-   Between 2017-2019, the work of Sebastian Kreutzer as maintainer of
     the package was supported by LabEx LaScArBx (ANR -
     n. ANR-10-LABX-52).
 
-  - From 2020, Sebastian Kreutzer received funding from the European
+-   From 2020, Sebastian Kreutzer received funding from the European
     Union’s Horizon 2020 research and innovation programme under the
     Marie Skłodowska-Curie grant agreement No 844457 (project: CREDit).

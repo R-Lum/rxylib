@@ -9,7 +9,7 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
-* Dummy
+* Update to work with `'testthat'` >= 3.0.0
 
 ## rxylib 0.2.6 (Release date: 2020-09-15)
 
