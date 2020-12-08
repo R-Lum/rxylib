@@ -1,22 +1,21 @@
-context("read_xyData")
-
 test_that("General tests", {
   testthat::skip_on_cran()
+  local_edition(3)
 
   ##force break (file does not exists)
-  expect_type(read_xyData(file = "hi"), type = "NULL")
+  expect_null(read_xyData(file = "hi"))
 
   ##check get_version (internal function)
   expect_type(rxylib:::get_version(), type = "character")
 
   ##force connection error
-  expect_type(read_xyData(file = "https://github.com/R-Lum/rxylib/raw/master/tests/testdata/BkenExampleSpectrum.CNF"), type = "NULL")
+  expect_null(suppressWarnings(read_xyData(file = "https://github.com/R-Lum/rxylib/raw/master/tests/testdata/BkenExampleSpectrum.CNF")))
 
   ##force wrong file format read
-  expect_type(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/appveyor.yml"), type = "NULL")
+  expect_null(read_xyData(file = "https://raw.githubusercontent.com/R-Lum/rxylib/master/appveyor.yml", verbose = FALSE))
 
   ##check broken testdata
-  expect_type(read_xyData(file = "https://github.com/R-Lum/rxylib/raw/master/tests/testdata/BrokenExampleSpectrum.CNF"), type = "NULL")
+  expect_null(read_xyData(file = "https://github.com/R-Lum/rxylib/raw/master/tests/testdata/BrokenExampleSpectrum.CNF"))
 
   ##check C++ function
   expect_type(
@@ -40,13 +39,14 @@ test_that("General tests", {
 
 test_that("Methods test", {
   testthat::skip_on_cran()
+  local_edition(3)
 
   ##check S3 methods
   test_dataset <- read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/03yag02.mca")
   expect_output(print(test_dataset))
   expect_silent(plot(test_dataset))
   expect_silent(plot(test_dataset, block = 1))
-  expect_type(plot(test_dataset, block = 2), type = "NULL")
+  expect_null(plot(test_dataset, block = 2))
 
   test_dataset <- read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/background_8.CNF")
 
@@ -57,12 +57,14 @@ test_that("Methods test", {
 
 test_that("Check all formats", {
   testthat::skip_on_cran()
+  local_edition(3)
 
   ##load example data step by step from GitHub
-
     ##Canberra MCA
-    expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/03yag02.mca"), type = "list")
-    expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/04nacl02.mca"), type = "list")
+    expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/03yag02.mca"),
+                type = "list")
+    expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/04nacl02.mca"),
+                type = "list")
 
     ##Canberra CNF
     expect_type(read_xyData(file = "https://github.com/wojdyr/xylib/raw/master/samples/SMP00011.CNF"), type = "list")

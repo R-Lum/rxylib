@@ -27,7 +27,7 @@ Imports:
     methods,
     Rcpp (>= 1.0.5)
 Suggests: 
-    testthat (>= 2.3.2)
+    testthat (>= 3.0.0)
 LinkingTo:
    Rcpp (>= 1.0.5),
    BH (>= 1.72.0)

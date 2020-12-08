@@ -1,7 +1,6 @@
-context("convert_xy2TKA")
-
 test_that("General tests", {
   testthat::skip_on_cran()
+  local_edition(3)
 
   ##general stop ... not object
   expect_error(convert_xy2TKA())
@@ -14,24 +13,25 @@ test_that("General tests", {
 
 test_that("Input and output", {
   testthat::skip_on_cran()
+  local_edition(3)
 
   ##input as xylib object
-  expect_is(
+  expect_type(
     convert_xy2TKA(
       object = read_xyData(system.file("extdata/ExampleSpectrum.CNF", package = "rxylib"))),
-    class = "list")
+    "list")
 
   ##input as file path
-  expect_is(
+  expect_type(
     convert_xy2TKA(
       object = system.file("extdata/ExampleSpectrum.CNF", package = "rxylib")),
-    class = "list")
+    "list")
 
   ##input file path not correct
-  expect_is(
+  expect_type(
     convert_xy2TKA(
       object = system.file("extdata/ExampleSpectrum.TEST", package = "rxylib")),
-    class = "NULL")
+    "NULL")
 
   ##input format not recognised
   expect_error(
