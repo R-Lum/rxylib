@@ -1,57 +1,53 @@
 {
-    "license": "GPL-2.0-or-later",
-    "contributors": [
-        {
-            "type": "Other",
-            "name": "RLum Team"
-        },
-        {
-            "type": "RightsHolder",
-            "name": "Wojdyr,  Marcin"
-        },
-        {
-            "type": "Other",
-            "name": "Zhang, Peng"
-        }
-    ],
-    "language": "eng",
-    "title": "rxylib: Import XY-Data into R",
-    "related_identifiers": [
-        {
-            "scheme": "url",
-            "identifier": "https://CRAN.R-project.org/package=rxylib",
-            "relation": "references"
-        },
-        {
-            "scheme": "url",
-            "identifier": "https://github.com/R-Lum/rxylib/tree/master",
-            "relation": "isPreviousVersionOf"
-        },
-        {
-            "scheme": "doi",
-            "identifier": "10.5281/zenodo.4030323",
-            "relation": "isVersionOf"
-        }
-    ],
-    "version": "0.2.6",
-    "upload_type": "software",
-    "keywords": [
-        "data import",
-        "power diffraction",
-        "R"
-    ],
-    "publication_date": "2020-09-15",
-    "creators": [
-        {
-            "orcid": "0000-0002-0734-2199",
-            "affiliation": "Department of Geography and Earth Sciences, Aberystwyth University (United Kingdom)",
-            "name": "Kreutzer, Sebastian"
-        },
-        {
-            "orcid": "0000-0002-0805-9547",
-            "name": "Friedrich, Johannes"
-        }
-    ],
-    "access_right": "open",
-    "description": "<p>Provides access to the &#39;xylib&#39; C library for to import xy&nbsp;data from powder diffraction, spectroscopy and other experimental methods</p>"
+  "license": ["GPL-2.0-or-later"],
+  "contributors": [
+    {
+      "type": "Other",
+      "name": "RLum Team"
+    },
+    {
+      "type": "RightsHolder",
+      "name": "Wojdyr,  Marcin"
+    },
+    {
+      "type": "Other",
+      "name": "Zhang, Peng"
+    }
+  ],
+  "language": ["eng"],
+  "title": ["rxylib: Import XY-Data into R "],
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://CRAN.R-project.org/package=rxylib",
+      "relation": "references"
+    },
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/R-Lum/rxylib/tree/master",
+      "relation": "isPreviousVersionOf"
+    },
+    {
+      "scheme": "doi",
+      "identifier": "10.5281/zenodo.4030323",
+      "relation": "isVersionOf"
+    }
+  ],
+  "version": ["0.2.7.9000-8"],
+  "upload_type": ["software"],
+  "keywords": ["data import", "power diffraction", "R"],
+  "publication_date": ["2020-12-10"],
+  "creators": [
+    {
+      "orcid": "0000-0002-0734-2199",
+      "affiliation": "Department of Geography and Earth Sciences, Aberystwyth University (United Kingdom)",
+      "name": "Kreutzer, Sebastian"
+    },
+    {
+      "orcid": "0000-0002-0805-9547",
+      "name": "Friedrich, Johannes"
+    }
+  ],
+  "access_right": ["open"],
+  "description": ["<p>Provides access to the 'xylib' C library for to import xy <\/p>"]
 }
