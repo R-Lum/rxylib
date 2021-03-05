@@ -1,5 +1,5 @@
 {
-  "license": ["GPL-2.0-or-later"],
+  "license": "GPL-2.0-or-later",
   "contributors": [
     {
       "type": "Other",
@@ -14,13 +14,13 @@
       "name": "Zhang, Peng"
     }
   ],
-  "language": ["eng"],
-  "title": ["rxylib: Import XY-Data into R "],
+  "language": "eng",
+  "title": "rxylib: Import XY-Data into R ",
   "related_identifiers": [
     {
       "scheme": "url",
       "identifier": "https://CRAN.R-project.org/package=rxylib",
-      "relation": "references"
+      "relation": "isSupplementedBy"
     },
     {
       "scheme": "url",
@@ -30,13 +30,13 @@
     {
       "scheme": "doi",
       "identifier": "10.5281/zenodo.4030323",
-      "relation": "isVersionOf"
+      "relation": "isReferencedBy"
     }
   ],
-  "version": ["0.2.7.9000-8"],
-  "upload_type": ["software"],
+  "version": "0.2.7.9000-10",
+  "upload_type": "software",
   "keywords": ["data import", "power diffraction", "R"],
-  "publication_date": ["2020-12-10"],
+  "publication_date": "2021-01-03",
   "creators": [
     {
       "orcid": "0000-0002-0734-2199",
@@ -48,6 +48,6 @@
       "name": "Friedrich, Johannes"
     }
   ],
-  "access_right": ["open"],
-  "description": ["<p>Provides access to the 'xylib' C library for to import xy <\/p>"]
+  "access_right": "open",
+  "description": "<p>Provides access to the 'xylib' C library for to import xy <\/p>"
 }
