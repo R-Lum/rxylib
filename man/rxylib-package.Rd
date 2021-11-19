@@ -45,7 +45,7 @@ Supported data formats:
 [18,] \tab spectra \tab Spectra / VGX 900 \tab 1 2 3 4 5 6 7 8 9 \tab  \tab ascii \tab multiple\cr
 [19,] \tab specsxy \tab SPECS SpecsLab2 xy \tab xy \tab  \tab ascii \tab multiple\cr
 [20,] \tab csv \tab CSV or TSV \tab csv tsv tab \tab decimal-comma \tab ascii \tab single\cr
-[21,] \tab xsyg \tab Freiberg Instruments (FI) Lexsyg \tab xsyg \tab  \tab ascii \tab multiple\cr
+[21,] \tab xsyg \tab Freiberg Instruments XSYG \tab xsyg \tab  \tab ascii \tab multiple\cr
  \tab \tab }
 }
 \author{

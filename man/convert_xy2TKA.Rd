@@ -60,7 +60,7 @@ Sebastian Kreutzer, IRAMAT-CRP2A, Université Bordeaux Montaigne (France)
 } 
 
 \section{How to cite}{
-Kreutzer, S., 2020. convert_xy2TKA(): Convert xy-data to TKA. Function version 0.1.0. In: Kreutzer, S., Friedrich, J., 2020. rxylib: Import XY-Data into R . R package version 0.2.7.9000-8. https://github.com/R-Lum/rxylib
+Kreutzer, S., 2021. convert_xy2TKA(): Convert xy-data to TKA. Function version 0.1.0. In: Kreutzer, S., Friedrich, J., 2021. rxylib: Import XY-Data into R . R package version 0.2.7.9000-14. https://github.com/R-Lum/rxylib
 }
 
 \keyword{IO}

@@ -5,6 +5,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // get_block_names
 Rcpp::CharacterVector get_block_names(std::string path, std::string format_name, std::string options);
 RcppExport SEXP _rxylib_get_block_names(SEXP pathSEXP, SEXP format_nameSEXP, SEXP optionsSEXP) {
