@@ -3,8 +3,8 @@ Type: Package
 Title: Import XY-Data into R 
 Description: Provides access to the 'xylib' C library for to import xy 
   data from powder diffraction, spectroscopy and other experimental methods.
-Version: 0.2.7.9000-8
-Date: 2020-12-10
+Version: 0.2.7.9000-12
+Date: 2021-11-19
 Author: Sebastian Kreutzer [aut, trl, cre] (<https://orcid.org/0000-0002-0734-2199>), 
   Johannes Friedrich [aut] (<https://orcid.org/0000-0002-0805-9547>),
   RLum Team [ctb],
@@ -21,16 +21,16 @@ URL: https://github.com/R-Lum/rxylib
 BugReports: https://github.com/R-Lum/rxylib/issues
 License: GPL-3 | LGPL-2.1
 Depends:
-    R (>= 3.5.0),
+    R (>= 4.0.0),
     utils
 Imports: 
     methods,
-    Rcpp (>= 1.0.5)
+    Rcpp (>= 1.0.7)
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.1.0)
 LinkingTo:
-   Rcpp (>= 1.0.5),
-   BH (>= 1.72.0)
+   Rcpp (>= 1.0.7),
+   BH (>= 1.75.0)
 Encoding: UTF-8
 Language: en-GB
 Collate: 
@@ -39,4 +39,4 @@ Collate:
     'RcppExports.R'
     'read_xyData.R'
     'convert_xy2TKA.R'
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2

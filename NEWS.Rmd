@@ -9,7 +9,11 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
+** This package version requires R >= 4.0.0 **
+
 * Update to work with `'testthat'` >= 3.0.0
+* Include latest commits from the `xylib` between 2020-09-15 and `r Sys.Date()`
+(still library version 1.6)
 
 ## rxylib 0.2.6 (Release date: 2020-09-15)
 
