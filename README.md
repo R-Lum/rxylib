@@ -11,7 +11,6 @@ The **R** package `rxylib` provides and access to the C++ library
 [xylib](http://xylib.sourceforge.net) by wrapping the library using
 Rcpp. For supported data formats see <https://github.com/wojdyr/xylib>.
 
-[![Rdoc](https://www.rdocumentation.org/badges/version/rxylib)](https://www.rdocumentation.org/packages/rxylib)
 [![CRAN](https://www.r-pkg.org/badges/version/rxylib)](https://CRAN.R-project.org/package=rxylib)
 [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/rxylib)](https://www.r-pkg.org/pkg/rxylib)
 [![Build
