@@ -67,7 +67,7 @@ jobs:
             eval sudo $cmd
           done < <(Rscript -e 'writeLines(remotes::system_requirements("ubuntu", "20.04"))')
 
-     - name: Install ghostscript (Linux)
+      - name: Install ghostscript (Linux)
         if: runner.os == 'Linux'
         run: |
           sudo apt-get install -y ghostscript
