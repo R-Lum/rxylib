@@ -20,6 +20,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -32,18 +34,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">rxylib</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.7.9000-3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.7</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
@@ -53,8 +49,8 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/R-Lum/rxylib/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/R-Lum/rxylib/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -71,72 +67,92 @@
       </header><div class="row">
   <div class="contents col-md-9">
 
-<div id="rxylib-" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#rxylib-" class="anchor"></a>rxylib <img width="120px" src="reference/figures/rxylib.svg" align="right">
+<div class="section level1">
+<div class="page-header"><h1 id="rxylib-">rxylib
+<img width="120px" src="reference/figures/rxylib.svg" align="right"><a class="anchor" aria-label="anchor" href="#rxylib-"></a>
 </h1></div>
-<p>The <strong>R</strong> package <code>rxylib</code> provides and access to the C++ library <a href="http://xylib.sourceforge.net">xylib</a> by wrapping the library using Rcpp. For supported data formats see <a href="https://github.com/wojdyr/xylib" class="uri">https://github.com/wojdyr/xylib</a>.</p>
-<p><a href="https://www.rdocumentation.org/packages/rxylib"><img src="https://www.rdocumentation.org/badges/version/rxylib" alt="Rdoc"></a> <a href="https://CRAN.R-project.org/package=rxylib"><img src="https://www.r-pkg.org/badges/version/rxylib" alt="CRAN"></a> <a href="https://www.r-pkg.org/pkg/rxylib"><img src="https://cranlogs.r-pkg.org/badges/grand-total/rxylib" alt="Downloads"></a> <a href="https://ci.appveyor.com/project/RLumSK/rxylib/branch/master"><img src="https://ci.appveyor.com/api/projects/status/7mmfpmo23k3iaq57/branch/master?svg=true" alt="Build status"></a> <a href="https://travis-ci.org/R-Lum/rxylib"><img src="https://travis-ci.org/R-Lum/rxylib.svg?branch=master" alt="Build Status"></a> <a href="https://zenodo.org/badge/latestdoi/95584252"><img src="https://zenodo.org/badge/95584252.svg" alt="DOI"></a> <a href="https://codecov.io/github/R-Lum/rxylib?branch=master"><img src="https://img.shields.io/codecov/c/github/R-Lum/rxylib.svg" alt="Coverage Status"></a></p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<div id="i-requirements" class="section level4">
-<h4 class="hasAnchor">
-<a href="#i-requirements" class="anchor"></a>i. Requirements</h4>
+<p>The <strong>R</strong> package <code>rxylib</code> provides and
+access to the C++ library <a href="http://xylib.sourceforge.net" class="external-link">xylib</a> by wrapping the library
+using Rcpp. For supported data formats see <a href="https://github.com/wojdyr/xylib" class="external-link uri">https://github.com/wojdyr/xylib</a>.</p>
+<p><a href="https://CRAN.R-project.org/package=rxylib" class="external-link"><img src="https://www.r-pkg.org/badges/version/rxylib" alt="CRAN"></a> <a href="https://www.r-pkg.org/pkg/rxylib" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/grand-total/rxylib" alt="Downloads"></a> <a href="https://ci.appveyor.com/project/RLumSK/rxylib/branch/master" class="external-link"><img src="https://ci.appveyor.com/api/projects/status/7mmfpmo23k3iaq57/branch/master?svg=true" alt="Build status"></a> <a href="https://github.com/R-Lum/rxylib/actions" class="external-link"><img src="https://github.com/R-Lum/rxylib/workflows/GitHub%20Actions%20CI/badge.svg" alt="R-CMD-check"></a> <a href="https://zenodo.org/badge/latestdoi/95584252" class="external-link"><img src="https://zenodo.org/badge/95584252.svg" alt="DOI"></a> <a href="https://codecov.io/github/R-Lum/rxylib?branch=master" class="external-link"><img src="https://img.shields.io/codecov/c/github/R-Lum/rxylib.svg" alt="Coverage Status"></a></p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<div class="section level4">
+<h4 id="i-requirements">i. Requirements<a class="anchor" aria-label="anchor" href="#i-requirements"></a>
+</h4>
 <ul>
 <li>
-<em>Windows (32/64bit)</em>: <a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools</a> (provided by CRAN)</li>
+<em>Windows (32/64bit)</em>: <a href="https://cran.r-project.org/bin/windows/Rtools/" class="external-link">Rtools</a>
+(provided by CRAN)</li>
 <li>
-<em>macOS</em>: <a href="https://developer.apple.com/xcode/downloads/">Xcode</a> (provided by Apple)</li>
+<em>macOS</em>: <a href="https://developer.apple.com/xcode/" class="external-link">Xcode</a>
+</li>
 <li>
-<em>Linux</em>: <a href="https://gcc.gnu.org">gcc</a> often comes pre-installed in most distributions.</li>
+<em>Linux</em>: <a href="https://gcc.gnu.org" class="external-link">gcc</a> often comes
+pre-installed in most distributions.</li>
 </ul>
 </div>
-<div id="ii-install-the-package-development-version" class="section level4">
-<h4 class="hasAnchor">
-<a href="#ii-install-the-package-development-version" class="anchor"></a>ii. Install the package (development version)</h4>
-<p>To install the stable version from CRAN, simply run the following from an R console:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"rxylib"</span>)
-</pre></div>
-<p>To install the latest development builds directly from GitHub, run</p>
-<div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="co">if</span>(<span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="st"><a href="https://devtools.r-lib.org">"devtools"</a></span>))
-  <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"devtools"</span>)
-<span class="kw">devtools</span>::<span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"R-Lum/rxylib@master"</span>)
-</pre></div>
-<p>To install a developer build other than <code>'master'</code>, replace the term <code>'master'</code> in the code line by the name of the wanted developer build.</p>
+<div class="section level4">
+<h4 id="ii-install-the-package-development-version">ii. Install the package (development version)<a class="anchor" aria-label="anchor" href="#ii-install-the-package-development-version"></a>
+</h4>
+<p>To install the stable version from CRAN, simply run the following
+from an R console:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"rxylib"</span><span class="op">)</span></code></pre></div>
+<p>To install the latest development builds directly from GitHub,
+run</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://devtools.r-lib.org/" class="external-link">"devtools"</a></span><span class="op">)</span><span class="op">)</span>
+  <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"R-Lum/rxylib@master"</span><span class="op">)</span></code></pre></div>
+<p>To install a developer build other than <code>'master'</code>,
+replace the term <code>'master'</code> in the code line by the name of
+the wanted developer build.</p>
 </div>
 </div>
-<div id="related-projects" class="section level2">
-<h2 class="hasAnchor">
-<a href="#related-projects" class="anchor"></a>Related projects</h2>
+<div class="section level2">
+<h2 id="related-projects">Related projects<a class="anchor" aria-label="anchor" href="#related-projects"></a>
+</h2>
 <ul>
-<li><a href="https://github.com/JohannesFriedrich/rxylibShiny">rxylibShiny</a></li>
+<li><a href="https://github.com/JohannesFriedrich/rxylibShiny" class="external-link">rxylibShiny</a></li>
 </ul>
 </div>
 </div>
-<div id="licenses" class="section level1">
-<h1 class="hasAnchor">
-<a href="#licenses" class="anchor"></a>Licenses</h1>
+<div class="section level1">
+<h1 id="licenses">Licenses<a class="anchor" aria-label="anchor" href="#licenses"></a>
+</h1>
 <p>Please note that the package uses two different licences</p>
-<div id="package-rxylib-license" class="section level2">
-<h2 class="hasAnchor">
-<a href="#package-rxylib-license" class="anchor"></a>Package <code>rxylib</code> license</h2>
-<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.</p>
-<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <a href="https://github.com/R-Lum/rxylib/blob/master/LICENSE">GNU General Public License</a> for more details.</p>
+<div class="section level2">
+<h2 id="package-rxylib-license">Package <code>rxylib</code> license<a class="anchor" aria-label="anchor" href="#package-rxylib-license"></a>
+</h2>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or any later
+version.</p>
+<p>This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <a href="https://github.com/R-Lum/rxylib/blob/master/LICENSE" class="external-link">GNU General
+Public License</a> for more details.</p>
 </div>
-<div id="library-xylib-license" class="section level2">
-<h2 class="hasAnchor">
-<a href="#library-xylib-license" class="anchor"></a>Library <code>xylib</code> license</h2>
-<p>The library itself is <strong>NOT</strong> part of the GPL-3 license conditions of the package and available under <a href="https://github.com/wojdyr/xylib/blob/master/COPYING">LGPL</a> license conditions only cf. <a href="https://github.com/wojdyr/xylib" class="uri">https://github.com/wojdyr/xylib</a></p>
+<div class="section level2">
+<h2 id="library-xylib-license">Library <code>xylib</code> license<a class="anchor" aria-label="anchor" href="#library-xylib-license"></a>
+</h2>
+<p>The library itself is <strong>NOT</strong> part of the GPL-3 license
+conditions of the package and available under <a href="https://github.com/wojdyr/xylib/blob/master/COPYING" class="external-link">LGPL</a>
+license conditions only cf. <a href="https://github.com/wojdyr/xylib" class="external-link uri">https://github.com/wojdyr/xylib</a></p>
 </div>
-<div id="-funding" class="section level2">
-<h2 class="hasAnchor">
-<a href="#-funding" class="anchor"></a><span class="glyphicon glyphicon-euro"></span> Funding</h2>
+<div class="section level2">
+<h2 id="-funding">
+<span class="glyphicon glyphicon-euro"></span> Funding<a class="anchor" aria-label="anchor" href="#-funding"></a>
+</h2>
 <ul>
-<li><p>Between 2017-2019, the work of Sebastian Kreutzer as maintainer of the package was supported by LabEx LaScArBx (ANR - n. ANR-10-LABX-52).</p></li>
-<li><p>From 2020, Sebastian Kreutzer received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 844457 (project: CREDit).</p></li>
+<li><p>Between 2017-2019, the work of Sebastian Kreutzer as maintainer
+of the package was supported by LabEx LaScArBx (ANR -
+n. ANR-10-LABX-52).</p></li>
+<li><p>From 2020, Sebastian Kreutzer received funding from the European
+Union’s Horizon 2020 research and innovation programme under the Marie
+Skłodowska-Curie grant agreement No 844457 (project: CREDit).</p></li>
 </ul>
 </div>
 </div>
@@ -145,42 +161,54 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=rxylib">https://​cloud.r-project.org/​package=rxylib</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/R-Lum/rxylib/">https://​github.com/​R-Lum/​rxylib/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/R-Lum/rxylib/issues">https://​github.com/​R-Lum/​rxylib/​issues</a>
-</li>
+<li><a href="https://cloud.r-project.org/package=rxylib" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/R-Lum/rxylib/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/R-Lum/rxylib/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li>
-<a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a> | <a href="https://www.r-project.org/Licenses/LGPL-2">LGPL-2</a>.1</li>
+<a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a> | <a href="https://www.r-project.org/Licenses/LGPL-2" class="external-link">LGPL-2</a>.1</li>
 </ul>
 </div>
-<div class="developers">
-<h2>Developers</h2>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li>Sebastian Kreutzer <br><small class="roles"> Author, translator, maintainer </small> <a href="https://orcid.org/0000-0002-0734-2199" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Johannes Friedrich <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-0805-9547" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li><a href="authors.html">All authors...</a></li>
+<li><a href="authors.html#citation">Citing rxylib</a></li>
 </ul>
 </div>
+
+<div class="developers">
+<h2 data-toc-skip>Developers</h2>
+<ul class="list-unstyled">
+<li>Sebastian Kreutzer <br><small class="roles"> Author, translator, maintainer </small> <a href="https://orcid.org/0000-0002-0734-2199" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Johannes Friedrich <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-0805-9547" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li><a href="authors.html">More about authors...</a></li>
+</ul>
+</div>
+
+
 
   </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Sebastian Kreutzer, Johannes Friedrich.</p>
+  <p></p>
+<p>Developed by Sebastian Kreutzer, Johannes Friedrich.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a>
+2.0.2.</p>
 </div>
 
       </footer>
@@ -188,6 +216,8 @@
 
   
 
+
+  
 
   </body>
 </html>

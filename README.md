@@ -27,8 +27,7 @@ Status](https://img.shields.io/codecov/c/github/R-Lum/rxylib.svg)](https://codec
 -   *Windows (32/64bit)*:
     [Rtools](https://cran.r-project.org/bin/windows/Rtools/) (provided
     by CRAN)
--   *macOS*: [Xcode](https://developer.apple.com/xcode/downloads/)
-    (provided by Apple)
+-   *macOS*: [Xcode](https://developer.apple.com/xcode/)
 -   *Linux*: [gcc](https://gcc.gnu.org) often comes pre-installed in
     most distributions.
 
