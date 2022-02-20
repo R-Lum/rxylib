@@ -1,23 +1,19 @@
 {
-  "@context": [
-    "https://doi.org/10.5063/schema/codemeta-2.0",
-    "http://schema.org"
-  ],
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "rxylib",
-  "description": "Provides access to the 'xylib' C library for to import xy \n  data from powder diffraction, spectroscopy and other experimental methods.",
+  "description": "Provides access to the 'xylib' C library for to import xy data from powder diffraction, spectroscopy and other experimental methods.",
   "name": "rxylib: Import XY-Data into R ",
   "codeRepository": "https://github.com/R-Lum/rxylib",
   "issueTracker": "https://github.com/R-Lum/rxylib/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.2.5.9000.4",
+  "version": "0.2.7",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "4.0.0",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R Under development (unstable) (2019-11-07 r77386)",
+  "runtimePlatform": "R Under development (unstable) (2022-02-15 r81747)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -29,7 +25,7 @@
       "@type": "Person",
       "givenName": "Sebastian",
       "familyName": "Kreutzer",
-      "email": "sebastian.kreutzer@u-bordeaux-montaigne.fr",
+      "email": "sebastian.kreutzer@aber.ac.uk",
       "@id": "https://orcid.org/0000-0002-0734-2199"
     },
     {
@@ -47,7 +43,7 @@
       "@type": "Person",
       "givenName": "Sebastian",
       "familyName": "Kreutzer",
-      "email": "sebastian.kreutzer@u-bordeaux-montaigne.fr",
+      "email": "sebastian.kreutzer@aber.ac.uk",
       "@id": "https://orcid.org/0000-0002-0734-2199"
     }
   ],
@@ -63,13 +59,12 @@
       "familyName": "Zhang"
     }
   ],
-  "funder": {},
   "maintainer": [
     {
       "@type": "Person",
       "givenName": "Sebastian",
       "familyName": "Kreutzer",
-      "email": "sebastian.kreutzer@u-bordeaux-montaigne.fr",
+      "email": "sebastian.kreutzer@aber.ac.uk",
       "@id": "https://orcid.org/0000-0002-0734-2199"
     }
   ],
@@ -78,7 +73,7 @@
       "@type": "SoftwareApplication",
       "identifier": "testthat",
       "name": "testthat",
-      "version": ">= 1.0.2",
+      "version": ">= 3.1.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -88,28 +83,28 @@
       "sameAs": "https://CRAN.R-project.org/package=testthat"
     }
   ],
-  "softwareRequirements": [
-    {
+  "softwareRequirements": {
+    "1": {
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
-      "version": ">= 3.3.0"
+      "version": ">= 4.0"
     },
-    {
+    "2": {
       "@type": "SoftwareApplication",
       "identifier": "utils",
       "name": "utils"
     },
-    {
+    "3": {
       "@type": "SoftwareApplication",
       "identifier": "methods",
       "name": "methods"
     },
-    {
+    "4": {
       "@type": "SoftwareApplication",
       "identifier": "Rcpp",
       "name": "Rcpp",
-      "version": ">= 0.12.11",
+      "version": ">= 1.0.8",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -117,20 +112,11 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=Rcpp"
-    }
-  ],
+    },
+    "SystemRequirements": null
+  },
+  "fileSize": "1226.355KB",
   "releaseNotes": "https://github.com/R-Lum/rxylib/blob/master/NEWS.md",
-  "readme": "https://github.com/R-Lum/rxylib/blob/master/README.md",
-  "contIntegration": [
-    "https://ci.appveyor.com/project/RLumSK/rxylib/branch/master",
-    "https://travis-ci.org/R-Lum/rxylib",
-    "https://codecov.io/github/R-Lum/rxylib?branch=master"
-  ],
-  "keywords": [
-    "gamma-ray-spectrometry",
-    "diffraction-analysis",
-    "data-import",
-    "powder-diffraction"
-  ],
+  "contIntegration": ["https://ci.appveyor.com/project/RLumSK/rxylib/branch/master", "https://codecov.io/github/R-Lum/rxylib?branch=master"],
   "relatedLink": "https://CRAN.R-project.org/package=rxylib"
 }
