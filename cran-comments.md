@@ -1,6 +1,8 @@
 ## Release summary
 
-This release updates ...
+Addresses CRAN request received by email from Kurt Hornik 2022-02-17: 
+
+> rxylib::rxylib-package.Rd: Warning: <img> attribute "width" has invalid value "50px"
 
 ## R CMD check results
 There were no ERRORs or WARNINGs.
