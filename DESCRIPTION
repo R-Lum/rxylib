@@ -11,12 +11,12 @@ Author: Sebastian Kreutzer [aut, trl, cre] (<https://orcid.org/0000-0002-0734-21
   Marcin Wojdyr [cph] (C++ library 'xylib'), 
   Peng Zhang [cph] (C++ library 'xylib')
 Authors@R: c(
-    person("Sebastian", "Kreutzer", role = c("aut", "trl", "cre"), email = "sebastian.kreutzer@aber.ac.uk", comment = c(ORCID = "0000-0002-0734-2199")),
+    person("Sebastian", "Kreutzer", role = c("aut", "trl", "cre"), email = "sebastian.kreutzer@uni-heidelberg.de", comment = c(ORCID = "0000-0002-0734-2199")),
     person("Johannes Friedrich", role = c("aut"), comment = c(ORCID = "0000-0002-0805-9547")), 
     person(family = "RLum Team", role = "ctb"),
     person("Marcin", "Wojdyr", role = c("cph"), comment = "C++ library 'xylib'"),
     person("Peng", "Zhang", role = c("cph"), comment = "C++ library 'xylib'"))
-Maintainer: Sebastian Kreutzer <sebastian.kreutzer@aber.ac.uk>
+Maintainer: Sebastian Kreutzer <sebastian.kreutzer@uni-heidelberg.de>
 URL: https://github.com/R-Lum/rxylib
 BugReports: https://github.com/R-Lum/rxylib/issues
 License: GPL-3 | LGPL-2.1
