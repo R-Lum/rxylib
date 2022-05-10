@@ -9,5 +9,6 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
-* Dummy
+* Upstream fetch to include latest library changes and avoid
+compiler warnings
 
