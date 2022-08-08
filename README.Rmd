@@ -83,7 +83,7 @@ license conditions only cf. https://github.com/wojdyr/xylib
 * Between 2017-2019, the work of Sebastian Kreutzer as maintainer of the package was supported
 by LabEx LaScArBx (ANR - n. ANR-10-LABX-52).
 
-* From 2020, Sebastian Kreutzer received funding from the European Union’s Horizon 2020 
+* From 01/2020-04/2022, Sebastian Kreutzer received funding from the European Union’s Horizon 2020 
 research and innovation programme under the Marie Skłodowska-Curie grant
 agreement No 844457 (project: CREDit).
 
@@ -94,7 +94,7 @@ agreement No 844457 (project: CREDit).
 ### 2019-05-08
 ### ==========================================================================================
 
-##run only if not alrady there (otherwise we create it two time)
+##run only if not already there (otherwise we create it two time)
 if(!any(
   grepl(
     pattern = "library version:", 
