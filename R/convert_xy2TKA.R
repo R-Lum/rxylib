@@ -18,9 +18,9 @@
 #'
 #' @param overwrite [logical] (with default): force overwriting of existing files if `TRUE`.
 #'
-#' @section Function version: 0.1.0
+#' @section Function version: 0.1.1
 #'
-#' @author Sebastian Kreutzer, IRAMAT-CRP2A, Université Bordeaux Montaigne (France)
+#' @author Sebastian Kreutzer, Institute of Geography, Universität Heidelberg, Germany
 #'
 #' @return Returns a [list] of [matrix] objects or an output TKA-file.
 #'
@@ -56,14 +56,14 @@ convert_xy2TKA <- function(
 
 
   # self call -----------------------------------------------------------------------------------
-  if(class(object) == "list" || (class(object) == "character" && length(object) > 1)){
+  if(inherits(object, "list") || (inherits(object, "character") && length(object) > 1)){
 
     ##convert to list in either case
-    if(class(object) == "character")
+    if(inherits(object, "character"))
       object <- as.list(object)
 
     ##expand
-    if(class(file) == "list"){
+    if(inherits(file, "list")){
       file <- rep_len(file,length.out = length(object))
 
     }else{
@@ -89,7 +89,7 @@ convert_xy2TKA <- function(
   # Integrity tests -----------------------------------------------------------------------------
   ##The functions allows to inputs
   ##(1) object can be a file connection ... here a character
-  if(class(object) == "character"){
+  if(inherits(object, "character")){
     file_name <- basename(object)
     object <- read_xyData(object, verbose = FALSE)
 
@@ -99,8 +99,9 @@ convert_xy2TKA <- function(
   }
 
   ##(2) object is just an object
-  if(class(object) != "rxylib")
-    stop("[write_xy2TKA()] Argument 'object' requires an S3-object of class 'rxylib'")
+  if(!inherits(object, "rxylib"))
+    stop("[write_xy2TKA()] Argument 'object' requires an S3-object of class 'rxylib'",
+         call. = FALSE)
 
   # Convert -------------------------------------------------------------------------------------
 
