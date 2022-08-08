@@ -19,7 +19,7 @@ The function automatically recognises allowed formats. See rxylib-package for su
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">rxylib</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.7</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.8</span>
       </span>
     </div>
 
@@ -57,23 +57,32 @@ The function automatically recognises allowed formats. See <a href="rxylib-packa
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">read_xyData</span><span class="op">(</span><span class="va">file</span>, options <span class="op">=</span> <span class="st">""</span>, verbose <span class="op">=</span> <span class="cn">TRUE</span>, metaData <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">read_xyData</span><span class="op">(</span><span class="va">file</span>, options <span class="op">=</span> <span class="st">""</span>, verbose <span class="op">=</span> <span class="cn">TRUE</span>, metaData <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>file</dt>
 <dd><p><a href="https://rdrr.io/r/base/character.html" class="external-link">character</a> (<strong>required</strong>): path and file to be imported. The argument accepts an <code>URL</code>.</p></dd>
+
+
 <dt>options</dt>
 <dd><p><a href="https://rdrr.io/r/base/character.html" class="external-link">character</a> (with default): set format options (see <a href="rxylib-package.html">rxylib-package</a>)</p></dd>
+
+
 <dt>verbose</dt>
 <dd><p><a href="https://rdrr.io/r/base/logical.html" class="external-link">logical</a> (<em>with default</em>): enables/disables verbose mode</p></dd>
+
+
 <dt>metaData</dt>
 <dd><p><a href="https://rdrr.io/r/base/logical.html" class="external-link">logical</a> (<em>with default</em>): enables/disables the export of metadata</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>The functions returns a <a href="https://rdrr.io/r/base/list.html" class="external-link">list</a> of matrices.</p>
+    
+
+<p>The functions returns a <a href="https://rdrr.io/r/base/list.html" class="external-link">list</a> of matrices.</p>
     </div>
     <div id="function-version">
     <h2>Function version</h2>
@@ -86,18 +95,18 @@ University of Bayreuth (Germany)</p>
     </div>
     <div id="how-to-cite">
     <h2>How to cite</h2>
-    <p>Kreutzer, S., Friedrich, J., 2022. read_xyData(): Import xy-Data for Supported Formats into R. Function version 0.3.0. In: Kreutzer, S., Friedrich, J., 2022. rxylib: Import XY-Data into R . R package version 0.2.7. https://github.com/R-Lum/rxylib</p>
+    <p>Kreutzer, S., Friedrich, J., 2022. read_xyData(): Import xy-Data for Supported Formats into R. Function version 0.3.0. In: Kreutzer, S., Friedrich, J., 2022. rxylib: Import XY-Data into R . R package version 0.2.8. https://github.com/R-Lum/rxylib</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"></span>
-<span class="r-in"><span class="co">##load example dataset</span></span>
-<span class="r-in"><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/ExampleSpectrum.CNF"</span>, package <span class="op">=</span> <span class="st">"rxylib"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">results</span> <span class="op">&lt;-</span> <span class="fu">read_xyData</span><span class="op">(</span><span class="va">file</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">##load example dataset</span></span></span>
+<span class="r-in"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/ExampleSpectrum.CNF"</span>, package <span class="op">=</span> <span class="st">"rxylib"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">results</span> <span class="op">&lt;-</span> <span class="fu">read_xyData</span><span class="op">(</span><span class="va">file</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [read_xyData()] &gt;&gt; File of type Canberra CNF detected</span>
-<span class="r-in"><span class="va">results</span></span>
+<span class="r-in"><span><span class="va">results</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [rxylib-object]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -108,32 +117,32 @@ University of Bayreuth (Germany)</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   &lt;&lt; block 1 : Thorit Kalibrierung &gt;&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   .. $data_block 	 matrix : 2048 x 2</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   .. $metadata_block 	 TRUE</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">##plot xy-spectrum</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">results</span>,</span>
-<span class="r-in"> type <span class="op">=</span> <span class="st">"l"</span>,</span>
-<span class="r-in"> xlab <span class="op">=</span> <span class="st">"Energy [keV]"</span>,</span>
-<span class="r-in"> ylab <span class="op">=</span> <span class="st">"Counts"</span>,</span>
-<span class="r-in"> main <span class="op">=</span> <span class="st">"Thorite - 1800 s"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/mtext.html" class="external-link">mtext</a></span><span class="op">(</span>side <span class="op">=</span> <span class="fl">3</span>, <span class="st">"Canberra Inspector 1000, 3 x 3 NaI probe"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">##plot xy-spectrum</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">results</span>,</span></span>
+<span class="r-in"><span> type <span class="op">=</span> <span class="st">"l"</span>,</span></span>
+<span class="r-in"><span> xlab <span class="op">=</span> <span class="st">"Energy [keV]"</span>,</span></span>
+<span class="r-in"><span> ylab <span class="op">=</span> <span class="st">"Counts"</span>,</span></span>
+<span class="r-in"><span> main <span class="op">=</span> <span class="st">"Thorite - 1800 s"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/mtext.html" class="external-link">mtext</a></span><span class="op">(</span>side <span class="op">=</span> <span class="fl">3</span>, <span class="st">"Canberra Inspector 1000, 3 x 3 NaI probe"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="read_xyData-1.png" alt="" width="700" height="433"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">##plot contour for TL-spectrum</span></span>
-<span class="r-in"><span class="co">##imported from an XSYG-file</span></span>
-<span class="r-in"><span class="va">spectrum</span> <span class="op">&lt;-</span> <span class="fu">read_xyData</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/TLSpectrum.xsyg"</span>, package <span class="op">=</span> <span class="st">"rxylib"</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">##plot contour for TL-spectrum</span></span></span>
+<span class="r-in"><span><span class="co">##imported from an XSYG-file</span></span></span>
+<span class="r-in"><span><span class="va">spectrum</span> <span class="op">&lt;-</span> <span class="fu">read_xyData</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/TLSpectrum.xsyg"</span>, package <span class="op">=</span> <span class="st">"rxylib"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [read_xyData()] &gt;&gt; File of type Freiberg Instruments XSYG detected</span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/contour.html" class="external-link">contour</a></span><span class="op">(</span></span>
-<span class="r-in"> x <span class="op">=</span> <span class="va">spectrum</span><span class="op">$</span><span class="va">dataset</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">data_block</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span>,</span>
-<span class="r-in"> y <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">ncol</a></span><span class="op">(</span><span class="va">spectrum</span><span class="op">$</span><span class="va">dataset</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">data_block</span><span class="op">[</span>,<span class="op">-</span><span class="fl">1</span><span class="op">]</span><span class="op">)</span>,</span>
-<span class="r-in"> z <span class="op">=</span> <span class="va">spectrum</span><span class="op">$</span><span class="va">dataset</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">data_block</span><span class="op">[</span>,<span class="op">-</span><span class="fl">1</span><span class="op">]</span>,</span>
-<span class="r-in"> xlab <span class="op">=</span> <span class="st">"Wavelength [nm]"</span>,</span>
-<span class="r-in"> ylab <span class="op">=</span> <span class="st">"#Channel"</span>,</span>
-<span class="r-in"> main <span class="op">=</span> <span class="st">"TL Spectrum"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/contour.html" class="external-link">contour</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span> x <span class="op">=</span> <span class="va">spectrum</span><span class="op">$</span><span class="va">dataset</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">data_block</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span>,</span></span>
+<span class="r-in"><span> y <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">ncol</a></span><span class="op">(</span><span class="va">spectrum</span><span class="op">$</span><span class="va">dataset</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">data_block</span><span class="op">[</span>,<span class="op">-</span><span class="fl">1</span><span class="op">]</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span> z <span class="op">=</span> <span class="va">spectrum</span><span class="op">$</span><span class="va">dataset</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">data_block</span><span class="op">[</span>,<span class="op">-</span><span class="fl">1</span><span class="op">]</span>,</span></span>
+<span class="r-in"><span> xlab <span class="op">=</span> <span class="st">"Wavelength [nm]"</span>,</span></span>
+<span class="r-in"><span> ylab <span class="op">=</span> <span class="st">"#Channel"</span>,</span></span>
+<span class="r-in"><span> main <span class="op">=</span> <span class="st">"TL Spectrum"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="read_xyData-2.png" alt="" width="700" height="433"></span>
-<span class="r-in"></span>
-<span class="r-in"></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -148,8 +157,7 @@ University of Bayreuth (Germany)</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a>
-2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer></div>

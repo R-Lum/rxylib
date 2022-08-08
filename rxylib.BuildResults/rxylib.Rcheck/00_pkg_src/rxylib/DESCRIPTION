@@ -1,0 +1,33 @@
+Package: rxylib
+Type: Package
+Title: Import XY-Data into R
+Description: Provides access to the 'xylib' C library for to import xy 
+  data from powder diffraction, spectroscopy and other experimental methods.
+Version: 0.2.8
+Date: 2022-08-08
+Author: Sebastian Kreutzer [aut, trl, cre] (<https://orcid.org/0000-0002-0734-2199>), 
+  Johannes Friedrich [aut] (<https://orcid.org/0000-0002-0805-9547>),
+  RLum Team [ctb],
+  Marcin Wojdyr [cph] (C++ library 'xylib'), 
+  Peng Zhang [cph] (C++ library 'xylib')
+Authors@R: c(
+    person("Sebastian", "Kreutzer", role = c("aut", "trl", "cre"), email = "sebastian.kreutzer@uni-heidelberg.de", comment = c(ORCID = "0000-0002-0734-2199")),
+    person("Johannes Friedrich", role = c("aut"), comment = c(ORCID = "0000-0002-0805-9547")), 
+    person(family = "RLum Team", role = "ctb"),
+    person("Marcin", "Wojdyr", role = c("cph"), comment = "C++ library 'xylib'"),
+    person("Peng", "Zhang", role = c("cph"), comment = "C++ library 'xylib'"))
+Maintainer: Sebastian Kreutzer <sebastian.kreutzer@uni-heidelberg.de>
+URL: https://github.com/R-Lum/rxylib
+BugReports: https://github.com/R-Lum/rxylib/issues
+License: GPL-3 | LGPL-2.1
+Depends: R (>= 4.1), utils
+Imports: methods, Rcpp (>= 1.0.9)
+Suggests: testthat (>= 3.1.4)
+LinkingTo: Rcpp (>= 1.0.9), BH (>= 1.78.0)
+Encoding: UTF-8
+Language: en-GB
+Collate: 'methods_rxylib.R' 'rxylib.R' 'RcppExports.R' 'read_xyData.R'
+        'convert_xy2TKA.R'
+RoxygenNote: 7.2.1
+NeedsCompilation: yes
+Packaged: 2022-08-08 16:01:33 UTC; kreutzer

@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">rxylib</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.7</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.8</span>
       </span>
     </div>
 
@@ -48,85 +48,10 @@
     </div>
 
     <div class="section level2">
-<h2 class="page-header" data-toc-text="0.2.7" id="changes-in-version-027-2022-02-20">Changes in version 0.2.7 (2022-02-20)<a class="anchor" aria-label="anchor" href="#changes-in-version-027-2022-02-20"></a></h2>
-<p><strong>This package version requires R &gt;= 4.0.0</strong></p>
-<ul><li>Update to work with <code>'testthat'</code> &gt;= 3.0.0</li>
-<li>Include latest commits from the <code>xylib</code> between
-2020-09-15 and 2022-02-20 (still library version 1.6)</li>
-</ul></div>
-    <div class="section level2">
-<h2 class="page-header" data-toc-text="0.2.6" id="rxylib-026-release-date-2020-09-15">rxylib 0.2.6 (Release date: 2020-09-15)<small>2020-09-14</small><a class="anchor" aria-label="anchor" href="#rxylib-026-release-date-2020-09-15"></a></h2>
-<ul><li>This version requires R &gt;= 3.5.0</li>
-<li>Update to the latest <code>xylib</code> version (1.6), which fixes
-the not working import of SPC-files and comes with partly re-factored
-code.</li>
-</ul></div>
-    <div class="section level2">
-<h2 class="page-header" data-toc-text="0.2.5" id="rxylib-025-never-released">rxylib 0.2.5 (never released)<a class="anchor" aria-label="anchor" href="#rxylib-025-never-released"></a></h2>
-</div>
-    <div class="section level2">
-<h2 class="page-header" data-toc-text="0.2.4" id="rxylib-024-release-date-2019-06-05">rxylib 0.2.4 (Release date: 2019-06-05)<small>2019-06-05</small><a class="anchor" aria-label="anchor" href="#rxylib-024-release-date-2019-06-05"></a></h2>
-<div class="section level3">
-<h3 id="bugfixes-and-other-changes-0-2-4">Bugfixes and other changes<a class="anchor" aria-label="anchor" href="#bugfixes-and-other-changes-0-2-4"></a></h3>
-<ul><li>Update to newest library version</li>
-<li>Add rxylib logo</li>
-<li>Remove <code>log</code> from example to avoid warning</li>
-</ul></div>
-<div class="section level3">
-<h3 id="internals-0-2-4">Internals<a class="anchor" aria-label="anchor" href="#internals-0-2-4"></a></h3>
-<ul><li>Address CRAN R-devel complains regarding an unneeded Makevars
-entry</li>
-</ul></div>
-</div>
-    <div class="section level2">
-<h2 class="page-header" data-toc-text="0.2.3" id="rxylib-023-release-date-2019-04-11">rxylib 0.2.3 (Release date: 2019-04-11)<small>2019-04-11</small><a class="anchor" aria-label="anchor" href="#rxylib-023-release-date-2019-04-11"></a></h2>
-<ul><li>Set compiler flag to avoid
-<code>C++ 1998 does not support 'long long'</code> error on R-devel for
-Windows</li>
-<li>Remove unconditional stripping for symbols (CRAN request)</li>
-</ul></div>
-    <div class="section level2">
-<h2 class="page-header" data-toc-text="0.2.2" id="rxylib-022-release-date-2019-04-11">rxylib 0.2.2 (Release date: 2019-04-11)<a class="anchor" aria-label="anchor" href="#rxylib-022-release-date-2019-04-11"></a></h2>
-<ul><li>Update to newest <code>'xylib'</code> version</li>
-<li>Modify example in <code><a href="../reference/convert_xy2TKA.html">convert_xy2TKA()</a></code> to avoid CRAN
-problems</li>
-<li>Add README.md</li>
-<li>Switch to NEWS.md</li>
-</ul></div>
-    <div class="section level2">
-<h2 class="page-header" data-toc-text="0.2.1" id="rxylib-021-release-date-2017-12-20">rxylib 0.2.1 (Release date: 2017-12-20)<small>2017-12-20</small><a class="anchor" aria-label="anchor" href="#rxylib-021-release-date-2017-12-20"></a></h2>
-<ul><li>Add function <code><a href="../reference/convert_xy2TKA.html">convert_xy2TKA()</a></code>
-</li>
-<li>Reduction of the library size by stripping debug entries</li>
-</ul></div>
-    <div class="section level2">
-<h2 class="page-header" data-toc-text="0.2.0" id="rxylib-020-release-date-2017-07-28">rxylib 0.2.0 (Release date: 2017-07-28)<small>2017-07-27</small><a class="anchor" aria-label="anchor" href="#rxylib-020-release-date-2017-07-28"></a></h2>
-<ul><li>Add full support for file format metadata</li>
-<li>Add full support for column names (R like set to V1 and V2 if not
-provided otherwise)</li>
-<li>Add full support for block names</li>
-<li>Add S3-methods for <code>plot</code> and <code>print</code>
-</li>
-<li>Add new example dataset for a TL spectrum (XSYG-file format) and a
-ChiPlot (chi-file format)</li>
-<li>Add internal function <code>get_version</code> to return the
-<code>'xylib'</code> version number</li>
-<li>Unfortunately the table with the supported file format got missing
-during the last update round … again added</li>
-</ul></div>
-    <div class="section level2">
-<h2 class="page-header" data-toc-text="0.1.1" id="rxylib-011-release-date-2017-07-05">rxylib 0.1.1 (Release date: 2017-07-05)<small>2017-07-06</small><a class="anchor" aria-label="anchor" href="#rxylib-011-release-date-2017-07-05"></a></h2>
-<ul><li>Correct for CRAN error on Solaris platform</li>
-<li>Remove import of package <code>'stringr'</code>
-</li>
-<li>Correct faulty set value for multibock (fixed by Johannes
-Friedrich)</li>
-<li>Fix minor issue for case the data format is not obvious</li>
-<li>Update to newest <code>'xylib'</code> library version</li>
-</ul></div>
-    <div class="section level2">
-<h2 class="page-header" data-toc-text="0.1.0" id="rxylib-010-release-date-2017-06-30">rxylib 0.1.0 (Release date: 2017-06-30)<small>2017-06-30</small><a class="anchor" aria-label="anchor" href="#rxylib-010-release-date-2017-06-30"></a></h2>
-<ul><li>Initial version</li>
+<h2 class="page-header" data-toc-text="0.2.8" id="changes-in-version-028-2022-08-08">Changes in version 0.2.8 (2022-08-08)<a class="anchor" aria-label="anchor" href="#changes-in-version-028-2022-08-08"></a></h2>
+<ul><li><p>Upstream fetch to include latest library changes and avoid compiler warnings</p></li>
+<li><p>Fix wrong usage of <code><a href="https://rdrr.io/r/base/class.html" class="external-link">class()</a></code> in <code>if()</code> call (CRAN message)</p></li>
+<li><p>Update maintainer address</p></li>
 </ul></div>
   </div>
 
@@ -142,8 +67,7 @@ Friedrich)</li>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a>
-2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer></div>

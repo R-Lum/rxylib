@@ -1,0 +1,258 @@
+* installing *source* package ‘nloptr’ ...
+** package ‘nloptr’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether ccache clang++ -std=c++11 accepts -g... yes
+checking for ccache clang++ -std=c++11 option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... ccache clang++ -std=c++11 -E
+checking whether the compiler supports GNU C++... (cached) yes
+checking whether ccache clang++ -std=c++11 accepts -g... (cached) yes
+checking for ccache clang++ -std=c++11 option to enable C++11 features... (cached) none needed
+checking for pkg-config... /usr/local/bin/pkg-config
+checking if pkg-config knows NLopt... no
+checking for cmake... no
+set CMAKE_BIN=/Applications/CMake.app/Contents/bin/cmake
+using NLopt via local cmake build on x86_64 
+set CMAKE_BIN=/Applications/CMake.app/Contents/bin/cmake
+set CC=ccache clang
+set CFLAGS=-I/usr/local/include -fPIC -Wall -g -O2
+set CXX=clang++ -mmacosx-version-min=10.13
+set CXXFLAGS=-std=gnu++11 -I/usr/local/include -fPIC -Wall -g -O2
+set LDFLAGS=-L/usr/local/lib
+-- The C compiler identification is AppleClang 13.1.6.13160021
+-- The CXX compiler identification is AppleClang 13.1.6.13160021
+-- Check for working C compiler: /usr/local/bin/ccache
+-- Check for working C compiler: /usr/local/bin/ccache -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- NLopt version 2.7.1
+-- Looking for getopt.h
+-- Looking for getopt.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for time.h
+-- Looking for time.h - found
+-- Looking for sys/time.h
+-- Looking for sys/time.h - found
+-- Looking for getpid
+-- Looking for getpid - found
+-- Looking for syscall
+-- Looking for syscall - found
+-- Looking for isinf
+-- Looking for isinf - found
+-- Looking for isnan
+-- Looking for isnan - found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- Looking for qsort_r
+-- Looking for qsort_r - found
+-- Looking for time
+-- Looking for time - found
+-- Looking for copysign
+-- Looking for copysign - found
+-- Looking for getopt
+-- Looking for getopt - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of uint32_t
+-- Check size of uint32_t - done
+-- Check size of unsigned int
+-- Check size of unsigned int - done
+-- Check size of unsigned long
+-- Check size of unsigned long - done
+-- Looking for sqrt in m
+-- Looking for sqrt in m - found
+-- Looking for fpclassify
+-- Looking for fpclassify - TRUE
+-- Performing Test HAVE_THREAD_LOCAL_STORAGE
+-- Performing Test HAVE_THREAD_LOCAL_STORAGE - Success
+-- Performing Test HAVE_THREAD_LOCAL_STORAGE
+-- Performing Test HAVE_THREAD_LOCAL_STORAGE - Failed
+-- Looking for __cplusplus
+-- Looking for __cplusplus - found
+-- Performing Test SUPPORTS_STDCXX11
+-- Performing Test SUPPORTS_STDCXX11 - Success
+-- Performing Test HAS_FPIC
+-- Performing Test HAS_FPIC - Success
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt-build
+Scanning dependencies of target generate-cpp
+Scanning dependencies of target generate-fortran
+[  4%] [  4%] Generating nlopt.f
+Generating nlopt.hpp
+[  4%] Built target generate-fortran
+[  4%] Built target generate-cpp
+Scanning dependencies of target nlopt
+[  6%] [  8%] Building C object CMakeFiles/nlopt.dir/src/algs/direct/DIRect.c.o
+Building C object CMakeFiles/nlopt.dir/src/algs/direct/direct_wrap.c.o
+[ 10%] Building C object CMakeFiles/nlopt.dir/src/algs/direct/DIRserial.c.o
+/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt-src/src/algs/direct/DIRect.c:71:19: warning: variable 'newtosample' set but not used [-Wunused-but-set-variable]
+    integer pos1, newtosample;
+                  ^
+1 warning generated.
+[ 12%] Building C object CMakeFiles/nlopt.dir/src/algs/direct/DIRsubrout.c.o
+[ 14%] Building C object CMakeFiles/nlopt.dir/src/algs/cdirect/cdirect.c.o
+[ 16%] Building C object CMakeFiles/nlopt.dir/src/algs/cdirect/hybrid.c.o
+[ 18%] Building C object CMakeFiles/nlopt.dir/src/algs/praxis/praxis.c.o
+[ 20%] Building C object CMakeFiles/nlopt.dir/src/algs/luksan/plis.c.o
+[ 22%] Building C object CMakeFiles/nlopt.dir/src/algs/luksan/plip.c.o
+[ 24%] Building C object CMakeFiles/nlopt.dir/src/algs/luksan/pnet.c.o
+[ 26%] Building C object CMakeFiles/nlopt.dir/src/algs/luksan/mssubs.c.o
+[ 28%] Building C object CMakeFiles/nlopt.dir/src/algs/luksan/pssubs.c.o
+[ 30%] Building C object CMakeFiles/nlopt.dir/src/algs/crs/crs.c.o
+[ 32%] Building C object CMakeFiles/nlopt.dir/src/algs/mlsl/mlsl.c.o
+[ 34%] Building C object CMakeFiles/nlopt.dir/src/algs/mma/mma.c.o
+[ 36%] Building C object CMakeFiles/nlopt.dir/src/algs/mma/ccsa_quadratic.c.o
+[ 38%] Building C object CMakeFiles/nlopt.dir/src/algs/cobyla/cobyla.c.o
+[ 40%] Building C object CMakeFiles/nlopt.dir/src/algs/newuoa/newuoa.c.o
+[ 42%] Building C object CMakeFiles/nlopt.dir/src/algs/neldermead/nldrmd.c.o
+[ 44%] Building C object CMakeFiles/nlopt.dir/src/algs/neldermead/sbplx.c.o
+[ 46%] Building C object CMakeFiles/nlopt.dir/src/algs/auglag/auglag.c.o
+[ 48%] Building C object CMakeFiles/nlopt.dir/src/algs/bobyqa/bobyqa.c.o
+[ 50%] Building C object CMakeFiles/nlopt.dir/src/algs/isres/isres.c.o
+[ 52%] Building C object CMakeFiles/nlopt.dir/src/algs/slsqp/slsqp.c.o
+[ 54%] Building C object CMakeFiles/nlopt.dir/src/algs/esch/esch.c.o
+[ 56%] Building C object CMakeFiles/nlopt.dir/src/api/general.c.o
+[ 58%] Building C object CMakeFiles/nlopt.dir/src/api/options.c.o
+[ 60%] Building C object CMakeFiles/nlopt.dir/src/api/optimize.c.o
+[ 62%] Building C object CMakeFiles/nlopt.dir/src/api/deprecated.c.o
+[ 64%] Building C object CMakeFiles/nlopt.dir/src/api/f77api.c.o
+[ 66%] Building C object CMakeFiles/nlopt.dir/src/util/mt19937ar.c.o
+[ 68%] Building C object CMakeFiles/nlopt.dir/src/util/sobolseq.c.o
+[ 70%] [ 72%] Building C object CMakeFiles/nlopt.dir/src/util/timer.c.o
+Building C object CMakeFiles/nlopt.dir/src/util/stop.c.o
+[ 74%] Building C object CMakeFiles/nlopt.dir/src/util/redblack.c.o
+[ 76%] Building C object CMakeFiles/nlopt.dir/src/util/qsort_r.c.o
+[ 78%] Building C object CMakeFiles/nlopt.dir/src/util/rescale.c.o
+[ 80%] Building CXX object CMakeFiles/nlopt.dir/src/algs/stogo/global.cc.o
+[ 82%] Building CXX object CMakeFiles/nlopt.dir/src/algs/stogo/linalg.cc.o
+[ 84%] Building CXX object CMakeFiles/nlopt.dir/src/algs/stogo/local.cc.o
+[ 86%] Building CXX object CMakeFiles/nlopt.dir/src/algs/stogo/stogo.cc.o
+[ 88%] Building CXX object CMakeFiles/nlopt.dir/src/algs/stogo/tools.cc.o
+[ 90%] Building CXX object CMakeFiles/nlopt.dir/src/algs/ags/evolvent.cc.o
+[ 92%] Building CXX object CMakeFiles/nlopt.dir/src/algs/ags/solver.cc.o
+[ 94%] Building CXX object CMakeFiles/nlopt.dir/src/algs/ags/local_optimizer.cc.o
+[ 96%] Building CXX object CMakeFiles/nlopt.dir/src/algs/ags/ags.cc.o
+In file included from /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt-src/src/algs/ags/solver.cc:8:
+In file included from /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt-src/src/algs/ags/solver.hpp:10:
+In file included from /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt-src/src/algs/ags/data_types.hpp:11:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string:522:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm:653:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/functional:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/function.h:20:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:315:9: warning: destructor called on non-final '(anonymous namespace)::ProblemInternal' that has virtual functions but non-virtual destructor [-Wdelete-non-abstract-non-virtual-dtor]
+        __get_elem()->~_Tp();
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:290:14: note: in instantiation of member function 'std::__shared_ptr_emplace<(anonymous namespace)::ProblemInternal, std::allocator<(anonymous namespace)::ProblemInternal>>::__on_zero_shared' requested here
+    explicit __shared_ptr_emplace(_Alloc __a, _Args&& ...__args)
+             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1106:55: note: in instantiation of function template specialization 'std::__shared_ptr_emplace<(anonymous namespace)::ProblemInternal, std::allocator<(anonymous namespace)::ProblemInternal>>::__shared_ptr_emplace<const std::vector<std::function<double (const double *)>> &, const std::vector<double> &, const std::vector<double> &>' requested here
+    ::new ((void*)_VSTD::addressof(*__guard.__get())) _ControlBlock(__a, _VSTD::forward<_Args>(__args)...);
+                                                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1115:19: note: in instantiation of function template specialization 'std::allocate_shared<(anonymous namespace)::ProblemInternal, std::allocator<(anonymous namespace)::ProblemInternal>, const std::vector<std::function<double (const double *)>> &, const std::vector<double> &, const std::vector<double> &, void>' requested here
+    return _VSTD::allocate_shared<_Tp>(allocator<_Tp>(), _VSTD::forward<_Args>(__args)...);
+                  ^
+/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt-src/src/algs/ags/solver.cc:87:19: note: in instantiation of function template specialization 'std::make_shared<(anonymous namespace)::ProblemInternal, const std::vector<std::function<double (const double *)>> &, const std::vector<double> &, const std::vector<double> &, void>' requested here
+  mProblem = std::make_shared<ProblemInternal>(functions, leftBound, rightBound);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:315:24: note: qualify call to silence this warning
+        __get_elem()->~_Tp();
+                       ^
+1 warning generated.
+Linking CXX static library libnlopt.a
+[100%] Built target nlopt
+[  2%] Built target generate-cpp
+[  4%] Built target generate-fortran
+[100%] Built target nlopt
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt/lib/pkgconfig/nlopt.pc
+-- Installing: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt/include/nlopt.h
+-- Installing: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt/include/nlopt.hpp
+-- Installing: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt/include/nlopt.f
+-- Installing: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt/lib/libnlopt.a
+-- Installing: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt/lib/cmake/nlopt/NLoptLibraryDepends.cmake
+-- Installing: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt/lib/cmake/nlopt/NLoptLibraryDepends-release.cmake
+-- Installing: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt/lib/cmake/nlopt/NLoptConfig.cmake
+-- Installing: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt/lib/cmake/nlopt/NLoptConfigVersion.cmake
+-- Installing: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt/share/man/man3/nlopt.3
+-- Installing: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt/share/man/man3/nlopt_minimize.3
+-- Installing: /private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpMH9flC/R.INSTALL8fff35f62fb5/nloptr/src/nlopt/share/man/man3/nlopt_minimize_constrained.3
+mv: rename nlopt/lib to nlopt/lib/lib: Invalid argument
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+ccache clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG -I../inst/include  -I'/Library/Frameworks/R.framework/Versions/4.3/Resources/library/testthat/include' -I/usr/local/include    -fPIC  -Wall -g -O2  -c init_nloptr.c -o init_nloptr.o
+ccache clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG -I../inst/include  -I'/Library/Frameworks/R.framework/Versions/4.3/Resources/library/testthat/include' -I/usr/local/include    -fPIC  -Wall -g -O2  -c nloptr.c -o nloptr.o
+clang++ -mmacosx-version-min=10.13 -std=gnu++11 -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG -I../inst/include  -I'/Library/Frameworks/R.framework/Versions/4.3/Resources/library/testthat/include' -I/usr/local/include    -fPIC  -Wall -g -O2  -c test-C-API.cpp -o test-C-API.o
+clang++ -mmacosx-version-min=10.13 -std=gnu++11 -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG -I../inst/include  -I'/Library/Frameworks/R.framework/Versions/4.3/Resources/library/testthat/include' -I/usr/local/include    -fPIC  -Wall -g -O2  -c test-runner.cpp -o test-runner.o
+clang++ -mmacosx-version-min=10.13 -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/Library/Frameworks/R.framework/Resources/lib -L/usr/local/lib -o nloptr.so init_nloptr.o nloptr.o test-C-API.o test-runner.o -L/Library/Frameworks/R.framework/Resources/lib -lRlapack -L/Library/Frameworks/R.framework/Resources/lib -lRblas -L/usr/local/gfortran/lib/gcc/x86_64-apple-darwin18/8.2.0 -L/usr/local/gfortran/lib -lgfortran -lquadmath -lm nlopt/lib/libnlopt.a -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+ld: warning: object file (init_nloptr.o) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nloptr.o) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(options.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(general.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(optimize.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(auglag.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(bobyqa.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(ccsa_quadratic.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(cdirect.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(esch.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(cobyla.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(crs.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(direct_wrap.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(isres.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(plip.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(plis.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(pnet.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(mlsl.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(mma.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(newuoa.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(nldrmd.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(stop.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(mt19937ar.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(deprecated.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(timer.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(slsqp.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(praxis.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(sbplx.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(DIRect.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(mssubs.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(pssubs.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(rescale.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(qsort_r.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(redblack.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(sobolseq.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(DIRsubrout.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+ld: warning: object file (nlopt/lib/libnlopt.a(DIRserial.c.o)) was built for newer macOS version (12.0) than being linked (10.13)
+installing to /Users/kreutzer/GitHub/rxylib/rxylib.BuildResults/Library/00LOCK-nloptr/00new/nloptr/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (nloptr)

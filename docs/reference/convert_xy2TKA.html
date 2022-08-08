@@ -18,7 +18,7 @@ Canberra Genie 2000."><!-- mathjax --><script src="https://cdnjs.cloudflare.com/
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">rxylib</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.7</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.8</span>
       </span>
     </div>
 
@@ -55,7 +55,7 @@ Canberra Genie 2000.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">convert_xy2TKA</span><span class="op">(</span><span class="va">object</span>, file <span class="op">=</span> <span class="cn">NULL</span>, overwrite <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">convert_xy2TKA</span><span class="op">(</span><span class="va">object</span>, file <span class="op">=</span> <span class="cn">NULL</span>, overwrite <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -63,16 +63,23 @@ Canberra Genie 2000.</p>
     <dl><dt>object</dt>
 <dd><p><a href="rxylib-package.html">rxylib</a> (<strong>required</strong>): xy data as imported by the function <a href="read_xyData.html">read_xyData</a>. Optional
 a file supported by the <code>rxylib</code>-package can be provided as input. Arguments can be provided as <a href="https://rdrr.io/r/base/list.html" class="external-link">list</a>.</p></dd>
+
+
 <dt>file</dt>
 <dd><p><a href="https://rdrr.io/r/base/character.html" class="external-link">character</a> (optional): optional file path or file name for the output to be written.
 If only a path is provided the output file name is derived from the input file name. Argument
 can be provided as <a href="https://rdrr.io/r/base/list.html" class="external-link">list</a>.</p></dd>
+
+
 <dt>overwrite</dt>
 <dd><p><a href="https://rdrr.io/r/base/logical.html" class="external-link">logical</a> (with default): force overwriting of existing files if <code>TRUE</code>.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>Returns a <a href="https://rdrr.io/r/base/list.html" class="external-link">list</a> of <a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a> objects or an output TKA-file.</p>
+    
+
+<p>Returns a <a href="https://rdrr.io/r/base/list.html" class="external-link">list</a> of <a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a> objects or an output TKA-file.</p>
     </div>
     <div id="details">
     <h2>Details</h2>
@@ -81,23 +88,23 @@ can be provided as <a href="https://rdrr.io/r/base/list.html" class="external-li
 </ul></div>
     <div id="function-version">
     <h2>Function version</h2>
-    <p>0.1.0</p>
+    <p>0.1.1</p>
     </div>
     <div id="author">
     <h2>Author</h2>
-    <p>Sebastian Kreutzer, IRAMAT-CRP2A, Université Bordeaux Montaigne (France)</p>
+    <p>Sebastian Kreutzer, Institute of Geography, Universität Heidelberg, Germany</p>
     </div>
     <div id="how-to-cite">
     <h2>How to cite</h2>
-    <p>Kreutzer, S., 2022. convert_xy2TKA(): Convert xy-data to TKA. Function version 0.1.0. In: Kreutzer, S., Friedrich, J., 2022. rxylib: Import XY-Data into R . R package version 0.2.7. https://github.com/R-Lum/rxylib</p>
+    <p>Kreutzer, S., 2022. convert_xy2TKA(): Convert xy-data to TKA. Function version 0.1.1. In: Kreutzer, S., Friedrich, J., 2022. rxylib: Import XY-Data into R . R package version 0.2.8. https://github.com/R-Lum/rxylib</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"></span>
-<span class="r-in"><span class="co">##convert CNF data (no export to file system)</span></span>
-<span class="r-in"><span class="fu">convert_xy2TKA</span><span class="op">(</span></span>
-<span class="r-in"> object <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/ExampleSpectrum.CNF"</span>, package <span class="op">=</span> <span class="st">"rxylib"</span><span class="op">)</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">##convert CNF data (no export to file system)</span></span></span>
+<span class="r-in"><span><span class="fu">convert_xy2TKA</span><span class="op">(</span></span></span>
+<span class="r-in"><span> object <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/ExampleSpectrum.CNF"</span>, package <span class="op">=</span> <span class="st">"rxylib"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $`Thorit Kalibrierung`</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           [,1]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    [1,]   1662</span>
@@ -2151,21 +2158,21 @@ can be provided as <a href="https://rdrr.io/r/base/list.html" class="external-li
 <span class="r-out co"><span class="r-pr">#&gt;</span> [2049,]     51</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [2050,]     52</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
-<span class="r-in"><span class="co">##export as file</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">##create temporary filepath</span></span>
-<span class="r-in"><span class="co">##(for usage replace by own path)</span></span>
-<span class="r-in"><span class="va">temp_file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/tempfile.html" class="external-link">tempfile</a></span><span class="op">(</span>pattern <span class="op">=</span> <span class="st">"output"</span>, fileext <span class="op">=</span> <span class="st">".TKA"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">##convert and write to file system</span></span>
-<span class="r-in"><span class="fu">convert_xy2TKA</span><span class="op">(</span></span>
-<span class="r-in"> object <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/ExampleSpectrum.CNF"</span>, package <span class="op">=</span> <span class="st">"rxylib"</span><span class="op">)</span>,</span>
-<span class="r-in"> file <span class="op">=</span> <span class="va">temp_file</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="op">}</span></span>
-<span class="r-in"></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span><span class="co">##export as file</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">##create temporary filepath</span></span></span>
+<span class="r-in"><span><span class="co">##(for usage replace by own path)</span></span></span>
+<span class="r-in"><span><span class="va">temp_file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/tempfile.html" class="external-link">tempfile</a></span><span class="op">(</span>pattern <span class="op">=</span> <span class="st">"output"</span>, fileext <span class="op">=</span> <span class="st">".TKA"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">##convert and write to file system</span></span></span>
+<span class="r-in"><span><span class="fu">convert_xy2TKA</span><span class="op">(</span></span></span>
+<span class="r-in"><span> object <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/ExampleSpectrum.CNF"</span>, package <span class="op">=</span> <span class="st">"rxylib"</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span> file <span class="op">=</span> <span class="va">temp_file</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="op">}</span></span></span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -2180,8 +2187,7 @@ can be provided as <a href="https://rdrr.io/r/base/list.html" class="external-li
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a>
-2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer></div>
