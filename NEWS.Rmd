@@ -12,3 +12,5 @@ header-includes:
 * Upstream fetch to include latest library changes and avoid
 compiler warnings
 
+* Update maintainer address 
+
