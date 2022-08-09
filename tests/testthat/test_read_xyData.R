@@ -135,7 +135,7 @@ test_that("Check all formats", {
 
     ##Philips UDF
     ##commented 2017-11-03 ... server down?
-    #expect_type(read_xyData(file = "http://www.ccp14.ac.uk/ccp/ccp14/ftp-mirror/krumm/Software/windows/winfit/Winfit/ZEOLITE.UDF"), type = "list")
+    expect_type(read_xyData(file = "http://www.cristal.org/DU-SDPD/semaine-2/na5+nac.udf"), type = "list")
 
     ##DBWS data
     expect_type(read_xyData("http://mysite.du.edu/~balzar/lebailbr.dbw"), type = "list")
@@ -144,7 +144,8 @@ test_that("Check all formats", {
     expect_type(read_xyData("https://raw.githubusercontent.com/R-Lum/rxylib/master/tests/testdata/ExampleRigaku.dat"), type = "list")
 
     ##Sietronics Sieray CPI detected
-    #expect_type(read_xyData("https://cbc-wb01x.chemistry.ohio-state.edu/~woodward/ceo2br.cpi"), type = "list")
+#     expect_type(read_xyData("https://www.chemistry.ohio-state.edu/~woodward/ceo2br.cpi
+# "), type = "list")
 
 })
 
