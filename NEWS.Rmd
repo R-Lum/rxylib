@@ -9,11 +9,5 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
-* Upstream fetch to include latest library changes and avoid
-compiler warnings
-
-* Fix wrong usage of `class()` in `if()` call (CRAN message)
-
-* Update maintainer address 
-
+* Dummy
 
