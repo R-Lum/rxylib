@@ -54,10 +54,9 @@ contour(
  ylab = "#Channel",
  main = "TL Spectrum")
 
-
 }
 \author{
-Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France), Johannes Friedrich,
+Sebastian Kreutzer, Institute of Geography, Universität Heidelberg (Germany), Johannes Friedrich,
 University of Bayreuth (Germany)
 } 
 

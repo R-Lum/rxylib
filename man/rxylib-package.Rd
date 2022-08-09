@@ -22,6 +22,10 @@ License: GPL-3 | LGPL-2.1 (for the C++ library 'xylib')
 Between 2017-2019, the work of Sebastian Kreutzer as maintainer of the package was supported
 by LabEx LaScArBx (ANR - n. ANR-10-LABX-52).
 
+From 01/2020-04/2022, Sebastian Kreutzer received funding from the European Union’s Horizon 2020
+research and innovation programme under the Marie Skłodowska-Curie grant
+agreement No 844457 (project: CREDit).
+
 Supported data formats:
 \cr library version: 1.6.0\cr\cr
 \tabular{lllllll}{\bold{ID} \tab \bold{NAME} \tab \bold{DESCRIPTION} \tab \bold{FILE EXTENSION}  \tab \bold{VALID_OPTIONS}  \tab \bold{DATATYPE} \tab \bold{BLOCK_TYPE}\cr

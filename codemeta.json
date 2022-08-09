@@ -115,7 +115,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "1237.125KB",
+  "fileSize": "1237.464KB",
   "releaseNotes": "https://github.com/R-Lum/rxylib/blob/master/NEWS.md",
   "contIntegration": ["https://ci.appveyor.com/project/RLumSK/rxylib/branch/master", "https://codecov.io/github/R-Lum/rxylib?branch=master"],
   "relatedLink": "https://CRAN.R-project.org/package=rxylib"
