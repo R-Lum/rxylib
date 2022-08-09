@@ -1,6 +1,6 @@
-#' Import xy-Data for Supported Formats into R
+#'@title Import xy-Data for Supported Formats into R
 #'
-#'The function provides access to the underlying `xylib` to import data for supported file formats
+#'@description The function provides access to the underlying `xylib` to import data for supported file formats
 #'into R. In most cases, only the file path is needed with further arguments to import the data.
 #'The function automatically recognises allowed formats. See [rxylib-package] for supported formats.
 #'
@@ -14,7 +14,7 @@
 #'
 #' @section Function version: 0.3.0
 #'
-#' @author Sebastian Kreutzer, IRAMAT-CRP2A, UMR 5060, CNRS - Université Bordeaux Montaigne (France), Johannes Friedrich,
+#' @author Sebastian Kreutzer, Institute of Geography, Universität Heidelberg (Germany), Johannes Friedrich,
 #' University of Bayreuth (Germany)
 #'
 #' @return The functions returns a [list] of matrices.
@@ -48,7 +48,6 @@
 #'  ylab = "#Channel",
 #'  main = "TL Spectrum")
 #'
-#'
 #' @md
 #' @export
 read_xyData <- function(
@@ -63,12 +62,9 @@ read_xyData <- function(
 
     ##check whether file exists
     if(!file.exists(file)){
-
       ##check whether the file as an URL
       if(grepl(pattern = "http", x = file, fixed = TRUE)){
-        if(verbose){
-          cat("[read_xyData()] URL detected, try download ... ")
-        }
+        if(verbose) cat("[read_xyData()] URL detected, try download ... ")
 
         ##set file link
         file_link <- paste0(tempfile("read_xyData"), ".", rev(strsplit(file, split = ".", fixed = TRUE)[[1]])[1])
@@ -85,7 +81,6 @@ read_xyData <- function(
 
         }
 
-
       }else{
         try(stop("[read_xyData()] File does not exist, NULL returned!", call. = FALSE))
         return(NULL)
@@ -95,15 +90,14 @@ read_xyData <- function(
     }
 
   # Set file extension  -------------------------------------------------------------------------
-
-    ##provide full path (the underlying C++ code does not like weired paths)
+    ##provide full path (the underlying C++ code does not like weird paths)
     file <- paste0(dirname(file),"/",basename(file))
 
     ##extract file extension
     ext <- rev(strsplit(x = basename(file), split = ".", fixed = TRUE)[[1]])[1]
 
       ##make small letters out of it, otherwise it may not work if, for whatever reason,
-      ##the filename was written in capital letters
+      ##the file name was written in capital letters
       ext <- tolower(ext)
 
     ##construct data.frame of supported file formats
@@ -130,10 +124,7 @@ read_xyData <- function(
 
       }
 
-      if(verbose){
-        cat(text)
-
-      }
+      if(verbose) cat(text)
 
     }else{
       try(stop(paste0("[read_xyData()] File extension '*.", ext, "' is not supported! Return NULL!"), call. = FALSE))
@@ -177,7 +168,6 @@ read_xyData <- function(
 
       }
 
-
   # return data ---------------------------------------------------------------------------------
   output <- list(
     dataset = data,
@@ -191,5 +181,4 @@ read_xyData <- function(
 
   ##return
   return(output)
-
 }
