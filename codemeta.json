@@ -7,13 +7,13 @@
   "codeRepository": "https://github.com/R-Lum/rxylib",
   "issueTracker": "https://github.com/R-Lum/rxylib/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.2.9.9000.1",
+  "version": "0.2.9.9000.9",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R Under development (unstable) (2022-06-27 r82528)",
+  "runtimePlatform": "R Under development (unstable) (2022-12-19 r83479)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -115,7 +115,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "1237.322KB",
+  "fileSize": "5007.233KB",
   "releaseNotes": "https://github.com/R-Lum/rxylib/blob/master/NEWS.md",
   "contIntegration": ["https://ci.appveyor.com/project/RLumSK/rxylib/branch/master", "https://codecov.io/github/R-Lum/rxylib?branch=master"],
   "relatedLink": "https://CRAN.R-project.org/package=rxylib"
