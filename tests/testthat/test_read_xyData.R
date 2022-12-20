@@ -138,7 +138,7 @@ test_that("Check all formats", {
     expect_type(read_xyData(file = "http://www.cristal.org/DU-SDPD/semaine-2/na5+nac.udf"), type = "list")
 
     ##DBWS data
-    expect_type(read_xyData("http://mysite.du.edu/~balzar/lebailbr.dbw"), type = "list")
+    #expect_type(read_xyData("http://mysite.du.edu/~balzar/lebailbr.dbw"), type = "list")
 
     ##Rigaku (dat)
     expect_type(read_xyData("https://raw.githubusercontent.com/R-Lum/rxylib/master/tests/testdata/ExampleRigaku.dat"), type = "list")
