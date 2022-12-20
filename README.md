@@ -13,8 +13,6 @@ Rcpp. For supported data formats see <https://github.com/wojdyr/xylib>.
 
 [![CRAN](https://www.r-pkg.org/badges/version/rxylib)](https://CRAN.R-project.org/package=rxylib)
 [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/rxylib)](https://www.r-pkg.org/pkg/rxylib)
-[![Build
-status](https://ci.appveyor.com/api/projects/status/7mmfpmo23k3iaq57/branch/master?svg=true)](https://ci.appveyor.com/project/RLumSK/rxylib/branch/master)
 [![R-CMD-check](https://github.com/R-Lum/rxylib/workflows/GitHub%20Actions%20CI/badge.svg)](https://github.com/R-Lum/rxylib/actions)
 [![DOI](https://zenodo.org/badge/95584252.svg)](https://zenodo.org/badge/latestdoi/95584252)
 [![Coverage
