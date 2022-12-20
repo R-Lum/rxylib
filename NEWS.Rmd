@@ -9,5 +9,4 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
-* Dummy
-
+* Internal C++ level replacement of `sprintf()` (deprecated) by `snprintf()`
