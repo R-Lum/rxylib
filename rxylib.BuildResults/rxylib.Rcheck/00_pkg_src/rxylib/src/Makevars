@@ -1,0 +1,69 @@
+# -------------------------------------------------------------------------------------------------#
+# MAKEVARS for R package 'rxylib'
+# Sebastian Kreutzer, last updated: 2019-04-26
+# -------------------------------------------------------------------------------------------------#
+#
+#
+# Information taken from: https://github.com/AleMorales/RcppSundials.R/blob/master/src/Makevars
+#
+# Further reading:
+#
+# https://stackoverflow.com/questions/43597632/understanding-the-contents-of-the-makevars-file-in-r-macros-variables-r-ma
+#
+# Note: the option --DDISABLE_STDERR_WARNINGS is a customized option for the xylib to ensure
+# that things CRAN does not like do get part of the compiled code, e.g, line 388 in util.cpp.
+
+## set flags
+PKG_CXXFLAGS = -I../inst/include/ -I../inst/include/xylib/ -DDISABLE_STDERR_WARNINGS
+CXX_STD = CXX11
+
+##include files manually
+RXYLIBSOBJECTS=\
+  	./xylib/bruker_raw.o \
+  	./xylib/bruker_spc.o \
+  	./xylib/cache.o \
+  	./xylib/canberra_cnf.o \
+  	./xylib/canberra_mca.o \
+  	./xylib/chiplot.o \
+  	./xylib/cpi.o \
+  	./xylib/csv.o \
+  	./xylib/dbws.o \
+  	./xylib/pdcif.o \
+  	./xylib/philips_raw.o \
+  	./xylib/philips_udf.o \
+  	./xylib/riet7.o \
+  	./xylib/rigaku_dat.o \
+  	./xylib/specsxy.o \
+  	./xylib/spectra.o \
+  	./xylib/text.o \
+  	./xylib/util.o \
+  	./xylib/uxd.o \
+  	./xylib/vamas.o \
+  	./xylib/winspec_spe.o \
+  	./xylib/xfit_xdd.o \
+  	./xylib/xrdml.o \
+  	./xylib/xsyg.o \
+  	./xylib/xylib.o
+
+
+WRAPOBJECTS= read_data.o get_supportedFormats.o get_version.o get_meta_DataSet.o get_block_names.o
+
+PKGOBJECTS= RcppExports.o
+
+OBJECTS= $(WRAPOBJECTS) $(PKGOBJECTS) $(RXYLIBSOBJECTS)
+
+## -------------------
+## OUTDATED
+## -------------------
+##reduce shared lib size, if possible, information taken from
+##http://dirk.eddelbuettel.com/blog/2017/08/14/#009_compact_shared_libraries
+##removed 2019-04-11 in response to an email by Brian Ripley
+##slightly modified ...
+## strippedLib: $(SHLIB)
+##		if test -e "/usr/bin/strip"; then /usr/bin/strip -S $(SHLIB); fi
+
+## .phony: strippedLib
+##
+## The stripping, however, is possible for R > 3.6 according to what
+## we can find in this blog:
+## http://dirk.eddelbuettel.com/blog/2019/03/27#021_stripping_take_three

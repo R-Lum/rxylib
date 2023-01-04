@@ -1,0 +1,847 @@
+Hmm ... looks like a package
+Converting parsed Rd's to LaTeX ......
+Creating pdf output from LaTeX ...
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-12-17>
+(./Rd2.tex
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+)))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 391.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 391.
+
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file Rd2.aux.
+(/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd)
+No file Rd2.toc.
+[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 92--94
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[2]
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 116--119
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[3]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 198--200
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[4] [5] (/usr/local/texlive/2022/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 322--324
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[6]
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 346--349
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[7]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 428--430
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active [9]
+[10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 1431--1433
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[25]
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 1457--1460
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[26]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 1532--1534
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[27] [28]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 1657--1659
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 1683--1686
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[29] [30]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 1758--1760
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[31] [32]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 1877--1879
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[33] [34]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 2001--2003
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2714--2717
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[47]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2765--2768
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[48] [49]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2878--2881
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[50]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2948--2951
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[51]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2995--2998
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[52]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 3072--3075
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[53]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 3118--3120
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[54] [55] [56]
+Overfull \hbox (2.00812pt too wide) in paragraph at lines 3321--3325
+\T1/ptm/m/n/10 phase con-cen-tra-tions based on de-fined min-eral groups from t
+he []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ref-er-ence li-brary. []\T1/zi4/m
+/n/10 regroup
+[57] [58] [59] [60] [61]
+Overfull \hbox (63.99742pt too wide) in paragraph at lines 3575--3581
+\T1/ptm/m/n/10 feldspar (OR-DERED_MICROCLINE), pla-gio-clase (LABRADORITE), kao
+li-n-ite (KAOLI-N-ITE_DRY_BRANCH),
+[62] [63] [64] [65] [66] [67] [68] [69]
+No file Rd2.ind.
+[70]
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information){/usr/local/texlive/2022/te
+xmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{/usr/local/texlive/2022/texmf-
+dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/
+dvips/inconsolata/i4-t1-0.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/p
+ublic/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2022/texmf-dist/font
+s/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
+/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times
+/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pf
+b></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (70 pages, 211044 bytes).
+Transcript written on Rd2.log.
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-12-17>
+(./Rd2.tex
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+)))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 391.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 391.
+
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.aux)
+(/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.out)
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.out)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd)
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.toc [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/p
+dftex.map}] [2])
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 92--94
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[3]
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 116--119
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[4]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 198--200
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[5] [6] (/usr/local/texlive/2022/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 322--324
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[7]
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 346--349
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[8]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 428--430
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23]
+[24] [25]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 1431--1433
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[26]
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 1457--1460
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[27]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 1532--1534
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[28] [29]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 1657--1659
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 1683--1686
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[30] [31]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 1758--1760
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[32] [33]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 1877--1879
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[34] [35]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 2001--2003
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2714--2717
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[48]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2765--2768
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[49] [50]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2878--2881
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[51]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2948--2951
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[52]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2995--2998
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[53]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 3072--3075
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[54]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 3118--3120
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[55] [56] [57]
+Overfull \hbox (2.00812pt too wide) in paragraph at lines 3321--3325
+\T1/ptm/m/n/10 phase con-cen-tra-tions based on de-fined min-eral groups from t
+he []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ref-er-ence li-brary. []\T1/zi4/m
+/n/10 regroup
+[58] [59] [60] [61] [62]
+Overfull \hbox (63.99742pt too wide) in paragraph at lines 3575--3581
+\T1/ptm/m/n/10 feldspar (OR-DERED_MICROCLINE), pla-gio-clase (LABRADORITE), kao
+li-n-ite (KAOLI-N-ITE_DRY_BRANCH),
+[63] [64] [65] [66] [67] [68] [69] [70]
+No file Rd2.ind.
+[71]
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.aux) )
+(see the transcript file for additional information){/usr/local/texlive/2022/te
+xmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{/usr/local/texlive/2022/texmf-
+dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/
+dvips/inconsolata/i4-t1-0.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/p
+ublic/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2022/texmf-dist/font
+s/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
+/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times
+/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pf
+b></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (71 pages, 218262 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.16 [TeX Live 2022] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (79 entries accepted, 0 rejected).
+Sorting entries....done (486 comparisons).
+Generating output file Rd2.ind....done (124 lines written, 0 warnings).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-12-17>
+(./Rd2.tex
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+)))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 391.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 391.
+
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.aux)
+(/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.out)
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.out)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd)
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.toc [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/p
+dftex.map}] [2])
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 92--94
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[3]
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 116--119
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[4]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 198--200
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[5] [6] (/usr/local/texlive/2022/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 322--324
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[7]
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 346--349
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[8]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 428--430
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23]
+[24] [25]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 1431--1433
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[26]
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 1457--1460
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[27]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 1532--1534
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[28] [29]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 1657--1659
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 1683--1686
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[30] [31]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 1758--1760
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[32] [33]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 1877--1879
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[34] [35]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 2001--2003
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2714--2717
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[48]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2765--2768
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[49] [50]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2878--2881
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[51]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2948--2951
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[52]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2995--2998
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[53]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 3072--3075
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[54]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 3118--3120
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[55] [56] [57]
+Overfull \hbox (2.00812pt too wide) in paragraph at lines 3321--3325
+\T1/ptm/m/n/10 phase con-cen-tra-tions based on de-fined min-eral groups from t
+he []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ref-er-ence li-brary. []\T1/zi4/m
+/n/10 regroup
+[58] [59] [60] [61] [62]
+Overfull \hbox (63.99742pt too wide) in paragraph at lines 3575--3581
+\T1/ptm/m/n/10 feldspar (OR-DERED_MICROCLINE), pla-gio-clase (LABRADORITE), kao
+li-n-ite (KAOLI-N-ITE_DRY_BRANCH),
+[63] [64] [65] [66] [67] [68] [69] [70]
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.ind [71] [72])
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information){/usr/local/texlive/2022/te
+xmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{/usr/local/texlive/2022/texmf-
+dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/
+dvips/inconsolata/i4-t1-0.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/p
+ublic/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2022/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts
+/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
+urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/
+utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
+></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (72 pages, 231239 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.16 [TeX Live 2022] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (79 entries accepted, 0 rejected).
+Sorting entries....done (486 comparisons).
+Generating output file Rd2.ind....done (124 lines written, 0 warnings).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-12-17>
+(./Rd2.tex
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+)))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 391.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 391.
+
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.aux)
+(/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.out)
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.out)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd)
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.toc [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/p
+dftex.map}] [2])
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 92--94
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[3]
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 116--119
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[4]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 198--200
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[5] [6] (/usr/local/texlive/2022/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 322--324
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[7]
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 346--349
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[8]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 428--430
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23]
+[24] [25]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 1431--1433
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[26]
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 1457--1460
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[27]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 1532--1534
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[28] [29]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 1657--1659
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+
+Overfull \hbox (62.46906pt too wide) in paragraph at lines 1683--1686
+\T1/ptm/m/n/10 names sup-plied must be present within the []\T1/zi4/m/n/10 lib$
+phases$phase_id []\T1/ptm/m/n/10 or []\T1/zi4/m/n/10 lib$phases$phase_name
+[30] [31]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 1758--1760
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[32] [33]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 1877--1879
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[34] [35]
+Overfull \hbox (6.0479pt too wide) in paragraph at lines 2001--2003
+[]\T1/ptm/m/n/10 A []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ob-ject rep-re-se
+nt-ing the ref-er-ence li-brary. Cre-ated us-ing the []\T1/zi4/m/n/10 powdRlib
+[36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2714--2717
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[48]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2765--2768
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[49] [50]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2878--2881
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[51]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2948--2951
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[52]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 2995--2998
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[53]
+Overfull \hbox (21.33827pt too wide) in paragraph at lines 3072--3075
+[]\T1/ptm/m/n/10 One of "Cu", "Co" or a cus-tom nu-meric value defin-ing the wa
+ve-length (in Angstroms).
+[54]
+Overfull \hbox (25.40837pt too wide) in paragraph at lines 3118--3120
+\T1/ptm/m/n/10 sum-ma-tion of X-ray pow-der diffrac-tion data. Comp. Geo. 147, 
+104662. doi:10.1016/j.cageo.2020.104662 
+[55] [56] [57]
+Overfull \hbox (2.00812pt too wide) in paragraph at lines 3321--3325
+\T1/ptm/m/n/10 phase con-cen-tra-tions based on de-fined min-eral groups from t
+he []\T1/zi4/m/n/10 powdRlib []\T1/ptm/m/n/10 ref-er-ence li-brary. []\T1/zi4/m
+/n/10 regroup
+[58] [59] [60] [61] [62]
+Overfull \hbox (63.99742pt too wide) in paragraph at lines 3575--3581
+\T1/ptm/m/n/10 feldspar (OR-DERED_MICROCLINE), pla-gio-clase (LABRADORITE), kao
+li-n-ite (KAOLI-N-ITE_DRY_BRANCH),
+[63] [64] [65] [66] [67] [68] [69] [70]
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.ind [71] [72])
+(/private/var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T/RtmpT73weG/Rd2pdf8711
+49bfbc17/Rd2.aux) )
+(see the transcript file for additional information){/usr/local/texlive/2022/te
+xmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{/usr/local/texlive/2022/texmf-
+dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/
+dvips/inconsolata/i4-t1-0.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/p
+ublic/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2022/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts
+/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
+urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/
+utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
+></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (72 pages, 231368 bytes).
+Transcript written on Rd2.log.
+Saving output to ‘powdR-manual.pdf’ ...
+Done
+You may want to clean up by 'rm -Rf /var/folders/yz/3s5p1pss4352wtlzt9_bzbp00000gp/T//RtmpT73weG/Rd2pdf871149bfbc17'

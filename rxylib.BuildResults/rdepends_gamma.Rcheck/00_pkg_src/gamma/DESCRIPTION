@@ -1,0 +1,85 @@
+Package: gamma
+Title: Dose Rate Estimation from in-Situ Gamma-Ray Spectrometry
+        Measurements
+Version: 1.0.3
+Authors@R: 
+    c(person(given = "Nicolas",
+             family = "Frerebeau",
+             role = c("aut"),
+             email = "nicolas.frerebeau@u-bordeaux-montaigne.fr",
+             comment = c(ORCID = "0000-0001-5759-4944")),
+      person(given = "Brice",
+             family = "Lebrun",
+             role = c("aut"),
+             email = "brice.lebrun@u-bordeaux-montaigne.fr",
+             comment = c(ORCID = "0000-0001-7503-8685")),
+      person(given = "Guilhem",
+             family = "Paradol",
+             role = "aut",
+             email = "guilhem.paradol@cea.fr",
+             comment = c(ORCID = "0000-0002-8561-4903")),
+      person(given = "Magali",
+             family = "Rizza",
+             role = "ctb",
+             email = "rizza@cerege.fr",
+             comment = c(ORCID = "0000-0003-2364-5621")),
+      person(given = "Christelle",
+             family = "Lahaye",
+             role = "ctb",
+             email = "christelle.lahaye@u-bordeaux-montaigne.fr",
+             comment = c(ORCID = "0000-0003-2215-9015")),
+      person(given = "Archéosciences Bordeaux",
+             role = c("cre"),
+             email = "services-archeosciences@u-bordeaux-montaigne.fr"),
+      person(given = "Université Bordeaux Montaigne",
+             role = c("cph", "fnd")),
+      person(given = "CNRS",
+             role = "fnd"),
+      person(given = "LabEx Sciences archéologiques de Bordeaux",
+             role = "fnd"),
+      person(given = "Idex Aix-Marseille",
+             role = "fnd"))
+Description: Process in-situ Gamma-Ray Spectrometry for
+    Luminescence Dating. This package allows to import, inspect and
+    correct the energy shifts of Gamma-ray spectra. It provides methods
+    for estimating the gamma dose rate by the use of a calibration curve 
+    as described in Mercier and Falguères (2007).
+    The package only supports Canberra CNF and TKA files.
+License: GPL-3
+URL: https://crp2a.github.io/gamma/, https://github.com/crp2a/gamma
+BugReports: https://github.com/crp2a/gamma/issues
+Depends: R (>= 3.5)
+Imports: ggplot2, graphics, IsoplotR, methods, rlang, rxylib, stats,
+        tools, utils
+Suggests: covr, knitr, magrittr, rmarkdown, testthat (>= 3.0.0), vdiffr
+        (>= 1.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.2.1
+Collate: 'AllClasses.R' 'AllGenerics.R' 'baseline.R'
+        'baseline_linear.R' 'baseline_rubberband.R' 'baseline_snip.R'
+        'coerce.R' 'data.R' 'dose_fit.R' 'dose_predict.R'
+        'energy_calibrate.R' 'gamma-package.R' 'initialize.R'
+        'mutators.R' 'operators.R' 'peaks_find.R' 'peaks_search.R'
+        'plot.R' 'read.R' 'show.R' 'signal_integrate.R'
+        'signal_slice.R' 'signal_split.R' 'signal_stabilize.R'
+        'smooth.R' 'smooth_rectangular.R' 'smooth_savitzky.R'
+        'smooth_triangular.R' 'subset.R' 'summarize.R' 'utilities.R'
+        'validate.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2022-09-14 12:58:31 UTC; nicolas
+Author: Nicolas Frerebeau [aut] (<https://orcid.org/0000-0001-5759-4944>),
+  Brice Lebrun [aut] (<https://orcid.org/0000-0001-7503-8685>),
+  Guilhem Paradol [aut] (<https://orcid.org/0000-0002-8561-4903>),
+  Magali Rizza [ctb] (<https://orcid.org/0000-0003-2364-5621>),
+  Christelle Lahaye [ctb] (<https://orcid.org/0000-0003-2215-9015>),
+  Archéosciences Bordeaux [cre],
+  Université Bordeaux Montaigne [cph, fnd],
+  CNRS [fnd],
+  LabEx Sciences archéologiques de Bordeaux [fnd],
+  Idex Aix-Marseille [fnd]
+Maintainer: Archéosciences Bordeaux <services-archeosciences@u-bordeaux-montaigne.fr>
+Repository: CRAN
+Date/Publication: 2022-09-15 09:10:12 UTC

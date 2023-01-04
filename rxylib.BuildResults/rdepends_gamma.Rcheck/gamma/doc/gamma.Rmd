@@ -1,0 +1,224 @@
+---
+title: "Manual"
+author: "N. Frerebeau"
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::html_vignette:
+    fig_caption: yes
+    toc: true
+    number_sections: true
+header-includes:
+   - \usepackage{amsmath}
+   - \usepackage{amssymb}
+bibliography: bibliography.bib
+vignette: >
+  %\VignetteIndexEntry{Manual}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  message = FALSE,
+  comment = "#>",
+  out.width = NULL
+)
+```
+```{r packages}
+library(gamma)
+```
+
+# Overview
+
+**gamma** is intended to process in-situ gamma-ray spectrometry measurements for luminescence dating. This package allows to import, inspect and (automatically) correct the energy scale of the spectrum. It provides methods for estimating the gamma dose rate by the use of a calibration curve. This package only supports Canberra CNF and TKA files.
+
+Typical workflow:
+
+1. Import spectrum data with `read()`,
+2. Inspect spectrum with `plot()`,
+3. Calibrate the energy scale with `calibrate_energy()`,
+4. Estimate the gamma dose rate with `predict_dose()`.
+
+The estimation of the gamma dose rate requires a calibration curve. This package contains several built-in curves, but as these are instrument-specific you may need to build your own (see `help(fit)`). These built-in curves are in use in several labs and can be used to reproduce published results. Check out the following vignettes for an overview of the fitting process.
+
+```{r calib-dose, eval=FALSE}
+# IRAMAT-CRP2A LaBr (BDX1)
+utils::vignette("CRP2A#1", package = "gamma")
+
+# CEREGE NaI (AIX1)
+utils::vignette("CEREGE#1", package = "gamma")
+```
+
+Note that **gamma** uses the *International System of Units*: energy values are assumed to be in keV and dose rates in µGy/y.
+
+# Import file
+Both Canberra CNF and TKA files can be imported.
+
+```{r import}
+# Automatically skip the first channels
+# Import a CNF file
+cnf_test <- system.file("extdata/LaBr.CNF", package = "gamma")
+(spc_cnf <- read(cnf_test))
+
+# Import a TKA file
+tka_test <- system.file("extdata/LaBr.TKA", package = "gamma")
+(spc_tka <- read(tka_test))
+
+# Import all files in a given directory
+files_test <- system.file("extdata", package = "gamma")
+(spc <- read(files_test))
+```
+
+# Inspect spectrum
+```{r inspect, fig.width=7, fig.height=5, fig.align="center"}
+# Plot CNF spectrum
+plot(spc_cnf) +
+  ggplot2::theme_bw()
+```
+
+# Calibrate the energy scale
+The energy calibration of a spectrum is the most tricky part. To do this, you must specify the position of at least three observed peaks and the corresponding energy value (in keV).
+
+The package allows you to provide the channel-energy pairs you want to use. However, the spectrum can be noisy so it is difficult to properly determine the peak channel. In this case, a better approach may be to pre-process the spectrum (variance-stabilization, smoothing and baseline correction) and perform a peak detection. Once the identified peaks are satisfactory, you can set the corresponding energy values (in keV) and use these lines to calibrate the energy scale of the spectrum.
+
+Regardless of the approach you choose, it is strongly recommended to check the result before proceeding.
+
+## Workflow
+The following steps illustrate how to properly fine-tune the parameters for spectrum processing before peak detection.
+
+### Clean
+Several channels can be dropped to retain only part of the spectrum. If no specific value is provided, an attempt is made to define the number of channels to skip at the beginning of the spectrum. This drops all channels before the highest count maximum. This is intended to deal with the artefact produced by the rapid growth of random background noise towards low energies.
+
+```{r slice}
+# Use a square root transformation
+sliced <- signal_slice(spc_tka)
+```
+
+### Stabilization
+The stabilization step aims at improving the identification of peaks with a low signal-to-noise ratio. This particularly targets higher energy peaks.
+
+```{r stabilize}
+# Use a square root transformation
+transformed <- signal_stabilize(sliced, f = sqrt)
+```
+
+### Smoothing
+```{r smoothing}
+# Use a 21 point Savitzky-Golay-Filter to smooth the spectrum
+smoothed <- signal_smooth(transformed, method = "savitzky", m = 21)
+```
+
+### Baseline correction
+The baseline estimation is performed using the SNIP algorithm [@ryan1988; @morhac1997; @morhac2008]. You can apply the LLS operator to your data, use a decreasing clipping window or change the number of iterations (see references).
+
+```{r baseline-estimate, fig.width=7, fig.height=5, fig.align="center"}
+# Estimate the baseline of a single file
+baseline <- signal_baseline(smoothed, method = "SNIP", decreasing = TRUE)
+
+# Plot spectrum + baseline
+plot(smoothed, baseline) +
+  ggplot2::labs(title = "Spectrum + baseline") +
+  ggplot2::theme_bw()
+```
+
+```{r baseline-remove, fig.width=7, fig.height=5, fig.align="center"}
+# Substract the estimated baseline
+corrected <- smoothed - baseline
+# Or, remove the baseline in one go
+# corrected <- removeBaseline(smoothed)
+
+# Plot the corrected spectrum
+plot(corrected) +
+  ggplot2::labs(title = "Baseline-corrected spectrum") +
+  ggplot2::theme_bw()
+```
+
+```{r baseline-remove-multi, eval=FALSE}
+# You can remove the baseline of multiple spectra in one go
+# Note that the same parameters will be used for all spectra
+clean <- signal_correct(spc)
+```
+
+### Peak detection
+Once you have a baseline-corrected spectrum, you can try to automatically find peaks in the spectrum. A local maximum has to be the highest one in the given window and has to be higher than $k$ times the noise to be recognized as peak.
+
+```{r peak-detection}
+# Detect peaks in a single file
+peaks <- peaks_find(corrected)
+
+# Plot spectrum + peaks
+plot(corrected, peaks) +
+  ggplot2::labs(title = "Peaks") +
+  ggplot2::theme_bw()
+```
+
+### Energy scale calibration
+If you know the correspondence between several channels and the energy scale, you can use these pairs of values to calibrate the spectrum. A second order polynomial model is fitted on these energy *vs* channel values, then used to predict the new energy scale of the spectrum.
+
+You can use the results of the peak detection and set the expected energy values.
+```{r calibrate-fit, fig.width=7, fig.height=5, fig.align="center"}
+# Set the energy values (in keV)
+set_energy(peaks) <- c(238, NA, NA, NA, 1461, NA, NA, 2615)
+peaks
+
+# Calibrate the spectrum using the peak positions
+scaled <- energy_calibrate(spc_tka, peaks)
+
+# Plot the spectrum
+plot(scaled, xaxis = "energy") +
+  ggplot2::labs(title = "Calibrated spectrum") +
+  ggplot2::theme_bw()
+```
+
+Alternatively, you can do it by hand.
+```{r calibrate-fixed}
+# Create a list of channel-enegy pairs
+calib_lines <- list(
+  channel = c(84, 492, 865),
+  energy = c(238, 1461, 2615)
+)
+
+# Calibrate the spectrum using these fixed lines
+scaled2 <- energy_calibrate(spc_tka, lines = calib_lines)
+```
+
+## Use the pipe!
+```{r pipe, fig.width=7, fig.height=5, fig.align="center", fig.show="hold"}
+library(magrittr)
+
+# Spectrum pre-processing and peak detection
+pks <- spc_tka %>%
+  signal_slice() %>%
+  signal_stabilize(f = sqrt) %>%
+  signal_smooth(method = "savitzky", m = 21) %>%
+  signal_correct(method = "SNIP", decreasing = TRUE, n = 100) %>%
+  peaks_find()
+
+# Set the energy values (in keV)
+set_energy(pks) <- c(238, NA, NA, NA, 1461, NA, NA, 2615)
+
+# Calibrate the energy scale
+cal <- energy_calibrate(spc_tka, pks)
+
+# Plot spectrum
+plot(cal, pks) +
+  ggplot2::theme_bw()
+```
+
+# Estimate the gamma dose rate
+To estimate the gamma dose rate, you can either use one of the calibration curves distributed with this package or build your own.
+
+```{r dose-rate-curves, eval=FALSE}
+# Load one of the built-in curves
+data(BDX_LaBr_1) # IRAMAT-CRP2A (Bordeaux)
+data(AIX_NaI_1) # CEREGE (Aix-en-Provence)
+```
+
+The construction of a calibration curve requires a set of reference spectra for which the gamma dose rate is known and a background noise measurement. First, each reference spectrum is integrated over a given interval, then normalized to active time and corrected for background noise. The dose rate is finally modelled by the integrated signal value used as a linear predictor.
+
+See `vignette(doserate)` for a reproducible example.
+
+# References

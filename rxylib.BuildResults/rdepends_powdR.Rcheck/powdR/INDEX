@@ -1,0 +1,89 @@
+afps                    Automated full pattern summation
+afps.powdRlib           Automated full pattern summation
+afsis                   Africa Soil Information Service (AfSIS) XRPD
+                        reference library
+afsis_codes             Original codes for the 'afsis' reference
+                        patterns
+afsis_regroup           Regrouping structure for the Africa Soil
+                        Information Service (AfSIS) XRPD reference
+                        library
+align_xy                Align XRPD data to a given standard
+align_xy.XY             Align XRPD data in an XY object to a given
+                        standard
+align_xy.multiXY        Align XRPD data in a multiXY object to a given
+                        standard
+as_multi_xy             Create a multiXY object
+as_multi_xy.data.frame
+                        Create a multiXY object from a list of XRPD
+                        data
+as_multi_xy.list        Create a multiXY object from a list of XRPD
+                        data
+as_xy                   Create an XY object
+bkg                     Fit a background to XRPD data
+close_quant             Close the phase concentration data within a
+                        'powdRfps' or 'powdRafps' object
+close_quant.powdRafps   Close the phase concentration data within a
+                        'powdRafps' object
+close_quant.powdRfps    Close the phase concentration data within a
+                        'powdRfps' object
+delta                   Calculate the Delta value for a fitted pattern
+extract_xy              Import and extract XY data from proprietary
+                        files
+fps                     Full pattern summation
+fps.powdRlib            Full pattern summation
+fps_lm                  Full pattern summation using linear regression
+fps_lm.powdRlib         Full pattern summation using linear regression
+interpolate             Interpolate an XY, multiXY or powdRlib object
+                        to a given 2theta scale.
+interpolate.XY          Interpolate an 'XY' object onto a given 2theta
+                        scale.
+interpolate.multiXY     Interpolate a multiXY object onto a given
+                        2theta scale.
+interpolate.powdRlib    Interpolate a 'powdRlib' object onto a given
+                        2theta scale.
+merge.powdRlib          Merge two powdRlib objects
+minerals                An example powdRlib reference library
+minerals_phases         Example phases table for a reference library
+minerals_regroup        Example regrouping structure for the 'minerals'
+                        data
+minerals_xrd            Example xrd table for a reference library
+multi_xy_to_df          Convert a multiXY object to a data frame.
+multi_xy_to_df.multiXY
+                        Convert a multiXY object to a data frame.
+omit_std                Omit the internal standard from phase
+                        concentration data within a 'powdRfps' or
+                        'powdRafps' object
+omit_std.powdRafps      Omit the internal standard from phase
+                        concentration data within a 'powdRafps' object
+omit_std.powdRfps       Omit the internal standard from phase
+                        concentration data within a 'powdRfps' object
+plot.XY                 Plotting an XY object
+plot.multiXY            Plotting a multiXY object
+plot.powdRafps          Plotting elements of a powdRafps object
+plot.powdRbkg           Plotting a powdRbkg object
+plot.powdRfps           Plotting elements of a powdRfps object
+plot.powdRlib           Plotting elements of a powdRlib object
+plot.powdRlm            Plotting elements of a powdRlm object
+powdR                   powdR: Full Pattern Summation of X-Ray Powder
+                        Diffraction Data
+powdRlib                Create an XRPD reference library
+r                       Calculate the R value for a fitted pattern
+read_xy                 Read ASCII XY data
+regroup                 regroup
+regroup.powdRafps       regroup
+regroup.powdRfps        regroup
+rockjock                RockJock reference library
+rockjock_mixtures       RockJock synthetic mixtures
+rockjock_regroup        Regrouping structure for the rockjock reference
+                        library
+rockjock_weights        Mineral concentrations of the
+                        'rockjock_mixtures' data
+run_bkg                 Run the background fitting shiny app
+run_powdR               Run the powdR shiny app
+rwp                     Calculate the Rwp value for a fitted pattern
+soils                   Example soil XRPD data
+subset.powdRlib         Subset a powdRlib object
+summarise_mineralogy    Summarise the mineralogy from multiple powdRfps
+                        and powdRafps outputs
+tth_transform           Transform a two theta axis between wavelengths
+xrpd_pca                PCA of XRPD data
