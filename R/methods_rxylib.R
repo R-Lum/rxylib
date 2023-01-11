@@ -22,7 +22,7 @@ NULL
 #' @method print rxylib
 #' @export
 print.rxylib <- function(x, ...) {
-  cat("\n[rxylib-object]\n")
+  cat("\n[rxylib-object]")
   cat("\n  Imported format:\t", attr(x, "format_name"))
   cat("\n  Imported blocks: \t", length(x$dataset))
   cat("\n  Dataset has metadata:\t", ifelse(nrow(x$metadata) == 0, FALSE, TRUE))
@@ -44,6 +44,8 @@ print.rxylib <- function(x, ...) {
         cat("\n  .. $metadata_block \t", ifelse(nrow(x$dataset[[i]]$metadata_block) == 0, FALSE, TRUE))
 
     }
+    cat("\n")
+
   }else{
     cat("\n << empty data set >>\n")
 
