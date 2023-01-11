@@ -1,9 +1,0 @@
-Package: rxylib
-Version: 0.2.9
-Depends: R (>= 4.1), utils
-Imports: methods, Rcpp (>= 1.0.9)
-LinkingTo: Rcpp (>= 1.0.9), BH (>= 1.78.0)
-Suggests: testthat (>= 3.1.4)
-License: GPL-3 | LGPL-2.1
-MD5sum: fce1f58a6feeacd18058e696e4194511
-NeedsCompilation: yes
