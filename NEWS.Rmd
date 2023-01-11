@@ -9,4 +9,5 @@ header-includes:
 
 ## Changes in version `r RLumBuild::.get_pkg_version()` (`r Sys.Date()`)
 
-* dummy
+* `read_xyData()` now supports that the argument file is of type `list` or a `character` vector
+of length > 1
