@@ -1,10 +1,11 @@
-#'@title Import xy-Data for Supported Formats into R
+#' @title Import xy-Data for Supported Formats into R
 #'
-#'@description The function provides access to the underlying `xylib` to import data for supported file formats
+#' @description The function provides access to the underlying `xylib` to import data for supported file formats
 #'into R. In most cases, only the file path is needed with further arguments to import the data.
 #'The function automatically recognises allowed formats. See [rxylib-package] for supported formats.
 #'
 #' @param file [character] (**required**): path and file to be imported. The argument accepts an `URL`.
+#' Can be [character] vector or a [list] of `characters`.
 #'
 #' @param options [character] (with default): set format options (see [rxylib-package])
 #'

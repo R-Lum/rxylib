@@ -7,7 +7,8 @@
 read_xyData(file, options = "", verbose = TRUE, metaData = TRUE)
 }
 \arguments{
-\item{file}{\link{character} (\strong{required}): path and file to be imported. The argument accepts an \code{URL}.}
+\item{file}{\link{character} (\strong{required}): path and file to be imported. The argument accepts an \code{URL}.
+Can be \link{character} vector or a \link{list} of \code{characters}.}
 
 \item{options}{\link{character} (with default): set format options (see \link{rxylib-package})}
 
@@ -58,10 +59,5 @@ contour(
 \author{
 Sebastian Kreutzer, Institute of Geography, Ruprecht-Karl-University of Heidelberg (Germany), Johannes Friedrich,
 University of Bayreuth (Germany)
-} 
-
-\section{How to cite}{
-Kreutzer, S., Friedrich, J., 2023. read_xyData(): Import xy-Data for Supported Formats into R. Function version 0.3.0. In: Kreutzer, S., Friedrich, J., 2023. rxylib: Import XY-Data into R . R package version 0.2.10.9000-6. https://github.com/R-Lum/rxylib
 }
-
 \keyword{IO}
