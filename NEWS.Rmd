@@ -11,3 +11,4 @@ header-includes:
 
 * `read_xyData()` now supports that the argument file is of type `list` or a `character` vector
 of length > 1
+* Internal: Update standard from C++11 to C++17 as requested by CRAN
