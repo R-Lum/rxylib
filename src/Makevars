@@ -11,11 +11,11 @@
 # https://stackoverflow.com/questions/43597632/understanding-the-contents-of-the-makevars-file-in-r-macros-variables-r-ma
 #
 # Note: the option --DDISABLE_STDERR_WARNINGS is a customized option for the xylib to ensure
-# that things CRAN does not like do get part of the compiled code, e.g, line 388 in util.cpp.
+# that things CRAN does not like get part of the compiled code, e.g, line 388 in util.cpp.
 
 ## set flags
 PKG_CXXFLAGS = -I../inst/include/ -I../inst/include/xylib/ -DDISABLE_STDERR_WARNINGS
-CXX_STD = CXX17
+#CXX_STD = CXX17
 
 ##include files manually
 RXYLIBSOBJECTS=\
