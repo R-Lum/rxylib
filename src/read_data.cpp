@@ -69,7 +69,7 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
       std::string value, key;
       Rcpp::CharacterVector value_vec, key_vec;
 
-      for(int i =0; i < meta_size; i++){
+      for(unsigned long int i =0; i < meta_size; i++){
         key = block ->meta.get_key(i);
         value = block ->meta.get(key);
         key_vec.push_back(key);

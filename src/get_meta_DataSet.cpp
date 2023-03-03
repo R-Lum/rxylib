@@ -15,14 +15,14 @@ Rcpp::DataFrame get_meta_DataSet(std::string path, std::string format_name, std:
 
   //load dataset
   DataSet* dataset = load_file(path, format_name, options);
-  
+
   size_t meta_size = dataset ->meta.size();
   std::string value, key;
   Rcpp::CharacterVector value_vec, key_vec;
-  
-  for(int i =0; i < meta_size; i++){
-    
-    key = dataset ->meta.get_key(i); 
+
+  for(unsigned long int i = 0; i < meta_size; i++){
+
+    key = dataset ->meta.get_key(i);
     value = dataset ->meta.get(key);
     key_vec.push_back(key);
     value_vec.push_back(value);
