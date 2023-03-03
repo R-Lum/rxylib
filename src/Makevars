@@ -14,7 +14,7 @@
 # that things CRAN does not like get part of the compiled code, e.g, line 388 in util.cpp.
 
 ## set flags
-PKG_CXXFLAGS = -I../inst/include/ -I../inst/include/xylib/ -DDISABLE_STDERR_WARNINGS
+PKG_CXXFLAGS = -I../inst/include/ -I../inst/include/xylib/ -DDISABLE_STDERR_WARNINGS -D_HAS_AUTO_PTR_ETC=0
 #CXX_STD = CXX17
 
 ##include files manually
