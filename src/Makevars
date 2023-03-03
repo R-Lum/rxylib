@@ -15,8 +15,8 @@
 
 ## set flags
 PKG_CXXFLAGS = -I../inst/include/ -I../inst/include/xylib/ -DDISABLE_STDERR_WARNINGS -D_HAS_AUTO_PTR_ETC=0
-CXX_STD = CXX17
-CXX17STD = -std=c++17
+##CXX_STD = CXX17
+##CXX17STD = -std=c++17
 
 ##include files manually
 RXYLIBSOBJECTS=\
