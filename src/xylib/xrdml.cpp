@@ -4,10 +4,17 @@
 #define BUILDING_XYLIB
 #include "xrdml.h"
 
-//prevent parentheses warnings
+//prevent warnings for C++17 warnings
 #if __cplusplus >= 201703L
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wparentheses"
+  #if __clang__
+  #pragma clang diagnostic push
+  #pragma clang diagnostic ignored "-Wmacro-redefined"
+  #else
+  #pragma GCC diagnostic push
+  #pragma GCC diagnostic ignored "-Wbuiltin-macro-redefined"
+  #endif
 #endif
 
 #include <cstring>

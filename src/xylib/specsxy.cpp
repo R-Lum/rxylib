@@ -2,6 +2,7 @@
 // Licence: Lesser GNU Public License 2.1 (LGPL)
 
 #define BUILDING_XYLIB
+
 #include "specsxy.h"
 
 #include <cctype>
@@ -62,7 +63,7 @@ Block* read_block(istream &f)
                     // ignore, these fields are non-unique or not interesting
                 } else if (key == "Excitation Energy") {
                     blk->meta["source energy"] = value;
-                } else { // all other 
+                } else { // all other
                     blk->meta[key] = value;
                 }
             }

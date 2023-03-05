@@ -2,6 +2,11 @@
 // Licence: Lesser GNU Public License 2.1 (LGPL)
 
 #define BUILDING_XYLIB
+
+#ifndef BOOST_NO_AUTO_PTR
+#define BOOST_NO_AUTO_PTR
+#endif
+
 #include "riet7.h"
 
 #include <cstdlib>
