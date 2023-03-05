@@ -2,6 +2,12 @@
 #include "util.h"
 #include "xsyg.h"
 
+//prevent parentheses warnings
+#if __cplusplus >= 201703L
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wparentheses"
+#endif
+
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/xml_parser.hpp>
 #include <boost/algorithm/string.hpp>

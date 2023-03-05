@@ -4,6 +4,12 @@
 #define BUILDING_XYLIB
 #include "xrdml.h"
 
+//prevent parentheses warnings
+#if __cplusplus >= 201703L
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wparentheses"
+#endif
+
 #include <cstring>
 #include <memory>  // for unique_ptr
 #include <boost/property_tree/ptree.hpp>
