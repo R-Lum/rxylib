@@ -10,9 +10,3 @@ header-includes:
 
 **This version has C++17 as a system requirement.**
 
-* `read_xyData()` now supports that the argument file is of type `list` or a `character` vector
-of length > 1
-
-### Internal
-* C++17 is now set as a requirement 
-* Address CRAN warning: sanitize usage of deprecated Boost headers
