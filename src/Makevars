@@ -26,7 +26,7 @@ PKG_CXXFLAGS =\
 	-D_HAS_AUTO_PTR_ETC
 
 ## set C++ standard
-#CXX_STD = CXX17
+CXX_STD = CXX17
 
 ##include files manually
 RXYLIBSOBJECTS=\
