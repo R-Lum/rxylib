@@ -56,11 +56,6 @@
  */
 #define XYLIB_VERSION 10600 /* 1.6.0 */
 
-// make sure the
-#if __cplusplus >= 201703L
-#define _HAS_AUTO_PTR_ETC 0
-#endif
-
 #ifdef __cplusplus
 
 #include <string>
