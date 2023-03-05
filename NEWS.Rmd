@@ -14,5 +14,5 @@ header-includes:
 of length > 1
 
 ### Internal
-* CRAN note: Set C++17 standard flag 
-* CRAN warning: sanitize usage of non-conform Boost headers
+* C++17 is now set as a requirement 
+* Address CRAN warning: sanitize usage of deprecated Boost headers
