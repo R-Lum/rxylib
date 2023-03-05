@@ -15,7 +15,7 @@ Rcpp. For supported data formats see <https://github.com/wojdyr/xylib>.
 [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/rxylib)](https://www.r-pkg.org/pkg/rxylib)
 [![R-CMD-check](https://github.com/R-Lum/rxylib/workflows/GitHub%20Actions%20CI/badge.svg)](https://github.com/R-Lum/rxylib/actions)
 [![DOI](https://zenodo.org/badge/95584252.svg)](https://zenodo.org/badge/latestdoi/95584252)
-[![codecov](https://app.codecov.io/gh/R-Lum/rxylib/branch/master/graph/badge.svg?token=is1ADF98pO)](https://app.codecov.io/gh/R-Lum/rxylib)
+[![codecov](https://codecov.io/gh/R-Lum/rxylib/branch/master/graph/badge.svg?token=is1ADF98pO)](https://app.codecov.io/gh/R-Lum/rxylib)
 
 ## Installation
 

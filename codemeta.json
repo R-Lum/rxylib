@@ -115,7 +115,7 @@
     },
     "SystemRequirements": "\n    C++17"
   },
-  "fileSize": "5010.442KB",
+  "fileSize": "5010.438KB",
   "releaseNotes": "https://github.com/R-Lum/rxylib/blob/master/NEWS.md",
   "contIntegration": "https://app.codecov.io/gh/R-Lum/rxylib",
   "relatedLink": "https://CRAN.R-project.org/package=rxylib"
