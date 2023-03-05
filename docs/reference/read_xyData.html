@@ -19,7 +19,7 @@ The function automatically recognises allowed formats. See rxylib-package for su
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">rxylib</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.9</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.10</span>
       </span>
     </div>
 
@@ -63,7 +63,8 @@ The function automatically recognises allowed formats. See <a href="rxylib-packa
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>file</dt>
-<dd><p><a href="https://rdrr.io/r/base/character.html" class="external-link">character</a> (<strong>required</strong>): path and file to be imported. The argument accepts an <code>URL</code>.</p></dd>
+<dd><p><a href="https://rdrr.io/r/base/character.html" class="external-link">character</a> (<strong>required</strong>): path and file to be imported. The argument accepts an <code>URL</code>.
+Can be <a href="https://rdrr.io/r/base/character.html" class="external-link">character</a> vector or a <a href="https://rdrr.io/r/base/list.html" class="external-link">list</a> of <code>characters</code>.</p></dd>
 
 
 <dt>options</dt>
@@ -95,7 +96,7 @@ University of Bayreuth (Germany)</p>
     </div>
     <div id="how-to-cite">
     <h2>How to cite</h2>
-    <p>Kreutzer, S., Friedrich, J., 2023. read_xyData(): Import xy-Data for Supported Formats into R. Function version 0.3.0. In: Kreutzer, S., Friedrich, J., 2023. rxylib: Import XY-Data into R . R package version 0.2.9. https://github.com/R-Lum/rxylib</p>
+    <p>Kreutzer, S., Friedrich, J., 2023. read_xyData(): Import xy-Data for Supported Formats into R. Function version 0.3.0. In: Kreutzer, S., Friedrich, J., 2023. rxylib: Import XY-Data into R . R package version 0.2.10. https://github.com/R-Lum/rxylib</p>
     </div>
 
     <div id="ref-examples">
@@ -104,12 +105,10 @@ University of Bayreuth (Germany)</p>
 <span class="r-in"><span><span class="co">##load example dataset</span></span></span>
 <span class="r-in"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/ExampleSpectrum.CNF"</span>, package <span class="op">=</span> <span class="st">"rxylib"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">results</span> <span class="op">&lt;-</span> <span class="fu">read_xyData</span><span class="op">(</span><span class="va">file</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [read_xyData()] &gt;&gt; File of type Canberra CNF detected</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [read_xyData()] File of type Canberra CNF detected ...</span>
 <span class="r-in"><span><span class="va">results</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [rxylib-object]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Imported format:	 Canberra CNF</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Imported blocks: 	 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Dataset has metadata:	 FALSE</span>
@@ -131,8 +130,7 @@ University of Bayreuth (Germany)</p>
 <span class="r-in"><span><span class="co">##plot contour for TL-spectrum</span></span></span>
 <span class="r-in"><span><span class="co">##imported from an XSYG-file</span></span></span>
 <span class="r-in"><span><span class="va">spectrum</span> <span class="op">&lt;-</span> <span class="fu">read_xyData</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/TLSpectrum.xsyg"</span>, package <span class="op">=</span> <span class="st">"rxylib"</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [read_xyData()] &gt;&gt; File of type Freiberg Instruments XSYG detected</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [read_xyData()] File of type Freiberg Instruments XSYG detected ...</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/contour.html" class="external-link">contour</a></span><span class="op">(</span></span></span>
 <span class="r-in"><span> x <span class="op">=</span> <span class="va">spectrum</span><span class="op">$</span><span class="va">dataset</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">data_block</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span>,</span></span>
 <span class="r-in"><span> y <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">ncol</a></span><span class="op">(</span><span class="va">spectrum</span><span class="op">$</span><span class="va">dataset</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">data_block</span><span class="op">[</span>,<span class="op">-</span><span class="fl">1</span><span class="op">]</span><span class="op">)</span>,</span></span>
