@@ -14,7 +14,7 @@
 # that things CRAN does not like get part of the compiled code, e.g, line 388 in util.cpp.
 #
 # -DDISABLE_STDERR_WARNINGS -> rxylib internal to meet CRAN requirements
-# -DBOOST_NO_AUTO_PTR -> avoid C++17 compiler warnings ... fixed redefinition warnings deeper
+# -DBOOST_NO_AUTO_PTR -> avoid C++17 compiler warnings
 # -D_HAS_AUTO_PTR_ETC -> recommended by CRAN for CLANG > 16
 
 ## set flags
@@ -26,7 +26,7 @@ PKG_CXXFLAGS =\
 	-D_HAS_AUTO_PTR_ETC
 
 ## set C++ standard
-CXX_STD = CXX17
+#CXX_STD = CXX17
 
 ##include files manually
 RXYLIBSOBJECTS=\
