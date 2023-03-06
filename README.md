@@ -22,8 +22,8 @@ Rcpp. For supported data formats see <https://github.com/wojdyr/xylib>.
 #### i. Requirements
 
 - *Windows (32/64bit)*:
-  [Rtools](https://cran.r-project.org/bin/windows/Rtools/) (provided by
-  CRAN)
+  [Rtools](https://cran.r-project.org/bin/windo%20ws/Rtools/) (provided
+  by CRAN)
 - *macOS*: [Xcode](https://developer.apple.com/xcode/)
 - *Linux*: [gcc](https://gcc.gnu.org) often comes pre-installed in most
   distributions.
