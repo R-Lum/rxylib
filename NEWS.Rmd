@@ -10,4 +10,6 @@ header-includes:
 
 **This version has C++17 as a system requirement.**
 
-* Dummy
+* `read_xyData()` no throws more meaningful errors if the underlying library throws 
+errors.
+* Update `xrdml.cpp` to work with nodes of type "counts" instead of "intensities"

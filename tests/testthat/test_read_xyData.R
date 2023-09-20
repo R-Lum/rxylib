@@ -106,7 +106,18 @@ test_that("Check all formats", {
     expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/Spectra.1"), type = "list")
 
     ##PANalytical XRDML
-    expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/empyrean.xrdml"), type = "list")
+      ## version with "intensities" node
+      expect_type(
+        read_xyData(
+          file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/empyrean.xrdml"),
+        type = "list")
+
+      ## version with "counts" node
+      ## TODO (check xylib page)
+      expect_type(
+      read_xyData(
+        file = "https://raw.githubusercontent.com/wojdyr/xylib/075db1e4261daffe0e86e655b3a5af39869faec5/samples/examples.xrdml"),
+      type = "list")
 
     ##VAMAS ISO-14976
     expect_type(read_xyData(file = "https://raw.githubusercontent.com/wojdyr/xylib/master/samples/mjr9_116a.vms"), type = "list")
