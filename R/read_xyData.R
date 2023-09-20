@@ -108,7 +108,7 @@ read_xyData <- function(
       ext <- tolower(ext)
 
     ##construct data.frame of supported file formats
-    df_supported <- as.data.frame(get_supportedFormats(), stringsAsFactors = FALSE)
+    df_supported <- as.data.frame(rxylib:::get_supportedFormats(), stringsAsFactors = FALSE)
 
     supported_ext <- unlist(lapply(1:length(df_supported$exts), function(x){
       strsplit(df_supported$exts[x], "\\s+")
@@ -140,7 +140,13 @@ read_xyData <- function(
     }
 
     # READ Data Import ----------------------------------------------------------------------------
-    data <- try(read_data(path = file, format_name = format_name, options = options, metaData = metaData), silent = TRUE)
+    data <- try(
+      rxylib:::read_data(
+        path = file,
+        format_name = format_name,
+        options = options,
+        metaData = metaData),
+      silent = FALSE)
 
     if(inherits(data, "try-error")){
       try(stop("[read_xyData()] Data import failed. Return NULL!", call. = FALSE))
