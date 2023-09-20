@@ -23,10 +23,8 @@ RcppExport SEXP read_data(std::string path, std::string format_name, std::string
   List results_block;
   // std::vector<std::string> col_names;
 
-
   //loop over blocks
   for(int b=0;b<n_blocks;b++){
-
     const Block* block = dataset ->get_block(b);
 
     //set variables for the block; columns and rows should be equal for each block
