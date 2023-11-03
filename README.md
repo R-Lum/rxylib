@@ -84,5 +84,9 @@ conditions only cf. <https://github.com/wojdyr/xylib>
 
 - From 01/2020-04/2022, Sebastian Kreutzer received funding from the
   European Union’s Horizon 2020 research and innovation programme under
-  the Marie Skłodowska-Curie grant agreement No 844457 (project:
-  CREDit).
+  the Marie Skłodowska-Curie grant agreement No [844457 (project:
+  CREDit)](https://cordis.europa.eu/project/id/844457).
+
+- Since 03/2023, Sebastian Kreutzer as maintainer of the package
+  receives funding from the DFG Heisenberg programme No
+  [505822867](https://gepris.dfg.de/gepris/projekt/505822867).
