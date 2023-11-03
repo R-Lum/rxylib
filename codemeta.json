@@ -7,7 +7,7 @@
   "codeRepository": "https://github.com/R-Lum/rxylib",
   "issueTracker": "https://github.com/R-Lum/rxylib/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.2.12",
+  "version": "0.2.13.9000",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -115,7 +115,7 @@
     },
     "SystemRequirements": "\n    C++17"
   },
-  "fileSize": "3431.965KB",
+  "fileSize": "3432.004KB",
   "releaseNotes": "https://github.com/R-Lum/rxylib/blob/master/NEWS.md",
   "contIntegration": "https://app.codecov.io/gh/R-Lum/rxylib",
   "relatedLink": "https://CRAN.R-project.org/package=rxylib"
