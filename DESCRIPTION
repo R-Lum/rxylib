@@ -17,7 +17,7 @@ Authors@R: c(
     person("Marcin", "Wojdyr", role = c("cph"), comment = "C++ library 'xylib'"),
     person("Peng", "Zhang", role = c("cph"), comment = "C++ library 'xylib'"))
 Maintainer: Sebastian Kreutzer <sebastian.kreutzer@uni-heidelberg.de>
-URL: https://github.com/R-Lum/rxylib
+URL: https://github.com/R-Lum/rxylib, https://r-lum.github.io/rxylib/
 BugReports: https://github.com/R-Lum/rxylib/issues
 License: GPL-3 | LGPL-2.1
 SystemRequirements: 
