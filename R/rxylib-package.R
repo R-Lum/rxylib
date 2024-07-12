@@ -26,7 +26,6 @@
 #'
 #' @name rxylib-package
 #' @aliases rxylib-package rxylib
-#' @docType package
 #' @author Sebastian Kreutzer, Institute of Geography, Ruprecht-Karl-University of Heidelberg (Germany), Johannes Friedrich (University of Bayreuth, Germany), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library `xylib`), Peng Zhang (author of the C++ library `xylib`)
 #'
 #' @md
@@ -35,4 +34,4 @@
 #' @importFrom graphics plot
 #' @importFrom Rcpp evalCpp
 #' @useDynLib rxylib, .registration=TRUE
-NULL
+"_PACKAGE"
