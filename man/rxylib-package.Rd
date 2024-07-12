@@ -52,6 +52,14 @@ Supported data formats:
 [21,] \tab xsyg \tab Freiberg Instruments XSYG \tab xsyg \tab  \tab ascii \tab multiple\cr
  \tab \tab }
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/R-Lum/rxylib}
+  \item Report bugs at \url{https://github.com/R-Lum/rxylib/issues}
+}
+
+}
 \author{
 Sebastian Kreutzer, Institute of Geography, Ruprecht-Karl-University of Heidelberg (Germany), Johannes Friedrich (University of Bayreuth, Germany), RLum Team (family support), Marcin Wojdyr (maintainer and author of the C++ library \code{xylib}), Peng Zhang (author of the C++ library \code{xylib})
 }

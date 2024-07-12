@@ -13,7 +13,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R Under development (unstable) (2023-10-30 r85440)",
+  "runtimePlatform": "R Under development (unstable) (2024-07-11 r86890)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -115,7 +115,7 @@
     },
     "SystemRequirements": "\n    C++17"
   },
-  "fileSize": "3432.004KB",
+  "fileSize": "3426.783KB",
   "releaseNotes": "https://github.com/R-Lum/rxylib/blob/master/NEWS.md",
   "contIntegration": "https://app.codecov.io/gh/R-Lum/rxylib",
   "relatedLink": "https://CRAN.R-project.org/package=rxylib"
