@@ -7,13 +7,13 @@
   "codeRepository": "https://github.com/R-Lum/rxylib",
   "issueTracker": "https://github.com/R-Lum/rxylib/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.2.13.9000",
+  "version": "0.2.13",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R Under development (unstable) (2024-07-11 r86890)",
+  "runtimePlatform": "R version 4.4.1 (2024-06-14)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -29,8 +29,9 @@
       "@id": "https://orcid.org/0000-0002-0734-2199"
     },
     {
-      "@type": "Organization",
-      "name": "Johannes Friedrich",
+      "@type": "Person",
+      "givenName": "Johannes",
+      "familyName": "Friedrich",
       "@id": "https://orcid.org/0000-0002-0805-9547"
     }
   ],
@@ -115,7 +116,7 @@
     },
     "SystemRequirements": "\n    C++17"
   },
-  "fileSize": "3426.783KB",
+  "fileSize": "3434.706KB",
   "releaseNotes": "https://github.com/R-Lum/rxylib/blob/master/NEWS.md",
   "contIntegration": "https://app.codecov.io/gh/R-Lum/rxylib",
   "relatedLink": "https://CRAN.R-project.org/package=rxylib"
