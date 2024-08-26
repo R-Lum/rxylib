@@ -4,7 +4,7 @@ Title: Import XY-Data into R
 Description: Provides access to the 'xylib' C library for to import xy 
   data from powder diffraction, spectroscopy and other experimental methods.
 Version: 0.2.13-9000
-Date: 2024-07-12
+Date: 2024-08-14
 Author: Sebastian Kreutzer [aut, trl, cre] (<https://orcid.org/0000-0002-0734-2199>), 
   Johannes Friedrich [aut] (<https://orcid.org/0000-0002-0805-9547>),
   RLum Team [ctb],
@@ -12,7 +12,7 @@ Author: Sebastian Kreutzer [aut, trl, cre] (<https://orcid.org/0000-0002-0734-21
   Peng Zhang [cph] (C++ library 'xylib')
 Authors@R: c(
     person("Sebastian", "Kreutzer", role = c("aut", "trl", "cre"), email = "sebastian.kreutzer@uni-heidelberg.de", comment = c(ORCID = "0000-0002-0734-2199")),
-    person("Johannes Friedrich", role = c("aut"), comment = c(ORCID = "0000-0002-0805-9547")), 
+    person("Johannes", "Friedrich", role = c("aut"), comment = c(ORCID = "0000-0002-0805-9547")), 
     person(family = "RLum Team", role = "ctb"),
     person("Marcin", "Wojdyr", role = c("cph"), comment = "C++ library 'xylib'"),
     person("Peng", "Zhang", role = c("cph"), comment = "C++ library 'xylib'"))
