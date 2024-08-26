@@ -1,6 +1,8 @@
-pandoc: 2.19.2
-pkgdown: 2.0.7
+pandoc: '3.3'
+pkgdown: 2.1.0
 pkgdown_sha: ~
 articles: {}
-last_built: 2023-03-05T20:55Z
-
+last_built: 2024-08-26T18:58Z
+urls:
+  reference: https://r-lum.github.io/rxylib/reference
+  article: https://r-lum.github.io/rxylib/articles
