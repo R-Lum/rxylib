@@ -55,7 +55,7 @@ Supported data formats:
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/R-Lum/rxylib}
+  \item \url{https://r-lum.github.io/rxylib/}
   \item Report bugs at \url{https://github.com/R-Lum/rxylib/issues}
 }
 
