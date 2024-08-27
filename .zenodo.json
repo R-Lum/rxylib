@@ -33,7 +33,7 @@
       "relation": "isReferencedBy"
     }
   ],
-  "version": "0.2.14.9000-2",
+  "version": "0.2.15.9000-1",
   "upload_type": "software",
   "keywords": ["data import", "power diffraction", "R"],
   "publication_date": "2024-08-27",

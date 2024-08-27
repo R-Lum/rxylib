@@ -60,7 +60,7 @@ Sebastian Kreutzer, Institute of Geography, Universität Heidelberg, Germany
 } 
 
 \section{How to cite}{
-Kreutzer, S., 2024. convert_xy2TKA(): Convert xy-data to TKA. Function version 0.1.1. In: Kreutzer, S., Friedrich, J., 2024. rxylib: Import XY-Data into R . R package version 0.2.14.9000-2. https://r-lum.github.io/rxylib/
+Kreutzer, S., 2024. convert_xy2TKA(): Convert xy-data to TKA. Function version 0.1.1. In: Kreutzer, S., Friedrich, J., 2024. rxylib: Import XY-Data into R . R package version 0.2.15.9000-1. https://r-lum.github.io/rxylib/
 }
 
 \keyword{IO}
