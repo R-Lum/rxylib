@@ -91,4 +91,4 @@ conditions only cf. <https://github.com/wojdyr/xylib>
 
 - Since 03/2023, Sebastian Kreutzer as maintainer of the package
   receives funding from the DFG Heisenberg programme No
-  [505822867](https://gepris.dfg.de/gepris/projekt/505822867).
+  [505822867](https://gepris.dfg.de/project/505822867).

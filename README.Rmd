@@ -88,7 +88,7 @@ research and innovation programme under the Marie Skłodowska-Curie grant
 agreement No [844457 (project: CREDit)](https://cordis.europa.eu/project/id/844457).
 
 * Since 03/2023, Sebastian Kreutzer as maintainer of the package receives funding from the DFG 
-Heisenberg programme No [505822867](https://gepris.dfg.de/gepris/projekt/505822867).
+Heisenberg programme No [505822867](https://gepris.dfg.de/project/505822867).
 
 ```{r, echo=FALSE}
 ### ==========================================================================================
