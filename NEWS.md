@@ -7,6 +7,6 @@
 
 ## Changes in version 0.2.14.9000-12 (2026-09-26)
 
-**This version has C++17 as a system requirement.**
+**This version has C++20 and R \> 4.5 as a system requirement.**
 
-- Dummy
+- Bump minium version requirements
