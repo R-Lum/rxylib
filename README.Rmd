@@ -93,7 +93,7 @@ Heisenberg programme No [505822867](https://gepris.dfg.de/project/505822867).
 ```{r, echo=FALSE}
 ### ==========================================================================================
 ### Write supported formats into the manual page
-### sebastian.kreutzer@u-bordeaux-montaigne.fr
+### sebastian.kreutzer@uni-heidelberg.de
 ### 2019-05-08
 ### ==========================================================================================
 

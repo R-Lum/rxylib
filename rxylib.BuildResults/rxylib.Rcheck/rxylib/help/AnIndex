@@ -1,0 +1,7 @@
+rxylib-package	rxylib-package
+convert_xy2TKA	convert_xy2TKA
+methods_rxylib	methods_rxylib
+plot.rxylib	methods_rxylib
+print.rxylib	methods_rxylib
+read_xyData	read_xyData
+rxylib	rxylib-package

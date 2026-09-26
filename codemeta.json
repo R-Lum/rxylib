@@ -7,13 +7,13 @@
   "codeRepository": "https://github.com/R-Lum/rxylib",
   "issueTracker": "https://github.com/R-Lum/rxylib/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.2.15.9000.1",
+  "version": "0.2.14.9000.12",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.4.1 (2024-06-14)",
+  "runtimePlatform": "R Under development (unstable) (2026-09-10 r90519)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -38,7 +38,7 @@
   "contributor": [
     {
       "@type": "Organization",
-      "name": "RLum Team"
+      "name": "RLum-Team"
     },
     {
       "@type": "Person",
@@ -74,7 +74,7 @@
       "@type": "SoftwareApplication",
       "identifier": "testthat",
       "name": "testthat",
-      "version": ">= 3.1.4",
+      "version": ">= 3.3.2",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -89,7 +89,7 @@
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
-      "version": ">= 4.1"
+      "version": ">= 4.5"
     },
     "2": {
       "@type": "SoftwareApplication",
@@ -105,7 +105,7 @@
       "@type": "SoftwareApplication",
       "identifier": "Rcpp",
       "name": "Rcpp",
-      "version": ">= 1.0.10",
+      "version": ">= 1.1.2",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -114,10 +114,12 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=Rcpp"
     },
-    "SystemRequirements": "\n    C++17"
+    "SystemRequirements": "\n    C++20"
   },
-  "fileSize": "3434.722KB",
+  "fileSize": "3303.034KB",
   "relatedLink": ["https://r-lum.github.io/rxylib/", "https://CRAN.R-project.org/package=rxylib"],
-  "releaseNotes": "https://github.com/R-Lum/rxylib/blob/master/NEWS.md",
-  "contIntegration": "https://app.codecov.io/gh/R-Lum/rxylib"
+  "releaseNotes": "https://github.com/R-Lum/rxylib/blob/main/NEWS.md",
+  "readme": "https://github.com/R-Lum/rxylib/blob/master/README.md",
+  "contIntegration": "https://app.codecov.io/gh/R-Lum/rxylib",
+  "keywords": ["gamma-ray-spectrometry", "diffraction-analysis", "data-import", "powder-diffraction", "r", "rpackage"]
 }

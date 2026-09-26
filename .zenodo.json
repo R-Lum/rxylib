@@ -15,7 +15,7 @@
     }
   ],
   "language": "eng",
-  "title": "rxylib: Import XY-Data into R ",
+  "title": "rxylib: Import XY-Data into R",
   "related_identifiers": [
     {
       "scheme": "url",
@@ -33,10 +33,10 @@
       "relation": "isReferencedBy"
     }
   ],
-  "version": "0.2.15.9000-1",
+  "version": "0.2.14.9000-12",
   "upload_type": "software",
   "keywords": ["data import", "power diffraction", "R"],
-  "publication_date": "2024-08-27",
+  "publication_date": "2026-09-26",
   "creators": [
     {
       "orcid": "0000-0002-0734-2199",
@@ -49,5 +49,5 @@
     }
   ],
   "access_right": "open",
-  "description": "<p>Provides access to the 'xylib' C library for to import xy <\/p>"
+  "description": "<p>Provides access to the 'xylib' C library for to import xy<\/p>"
 }

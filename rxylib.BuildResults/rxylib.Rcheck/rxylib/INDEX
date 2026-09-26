@@ -1,0 +1,4 @@
+convert_xy2TKA          Convert xy-data to TKA
+methods_rxylib          methods_rxylib
+read_xyData             Import xy-Data for Supported Formats into R
+rxylib-package          Import XY-Data into R
