@@ -33,10 +33,10 @@
       "relation": "isReferencedBy"
     }
   ],
-  "version": "0.2.14.9000-12",
+  "version": "0.2.14.9000-14",
   "upload_type": "software",
   "keywords": ["data import", "power diffraction", "R"],
-  "publication_date": "2026-09-26",
+  "publication_date": "2026-10-03",
   "creators": [
     {
       "orcid": "0000-0002-0734-2199",

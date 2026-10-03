@@ -61,7 +61,7 @@ LIAG Institute for Applied Geophysics (Hannover, Germany)
 } 
 
 \section{How to cite}{
-Kreutzer, S., 2026. convert_xy2TKA(): Convert xy-data to TKA. Function version 0.1.1. In: Kreutzer, S., Friedrich, J., 2026. rxylib: Import XY-Data into R . R package version 0.2.14.9000-12. https://r-lum.github.io/rxylib/
+Kreutzer, S., 2026. convert_xy2TKA(): Convert xy-data to TKA. Function version 0.1.1. In: Kreutzer, S., Friedrich, J., 2026. rxylib: Import XY-Data into R . R package version 0.2.14.9000-14. https://r-lum.github.io/rxylib/
 }
 
 \keyword{IO}
