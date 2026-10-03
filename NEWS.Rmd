@@ -11,3 +11,6 @@ header-includes:
 **This version has C++20 and R > 4.5 as a system requirement.**
 
 * Bump minimum version requirements 
+* Add coding agent assisted fix for Bruker .raw (also pushed upstream to original library)
+to handle additional variants of the format including the scan types 
+"Theta", "2Theta", "Chi", and "Phi". 
